@@ -1,0 +1,49 @@
+0. target6 = driverForGraphClusteringScaleRuns  
+   change to gcc/g++ compiler, genertae the above executable but got segfault error.
+========================================================================================================
+1. target5 = driverForGraphClustering
+   adding the missing arguments in driverForGraphClustering.cpp to generate executable 'driverForGraphClustering'
+
+2. Run rose to get energyAPIs added
+  ******** __sync_fetch_and_add not supported by ROSE
+   RngStream Rng[nT]; not supported by ROSE
+
+3. Some file cannot go through ROSE even without sync_fetch_and_add:
+   buildNextPhase:  forStatment != NULL assert failure
+  ROSE will panic at the following statements.
+
+     map<long,long>** cluPtrIn = (map<long,long>**) malloc(numUniqueClusters*sizeof(map<long,long>*)); 
+     for (long i=0; i<numUniqueClusters; i++)
+         cluPtrIn[i] = NULL;    
+It complains about assert (forStatment != NULL) 
+   Assertion `forstmt != __null' failed
+  Solution: remove omp parallel
+
+   Another place in buildNextPhase.cpp that doesn't support OpenMP well. 
+   line ~416 bug
+
+4. utilityFunctions.cpp  contains segfault omp parallel (in ROSE only? maybe ScaleRuns also has problems here?)
+	#pragma omp parallel
+      {
+        int myRank = omp_get_thread_num();
+  	#pragma omp for 
+          for (long i=0; i<size; i++) {
+              RandVec[i] =  RngArray[myRank].RandU01();
+          }
+      }//End of parallel region   
+temporary fix:
+      serialize it.
+ 52 //#pragma omp parallel
+ 53     {
+ 54 //      int myRank = omp_get_thread_num();
+ 55 //#pragma omp for 
+ 56         for (long i=0; i<size; i++) {
+ 57             RandVec[i] =  RngArray[i%16].RandU01();
+ 58         }
+ 59     }//End of parallel region   
+
+=================================================================
+5. Files no changes needed: (associated with driverForGraphClustering)
+rose_RngStream.cpp rose_writeGraphDimacsFormat.cpp rose_utilityClusteringFunctions.cpp
+
+
