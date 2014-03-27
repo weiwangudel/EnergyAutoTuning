@@ -1,0 +1,421 @@
+% This is "sig-alternate.tex" V2.0 May 2012
+% This file should be compiled with V2.5 of "sig-alternate.cls" May 2012
+%
+% This example file demonstrates the use of the 'sig-alternate.cls'
+% V2.5 LaTeX2e document class file. It is for those submitting
+% articles to ACM Conference Proceedings WHO DO NOT WISH TO
+% STRICTLY ADHERE TO THE SIGS (PUBS-BOARD-ENDORSED) STYLE.
+% The 'sig-alternate.cls' file will produce a similar-looking,
+% albeit, 'tighter' paper resulting in, invariably, fewer pages.
+%
+% ----------------------------------------------------------------------------------------------------------------
+% This .tex file (and associated .cls V2.5) produces:
+%       1) The Permission Statement
+%       2) The Conference (location) Info information
+%       3) The Copyright Line with ACM data
+%       4) NO page numbers
+%
+% as against the acm_proc_article-sp.cls file which
+% DOES NOT produce 1) thru' 3) above.
+%
+% Using 'sig-alternate.cls' you have control, however, from within
+% the source .tex file, over both the CopyrightYear
+% (defaulted to 200X) and the ACM Copyright Data
+% (defaulted to X-XXXXX-XX-X/XX/XX).
+% e.g.
+% \CopyrightYear{2007} will cause 2007 to appear in the copyright line.
+% \crdata{0-12345-67-8/90/12} will cause 0-12345-67-8/90/12 to appear in the copyright line.
+%
+% ---------------------------------------------------------------------------------------------------------------
+% This .tex source is an example which *does* use
+% the .bib file (from which the .bbl file % is produced).
+% REMEMBER HOWEVER: After having produced the .bbl file,
+% and prior to final submission, you *NEED* to 'insert'
+% your .bbl file into your source .tex file so as to provide
+% ONE 'self-contained' source file.
+%
+% ================= IF YOU HAVE QUESTIONS =======================
+% Questions regarding the SIGS styles, SIGS policies and
+% procedures, Conferences etc. should be sent to
+% Adrienne Griscti (griscti@acm.org)
+%
+% Technical questions _only_ to
+% Gerald Murray (murray@hq.acm.org)
+% ===============================================================
+%
+% For tracking purposes - this is V2.0 - May 2012
+\documentclass{sig-alternate}
+%\usepackage{algorithm}
+%\usepackage{algorithmic}
+\usepackage{color}
+\usepackage{url}
+\usepackage{hyperref} 
+
+\newcommand{\todo}[1]{%                                                          
+  \noindent {\bf {\color {red} TODO: #1 }}%                                      
+} 
+\newcommand{\WW}[1]{%                                                          
+  \noindent {\bf {\color {blue} #1}}%                                      
+} 
+
+\usepackage{subfigure}
+\pagenumbering{arabic}
+\toappear{
+\hrule \vspace{5pt}
+IMPACT 2014\\
+Fourth International Workshop on Polyhedral Compilation Techniques\\
+Jan 20, 2014, Vienna, Austria\\
+In conjunction with HiPEAC 2014.\\[10pt]
+\url{http://impact.gforge.inria.fr/impact2014}\\
+}
+
+\begin{document}
+%
+% --- Author Metadata here ---
+%\conferenceinfo{WOODSTOCK}{'97 El Paso, Texas USA}
+%\CopyrightYear{2007} % Allows default copyright year (20XX) to be over-ridden - IF NEED BE.
+%\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
+% --- End of Author Metadata ---
+
+\title{Energy Auto-tuning using Polyhedral Approach}
+
+%
+% You need the command \numberofauthors to handle the 'placement
+% and alignment' of the authors beneath the title.
+%
+% For aesthetic reasons, we recommend 'three authors at a time'
+% i.e. three 'name/affiliation blocks' be placed beneath the title.
+%
+% NOTE: You are NOT restricted in how many 'rows' of
+% "name/affiliations" may appear. We just ask that you restrict
+% the number of 'columns' to three.
+%
+% Because of the available 'opening page real-estate'
+% we ask you to refrain from putting more than six authors
+% (two rows with three columns) beneath the article title.
+% More than six makes the first-page appear very cluttered indeed.
+%
+% Use the \alignauthor commands to handle the names
+% and affiliations for an 'aesthetic maximum' of six authors.
+% Add names, affiliations, addresses for
+% the seventh etc. author(s) as the argument for the
+% \additionalauthors command.
+% These 'additional authors' will be output/set for you
+% without further effort on your part as the last section in
+% the body of your article BEFORE References or any Appendices.
+
+\numberofauthors{2} %  in this sample file, there are a *total*
+% of EIGHT authors. SIX appear on the 'first-page' (for formatting
+% reasons) and the remaining two appear in the \additionalauthors section.
+%
+\author{
+% You can go ahead and credit any number of authors here,
+% e.g. one 'row of three' or two rows (consisting of one row of three
+% and a second row of one, two or three).
+%
+% The command \alignauthor (no curly braces needed) should
+% precede each author name, affiliation/snail-mail address and
+% e-mail address. Additionally, tag each line of
+% affiliation/address with \affaddr, and tag the
+% e-mail address with \email.
+%
+\alignauthor Wei Wang, John Cavazos  \\
+       \affaddr{University of Delaware}\\                          
+       \affaddr{101 Smith Hall} \\
+       \affaddr{Newark, DE 19702}\\                                         
+       \email{{weiwang,cavazos}@udel.edu}                                      
+\alignauthor Allan Porterfield         \\                                                 
+       \affaddr{University of North Carolina - RENCI}\\                          
+       \affaddr{100 Europa Dr}\\                                                 
+       \affaddr{Chapel Hill, NC 27517}\\                                         
+       \email{akp@renci.org}                                      
+%\alignauthor
+% 1st. author
+%\alignauthor
+%Ben Trovato\titlenote{Dr.~Trovato insisted his name be first.}\\
+%       \affaddr{Institute for Clarity in Documentation}\\
+%       \affaddr{1932 Wallamaloo Lane}\\
+%       \affaddr{Wallamaloo, New Zealand}\\
+%       \email{trovato@corporation.com}
+%% 2nd. author
+%\alignauthor
+%G.K.M. Tobin\titlenote{The secretary disavows
+%any knowledge of this author's actions.}\\
+%       \affaddr{Institute for Clarity in Documentation}\\
+%       \affaddr{P.O. Box 1212}\\
+%       \affaddr{Dublin, Ohio 43017-6221}\\
+%       \email{webmaster@marysville-ohio.com}
+%% 3rd. author
+%\alignauthor Lars Th{\o}rv{\"a}ld\titlenote{This author is the
+%one who did all the really hard work.}\\
+%       \affaddr{The Th{\o}rv{\"a}ld Group}\\
+%       \affaddr{1 Th{\o}rv{\"a}ld Circle}\\
+%       \affaddr{Hekla, Iceland}\\
+%       \email{larst@affiliation.org}
+%\and  % use '\and' if you need 'another row' of author names
+%% 4th. author
+%\alignauthor Lawrence P. Leipuner\\
+%       \affaddr{Brookhaven Laboratories}\\
+%       \affaddr{Brookhaven National Lab}\\
+%       \affaddr{P.O. Box 5000}\\
+%       \email{lleipuner@researchlabs.org}
+%% 5th. author
+%\alignauthor Sean Fogarty\\
+%       \affaddr{NASA Ames Research Center}\\
+%       \affaddr{Moffett Field}\\
+%       \affaddr{California 94035}\\
+%       \email{fogartys@amesres.org}
+%% 6th. author
+%\alignauthor Charles Palmer\\
+%       \affaddr{Palmer Research Laboratories}\\
+%       \affaddr{8600 Datapoint Drive}\\
+%       \affaddr{San Antonio, Texas 78229}\\
+%       \email{cpalmer@prl.com}
+%}
+%% There's nothing stopping you putting the seventh, eighth, etc.
+%% author on the opening page (as the 'third row') but we ask,
+%% for aesthetic reasons that you place these 'additional authors'
+%% in the \additional authors block, viz.
+%\additionalauthors{Additional authors: John Smith (The Th{\o}rv{\"a}ld Group,
+%email: {\texttt{jsmith@affiliation.org}}) and Julius P.~Kumquat
+%(The Kumquat Consortium, email: {\texttt{jpkumquat@consortium.net}}).}
+}
+%\date{30 July 1999}
+% Just remember to make sure that the TOTAL number of authors
+% is the number that will appear on the first page PLUS the
+% number that will appear in the \additionalauthors section.
+
+\maketitle
+
+\input{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+\input{introduction}
+
+\section{Energy Measurement-and-Tuning Tools}
+\label{sec:tools}
+\input{tools}
+
+\section{Benchmarks for Energy Measurement and Tuning}
+\label{sec:benchmarks}
+\input{benchmarks}
+
+\section{Experimental Setup}
+\label{sec:setup}
+\input{setup}
+
+\section{Experimental Results}
+\label{sec:results}
+\input{results}
+
+\section{Related Work}
+\label{sec:related}
+\input{related}
+
+\section {Conclusion}
+\label{sec:conclusion}
+\input{conclusion}
+
+%\balancecolumns
+
+%ACKNOWLEDGMENTS are optional
+\section{Acknowledgments}
+This work is supported by the DOE XPress (DE-SC0008704) and the DoD ATPAR (PNNL-214990).
+The authors would like to thank EunJung Park and Matthew Kay for sharing the polyhedral optimized 
+Polybench programs and the cardiac wave propagation simulation application. The 
+authors would also like to thank Louis-No{\"e}l Pouchet,
+Albert Cohen, and Riyadh Baghdadi for their help with the polyhedral compilation 
+of benchmarks. Last but not least, the authors would like to thank all the anonymous 
+reviewers for their valuable feedback to help improve this work.
+
+%\balancecolumns
+%
+% The following two commands are all you need in the
+% initial runs of your .tex file to
+% produce the bibliography for the citations in your paper.
+%\bibliographystyle{abbrv}
+%\bibliography{EAT}  % sigproc.bib is the name of the Bibliography in this case
+% You must have a proper ".bib" file
+%  and remember to run:
+% latex bibtex latex latex
+% to resolve all references
+%
+% ACM needs 'a single self-contained file'!
+%
+
+\begin{thebibliography}{10}                                                      
+                                                                                 
+\bibitem{Math-Poly}                                                              
+M.-W. Benabderrahmane, L.-N. Pouchet, A.~Cohen, and C.~Bastoul.                  
+\newblock The polyhedral model is more widely applicable than you think.         
+\newblock In {\em Proceedings of the 19th joint European conference on Theory    
+  and Practice of Software, international conference on Compiler Construction},  
+  CC'10/ETAPS'10, pages 283--303, 2010.                                          
+                                                                                 
+\bibitem{Hyperplane}                                                             
+U.~Bondhugula, A.~Hartono, J.~Ramanujam, and P.~Sadayappan.                      
+\newblock {A Practical Automatic Polyhedral Parallelizer and Locality            
+  Optimizer}.                                                                    
+\newblock In {\em Proceedings of the 2008 ACM SIGPLAN Conference on Programming  
+  Language Design and Implementation}, PLDI '08, pages 101--113, 2008.           
+                                                                                 
+\bibitem{Cho}                                                                    
+S.~Cho and R.~Melhem.                                                            
+\newblock {On the Interplay of Parallelization, Program Performance, and Energy  
+  Consumption}.                                                                  
+\newblock {\em Parallel and Distributed Systems, IEEE Transactions on},          
+  21(3):342--353, 2010.                                                          
+                                                                                 
+\bibitem{SCoP1}                                                                  
+P.~Feautrier.                                                                    
+\newblock {Some efficient solutions to the affine scheduling problem. Part II.   
+  Multidimensional time}.                                                        
+\newblock {\em International Journal of Parallel Programming}, 21(6):389--420,   
+  1992.                                                                          
+                                                                                 
+\bibitem{Garcia}                                                                 
+E.~Garcia and G.~Gao.                                                            
+\newblock Strategies for improving performance and energy efficiency on a        
+  many-core.                                                                     
+\newblock In {\em Proceedings of the ACM International Conference on Computing   
+  Frontiers}, CF '13, pages 9:1--9:4, 2013.     
+
+\bibitem{SCoP2}                                                                  
+S.~Girbal, N.~Vasilache, C.~Bastoul, A.~Cohen, D.~Parello, M.~Sigler, and        
+  O.~Temam.                                                                      
+\newblock Semi-automatic composition of loop transformations for deep            
+  parallelism and memory hierarchies.                                            
+\newblock {\em Int. J. Parallel Program.}, 34(3):261--317, June 2006.            
+                                                                                 
+\bibitem{Scott}                                                                  
+S.~Grauer-Gray, L.~Xu, R.~Searles, S.~Ayalasomayajula, and J.~Cavazos.           
+\newblock {Auto-tuning a high-level language targeted to GPU codes}.             
+\newblock In {\em Innovative Parallel Computing (InPar), 2012}, pages 1--10,     
+  2012.                                                                          
+                                                                                 
+\bibitem{RAPL-Related}                                                           
+M.~H\"{a}hnel, B.~D\"{o}bel, M.~V\"{o}lp, and H.~H\"{a}rtig.                     
+\newblock {Measuring Energy Consumption for Short Code Paths Using RAPL}.        
+\newblock {\em SIGMETRICS Perform. Eval. Rev.}, 40(3):13--17, 2012.              
+                                                                                 
+\bibitem{IntelSystemProgrammingVol3}                                             
+{Intel}.                                                                         
+\newblock {Intel 64 and {IA-32} Architectures Software Developer's Manual,       
+  Volume 3}.                                                                     
+\newblock \url{http://download.intel.com/products/processor/manual/253669.pdf},  
+  2013.                                                                          
+                                                                                 
+\bibitem{LULESH:versions}                                                        
+I.~Karlin, A.~Bhatele, B.~L. Chamberlain, J.~Cohen, Z.~Devito, M.~Gokhale,       
+  R.~Haque, R.~Hornung, J.~Keasler, D.~Laney, E.~Luke, S.~Lloyd, J.~McGraw,      
+  R.~Neely, D.~Richards, M.~Schulz, C.~H. Still, F.~Wang, and D.~Wong.           
+\newblock {LULESH Programming Model and Performance Ports Overview}.             
+\newblock Technical Report LLNL-TR-608824, December 2012.    
+
+\bibitem{IPDPS13:LULESH}                                                         
+I.~Karlin, A.~Bhatele, J.~Keasler, B.~L. Chamberlain, J.~Cohen, Z.~DeVito,       
+  R.~Haque, D.~Laney, E.~Luke, F.~Wang, D.~Richards, M.~Schulz, and C.~Still.    
+\newblock {Exploring Traditional and Emerging Parallel Programming Models using  
+  a Proxy Application}.                                                          
+\newblock In {\em 27th IEEE International Parallel \& Distributed Processing     
+  Symposium (IEEE IPDPS 2013)}, Boston, USA, May 2013.                           
+                                                                                 
+\bibitem{LCPC2013}                                                               
+A.~Konstantinidis, P.~H. Kelly, J.~Ramanujam, and P.~Sadayappan.                 
+\newblock {Parametric GPU Code Generation for Affine Loop Programs}.             
+\newblock In {\em Proceedings of the 26th International Conference on Languages  
+  and Compilers for Parallel Computing}, LCPC'13, 2013.                          
+                                                                                 
+\bibitem{EJ2012}                                                                 
+E.~Park, J.~Cavazos, and M.~A. Alvarez.                                          
+\newblock Using graph-based program characterization for predictive modeling.    
+\newblock In {\em CGO}, pages 196--206, 2012.                                    
+                                                                                 
+\bibitem{EJ2013}                                                                 
+E.~Park, J.~Cavazos, L.-N. Pouchet, C.~Bastoul, A.~Cohen, and P.~Sadayappan.     
+\newblock {Predictive Modeling in a Polyhedral Optimization Space}.              
+\newblock {\em International Journal of Parallel Programming}, 41(5):704--750,   
+  2013.               
+
+\bibitem{EJ2011}                                                                 
+E.~Park, L.-N. Pouche, J.~Cavazos, A.~Cohen, and P.~Sadayappan.                  
+\newblock Predictive modeling in a polyhedral optimization space.                
+\newblock In {\em Proceedings of the 9th Annual IEEE/ACM International           
+  Symposium on Code Generation and Optimization}, CGO '11, pages 119--129,       
+  Washington, DC, USA, 2011. IEEE Computer Society.                              
+                                                                                 
+\bibitem{us}                                                                     
+A.~Porterfield, R.~Fowler, S.~Bhalachandra, and W.~Wang.                         
+\newblock {OpenMP and MPI Application Energy Measurement Variation}.             
+\newblock In {\em Proceedings of the 1st International Workshop on Energy        
+  Efficient Supercomputing}, E2SC '13, pages 7:1--7:8, 2013.                     
+                                                                                 
+\bibitem{PoCC}                                                                   
+L.-N. Pouchet.                                                                   
+\newblock {PoCC: the Polyhedral Compiler Collection}.                            
+\newblock \url{http://www.cs.ucla.edu/~pouchet/software/pocc/}, 2013.            
+                                                                                 
+\bibitem{Polybench}                                                              
+L.-N. Pouchet.                                                                   
+\newblock {Polybench}.                                                           
+\newblock \url{http://www.cse.ohio-state.edu/~pouchet/software/polybench/},      
+  2013.                                                                          
+\balancecolumns
+                                                                                 
+\bibitem{Polyopt}                                                                
+L.-N. Pouchet.                                                                   
+\newblock {PolyOpt/C: a Polyhedral Optimizer for the ROSE compiler}.             
+\newblock \url{http://www.cs.ucla.edu/~pouchet/software/polyopt/}, 2013.         
+                                                                                 
+\bibitem{ROSE}                                                                   
+D.~J. Quinlan and C.~L. Liao.                                                    
+\newblock {ROSE Compiler}.                                                       
+\newblock \url{http://rosecompiler.org/}, 2013.    
+
+\bibitem{CF12}                                                                   
+S.~M.~F. Rahman, J.~Guo, A.~Bhat, C.~Garcia, M.~H. Sujon, Q.~Yi, C.~Liao, and    
+  D.~Quinlan.                                                                    
+\newblock Studying the impact of application-level optimizations on the power    
+  consumption of multi-core architectures.                                       
+\newblock In {\em Proceedings of the 9th conference on Computing Frontiers}, CF  
+  '12, pages 123--132, 2012.                                                     
+                                                                                 
+\bibitem{Reduce-Cache}                                                           
+S.~Tavarageri and P.~Sadayappan.                                                 
+\newblock {A Compiler Analysis to Determine Useful Cache Size for Energy         
+  Efficiency}.                                                                   
+\newblock In {\em Proceedings of the 2013 IEEE 27th International Symposium on   
+  Parallel and Distributed Processing Workshops and PhD Forum}, IPDPSW '13,      
+  pages 923--930, 2013.                                                          
+                                                                                 
+\bibitem{Tiwari:EnergyAutoTune}                                                  
+A.~Tiwari, M.~A. Laurenzano, L.~Carrington, and A.~Snavely.                      
+\newblock Auto-tuning for energy usage in scientific applications.               
+\newblock In {\em Proceedings of the 2011 international conference on Parallel   
+  Processing - Volume 2}, Euro-Par'11, pages 178--187, Berlin, Heidelberg,       
+  2012. Springer-Verlag.                                                         
+                                                                                 
+\bibitem{SWIM}                                                                   
+N.~Vasilache, C.~Bastoul, and A.~Cohen.                                          
+\newblock Polyhedral code generation in the real world.                          
+\newblock In {\em In Proceedings of the International Conference on Compiler     
+  Construction (ETAPS CC'06), LNCS}, pages 185--201. Springer-Verlag, 2006.      
+                                                                                 
+\bibitem{Me}                                                                     
+W.~Wang, H.~Huang, M.~Kay, and J.~Cavazos.                                       
+\newblock {GPGPU} accelerated cardiac arrhythmia simulations.                    
+\newblock In {\em Engineering in Medicine and Biology Society,EMBC, 2011 Annual  
+  International Conference of the IEEE}, pages 724--727, 2011.                   
+                                                                
+\bibitem{SpeedEnergy}                                                            
+T.~Yuki and S.~Rajopadhye.                                                       
+\newblock {Folklore Confirmed: Compiling for Speed = Compiling for Energy}.      
+\newblock In {\em Proceedings of the 26th International Conference on Languages  
+  and Compilers for Parallel Computing}, LCPC'13, 2013.                          
+                                                                                 
+\end{thebibliography}   
+
+
+% That's all folks!
+\end{document}

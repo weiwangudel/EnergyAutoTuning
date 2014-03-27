@@ -1,0 +1,19 @@
+As expected, using an auto-tuning framework on a variety of
+small benchmarks and small applications has shown the high
+degree of correlation between execution time and energy
+consumption. Individual optimization can however
+have significant impact on the Power required by an
+application. In the Polybench program, \emph{covariance},
+using the ``maxfuse'' option resulted in a 20+\% percent power
+increase. With the correct tile size ``maxfuse'' also
+resulted in the 50+\% time decrease. Understanding
+how optimizations effect power and execution time 
+will be important for future exascale systems.
+
+Polyhedral optimization techniques can provide significant 
+increases in performance but currently require 
+significant user modifications to any real application
+to generate SCoPs with reasonable compilation times.
+On small real applications, like LULESH and \emph{brdr2d},
+polyhedral transformations allow the discovery of
+effective tiling sizes for SCoPs within the applications.

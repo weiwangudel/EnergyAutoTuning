@@ -1,0 +1,12 @@
+The tests ran on a 2-socket 8-core Intel Xeon E5-2680 processor with 20MB (40MB total) L3 cache.
+PoCC v1.2 was used to generate program variants from Polybench v3.2.
+The extra large data set (specified in Polybench) was used. A few modifications were made to
+ROSE (version timestamped 1370387370) to insert the energy API calls.
+GCC v4.4.6 was the backend compiler. Every executable was compiled with
+-O3 optimization flag.  
+To protect against low start-up energy/power measurements, the system was warmed up
+with a computational intensive script before any test was executed. 
+
+Experiments were also run on a Xeon Phi coprocessor. 
+The Phi architecture accelerator card contained 61 cores clocked at 1.09GHz. Each core had 512KB of L2 cache. 
+The generated program variants used ICC v14.0.0 compiler as their backend, producing OpenMP programs that ran natively on the Phi.

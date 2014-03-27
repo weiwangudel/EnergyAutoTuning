@@ -1,0 +1,33 @@
+%\todo{Needs work to make sense}
+\subsection{Benchmarks for Polyhedral Framework and Auto-parallelization}
+There are a few benchmarks available to evaluate polyhedral transformations as 
+an approach to improving application performance.  Our work adds two non-trivial application (LULESH and \emph{brdr2d})
+to the family of benchmarks that are polyhedral optimizable. Polybench\cite{Polybench} and 
+SWIM\cite{SWIM} benchmark are two benchmark suites that are often used. The Polybench programs evaluate polyhedral 
+transformations and are used to construct predictive models by Park {\it et al.}\cite{EJ2011,EJ2012, EJ2013}.
+They are also used to evaluate auto-parallelization techniques targeting different architectures,
+using different tools. Grauer-Gray {\it et al.}\cite{Scott} utilized high level languages 
+to target GPU architecture by annotating Polybench programs. Konstantinidis {\it et al.}\cite{LCPC2013}
+studied GPU code generation given the Polybench programs that contain affine loops. 
+%Our cardiac wave propagation simulation benchmark can help the design and evaluation of new
+%techniques.
+ 
+\subsection{Tuning for Performance and Energy}
+Rahman {\it et al.}\cite{CF12} studied the impact of application level optimizations from both the 
+performance and power efficiency perspective of various applications. They found
+that optimizing for performance did not guarantee better power consumption. We 
+observed similar results in Figure~\ref{fig:TE} and Figure~\ref{fig:2mm-TE} for non-optimal
+program variants but the graphs showed that for the optimal case, tuning for performance and power were 
+effectively equivalent. To improve performance and energy efficiency for a Many-Core architecture,
+Garcia {\it et al.}\cite{Garcia} studied the energy consumptions of applications and proposed models 
+characterizing application energy consumption footprints. We did not
+develop energy models but took advantage of the exposed hardware interfaces to obtain accurate   
+energy consumption information from modern commodity processor architectures like
+Intel Sandy Bridge and Xeon Phi.
+
+To improve performance, people have 
+developed techniques from distinctive ways. Tavarageri {\it et al.}\cite{Reduce-Cache} 
+adopted compiler analysis approach to configure the cache size to reduce energy consumption
+without performance loss. New programming languages\cite{IPDPS13:LULESH} and 
+models like Chapel, Liszt and others were introduced to facilitate program optimizations
+on parallel architectures.

@@ -1,0 +1,88 @@
+To understand energy consumption, execution time and various optimizations,
+a light-weight fine-grained measurement tool is required. RCRtool provides 
+user-level fast access to hardware counters.
+Finding the optimal combination of compiler optimizations 
+requires a compilation framework, like the Polyhedral Compiler
+Collection, that easily produces a large number of 
+program variants with specific optimization parameters.
+
+\subsection{RCRtool on Sandy Bridge System}
+The Intel Sandy Bridge architecture allows users to track energy usage through 
+the exposed Running Average Power Limit (RAPL) interface\cite{IntelSystemProgrammingVol3}. 
+A model-specific register (MSR) was added with the Sandy Bridge to track energy
+consumed by the chip  -- MSR\_PKG\_ENERGY\_STATUS.
+The counter is frequently updated and counts the energy in 15.3 micro-Joule units.
+Experiments have shown\cite{us} and the documentation\cite{IntelSystemProgrammingVol3} states
+that the counter can be accessed as often as every microsecond. 
+The counter is only 32 bits and can wrap in as little as a couple of minutes.
+The RCRtool detects the wraps and supplies a 64 bit value with the 
+upper 32 bits being the number of wraps since RCRtool instantiation.
+The RCRtool must run at supervisor level to access the counter.
+It writes the current value of the counter at least 1000 times a second into a shared-memory
+data structure. This ``blackboard'' structure provides a hierarchical view of the system
+where various current performance information is stored. The 
+information is available to any OpenMP applications through a simple API that 
+delineates a code region for measurement with a start and end call.
+Each region is identified by its file name and line number.
+If a region is executed multiple times the energy is summed across all executions. 
+All energy information is available during application shutdown.
+
+The ROSE source-to-source compiler\cite{ROSE} 
+finds OpenMP parallel regions and adds RCRtool API calls around the region 
+automatically. ROSE tracks original file name and source line
+number allowing simple parallel region identification. When the program finishes execution,
+the elapsed time, the amount of energy used (in Joules), and the average computed
+power (in Watts) of the parallel regions and the whole application are output. 
+Additional information such as processor temperature is also available 
+during application shut-down.
+RCRtool runs on Intel architecture with the RAPL interface, and has been tested
+on Sandy Bridge and Ivy Bridge implementations.
+
+The overhead of the RCRdaemon is negligible on both architectures.  
+It enables us to measure the energy consumption of the application 
+with a granularity of about one millisecond. 
+
+\subsection{RCRtool on Xeon Phi System}
+The Intel MIC architecture in the Intel Xeon Phi chips is a recent addition to the
+Intel processor offerings.
+Our Phi accelerator cards contain 61 cores, each core supports 4 hardware threads. 
+One notable feature is the 512-bit wide SIMD vectors providing fine-grain
+vectorization and high floating-point performance for each thread.
+With the wide vector registers, a single 
+instruction can operate on 8 adjacent double-precision floating point data or 16 
+single-precision floating point data. The cores, threads and vector unit combine
+to achieve well over a Teraflop from a single socket.
+
+RCRtool collects power information of Intel Phi natively
+or on the host. Natively, users can track power usage in microWatts through    
+a file (/sys/class/micras/power) updated every 50 millisecond.
+RCRtool monitors the power at user level and computes the energy
+consumption over time.
+The information is available to the applications through the same simple API as on
+Sandy Bridge.
+
+RCRtool can also run on the host. On the host, it collects
+power information using the MICAccessSDK API provided by Intel at the same 
+granularity as the native version. 
+Measurements in this paper were collected with a native Phi RCRdaemon.
+ 
+\subsection{Polyhedral Optimizations Tools}
+The Polyhedral Compiler Collection (PoCC)\cite{PoCC} was used to generate program 
+variants with different optimizations.
+The PoCC requires that programs contain static control parts (SCoP)\cite{SCoP1,SCoP2} so that 
+valid transformations can be applied. Polybench is a collection of programs
+that contain SCoPs and can be polyhedral optimized.  
+
+PolyOpt (a Polyhedral Optimizer for the ROSE compiler)\cite{Polyopt} was also used to 
+automatically detect SCoPs in applications. PolyOpt is integrated into the ROSE compiler.
+Aside from its capability of extracting SCoP regions in an automatic way, it fully
+supports PoCC analysis and optimizations. PolyOpt supports 
+loops fusion, loop tiling, thread-level parallelization and vectorization. PolyOpt
+has better support for side-effect free program features like math 
+functions\cite{Math-Poly}, allowing some function calls within a SCoP.
+
+PoCC generates hundreds and even thousands of program variants for simple programs, like Polybench.
+PolyOpt, although more powerful than PoCC, still may not be able to extract any SCoPs
+because of structural impediments. Changes to the program
+may be required to  ``manually'' expose the SCoPs for PolyOpt, allowing 
+loop transformations, parallelization, and vectorization to occur.
