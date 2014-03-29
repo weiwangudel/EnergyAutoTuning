@@ -1,0 +1,22 @@
+#
+set auto x
+set yrange [1:1.25]
+set y2range [0:0.25]
+set y2tics font "Arial-Bold,8"
+set ytics font "Arial-Bold, 8"
+set style data histogram
+#set style histogram cluster gap 1
+#set style fill solid border -1
+set style fill solid border 0 
+set boxwidth 1.0 
+set xtic  font ",8"
+#set bmargin 10 
+set xlabel 'Problem Size' font "Arial-Bold, 9"
+set ylabel 'Speedups' font "Arial-Bold,9"
+set y2label 'Normalized Energy Savings' font "Arial-Bold,9"
+plot 'speedup.dat' using  2:xtic(1) ti col , '' u 3 ti col axe x1y2 lt 3 fs pattern 1
+
+
+set term pdfcairo enhanced color font "Arial-Bold,8" 
+set output "output.pdf"
+replot
