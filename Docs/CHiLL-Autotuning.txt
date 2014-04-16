@@ -1,0 +1,17 @@
+Two versions of CHiLL
+  -- standalone CHiLL 
+    === cannot take .c file as input
+    === usually transform fortran code to SUIF code (scc) and then use s2f (to fortran)
+  -- CHiLL with ROSE
+    === works similiarly as polyopt
+    === did not generate cuda-chill, because it requires ROSE to be re-configured and re-built
+    === only generated chill (to transform and generate rose_Whatever.c file).
+    === Need to change ROSEHOME, BOOSTHOME to my elo "ROSE_ROOT", "BOOST_ROOT".
+    === still based on the ROSE version installed on weiwang@elo.hpc.renci.org
+    === ../../chill gemm.script
+    === it can also transform one file of an application contains many files, but it will
+        complain about missing Main functions
+    === Often encounters this fatal error:
+chill: Cxx_Grammar.C:69275: SgSymbolTable* SgScopeStatement::get_symbol_table() const: Assertion `this != __null' failed.
+Aborted (core dumped)
+

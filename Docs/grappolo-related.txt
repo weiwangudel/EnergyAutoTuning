@@ -1,5 +1,6 @@
 0. target6 = driverForGraphClusteringScaleRuns  
    change to gcc/g++ compiler, genertae the above executable but got segfault error.
+updates: fixed (in utilityFunction.cpp,  <= NV issue)
 ========================================================================================================
 1. target5 = driverForGraphClustering
    adding the missing arguments in driverForGraphClustering.cpp to generate executable 'driverForGraphClustering'
@@ -46,8 +47,36 @@ temporary fix:
 5. Files no changes needed: (associated with driverForGraphClustering)
 rose_RngStream.cpp rose_writeGraphDimacsFormat.cpp rose_utilityClusteringFunctions.cpp
 
-6. (Double) The number of edges in the graph
+*. in parallelLouvianMethod.cpp 
+    #pragma omp parallel for reduction(+:e_xx) reduction(+:a2_x)
+223     for (long i=0; i<NV; i++) {
+225       e_xx += clusterWeightInternal[i];
+227       a2_x += (cInfo[i].degree)*(cInfo[i].degree);
+228     }
+
+if turn on VF (VF=1), then the following is needed.
+    #pragma omp parallel for reduction(+:e_xx) reduction(+:a2_x)
+223     for (long i=0; i<NV; i++) {
+224       #pragma omp atomic
+225       e_xx += clusterWeightInternal[i];
+226       #pragma omp atomic
+227       a2_x += (cInfo[i].degree)*(cInfo[i].degree);
+228     }
+
+*. (Double) The number of edges in the graph
 [wwang@elo grappolo-02-2014-ORIG-RW]$ wc pnnl.graph  
  191402826  382805652 2586710548 pnnl.graph
 That's 191.4 MILLION!
  
+*. testing the Rose compiled version (with power) with the large file.
+    The pnnl.graph segfauts when 6 1 0 0 is tested.
+
+* Energy Info from GCC (Loop 0 is from IO time, parsing the input, Loop 1 is the big compute loop)
+Loop 0 <line-97> - Time 45.021271 Total energy consumed 2599.289220 Ave. Power Level 57.734692
+	-------- Loop 0 (sock 1 consumed 1443.274860, avg temp 49.000000, final temp 49 ) ------
+	-------- Loop 0 (sock 2 consumed 1156.014360, avg temp 43.000000, final temp 43 ) ------
+Loop 1 <line-191> - Time 69.179304 Total energy consumed 5461.958925 Ave. Power Level 78.953655
+	-------- Loop 1 (sock 1 consumed 2954.186550, avg temp 49.815385, final temp 53 ) ------
+	-------- Loop 1 (sock 2 consumed 2507.772375, avg temp 41.200000, final temp 46 ) ------
+Application(EnergyStat) - Time 120.550594 Total energy consumed 8536.984440 Ave. Power Level 70.816611 Final Temperature socket 1 : 53  socket 2 : 46 
+
