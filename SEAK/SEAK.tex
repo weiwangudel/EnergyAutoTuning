@@ -1,0 +1,91 @@
+% IEEE Paper Template for US-LETTER Page Size (V1)
+% Sample Conference Paper using IEEE LaTeX style file for US-LETTER pagesize.
+% Copyright (C) 2006 Causal Productions Pty Ltd.
+% Permission is granted to distribute and revise this file provided that
+% this header remains intact.
+%
+\documentclass[10pt,conference,letterpaper]{IEEEtran}
+\usepackage{times,amsmath,epsfig}
+\usepackage{subfigure}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+%\usepackage{pgfplots}
+\usepackage{color}
+\usepackage{url}
+\usepackage{hyperref}
+
+\newcommand{\todo}[1]{%                                                          
+  \noindent {\bf {\color {red} TODO: #1 }}%                                      
+}
+\newcommand{\WW}[1]{%                                                          
+  \noindent {\bf {\color {blue} #1}}%                                      
+}
+
+\usepackage{subfigure}
+\pagenumbering{arabic}
+
+\title{Energy Auto-tuning using Polyhedral Approach}
+
+
+% a short form should be given in case it is too long for the running head
+
+%\titlerunning{Social Network Analysis on SQL Queries}
+\author{
+}
+
+
+
+
+\begin{document}
+\maketitle
+
+\input{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+\input{introduction}
+
+\section{Energy Measurement-and-Tuning Tools}
+\label{sec:tools}
+\input{tools}
+
+\section{Benchmarks for Energy Measurement and Tuning}
+\label{sec:benchmarks}
+\input{benchmarks}
+
+\section{Experimental Setup}
+\label{sec:setup}
+\input{setup}
+
+\section{Experimental Results}
+\label{sec:results}
+\input{results}
+
+\section{Related Work}
+\label{sec:related}
+\input{related}
+
+\section {Conclusion}
+\label{sec:conclusion}
+\input{conclusion}
+
+%\balancecolumns
+
+%ACKNOWLEDGMENTS are optional
+\section{Acknowledgments}
+This work is supported by the DOE XPress (DE-SC0008704) and the DoD ATPAR (PNNL-214990).
+The authors would like to thank EunJung Park and Matthew Kay for sharing the polyhedral optimized
+Polybench programs and the cardiac wave propagation simulation application. The
+authors would also like to thank Louis-No{\"e}l Pouchet,
+Albert Cohen, and Riyadh Baghdadi for their help with the polyhedral compilation
+of benchmarks. Last but not least, the authors would like to thank all the anonymous
+reviewers for their valuable feedback to help improve this work.
+
+
+\bibliographystyle{IEEEtran}
+
+\bibliography{SEAK}  % sigproc.bib is the name of the Bibliography in this case
+
+
+
+\end{document}
