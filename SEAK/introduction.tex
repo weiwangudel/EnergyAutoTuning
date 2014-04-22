@@ -1,12 +1,11 @@
-As the HPC community approaches the exascale computing era, reducing application energy 
-and power consumption is important. The cost of supplying the peak power and 
-operational energy for exascale systems will be substantial. 
+Reducing application energy consumption is important to improve user experience of 
+embedded systems, e.g. smart phones, GPS navigators etc. 
+Tuning applications for better energy efficiency is faced with challenges brought by
+diverse architectures, difficulty of obtaining fine-grain measurements of power, 
+as well as enormous amount of tuning choices.
+The design and 
 Controlling application energy usage of increasingly powerful
 compute nodes will be required. 
-Before tuning an application for power efficiency, it is necessary to 
-understand how energy consumption is related to the application execution time.  
-Knowledge of the relationship between performance and energy can guide the tuning effort.
-
 Previous work which performed coarse-grain measurement have provided evidence for the 
 existence of opportunities to auto-tune for energy in parallel applications\cite{Tiwari:EnergyAutoTune}.
 Using the Resource Centric Reflection daemon tool (RCRtool) developed at RENCI\cite{us}, 
@@ -14,8 +13,7 @@ energy
 consumption can be measured at a fine granularity for any OpenMP program. Fine-grain measurements
 enable attribution of energy consumption to particular application regions and 
 even to the individual lines of codes. This allows accurate study of the correlation between execution time
-and energy consumption of an application.
-
+and energy consumption of an application. \\
 For most scientific applications, nested loops consume the significant 
 portion of the total running time. When tuning the application for
 better performance and energy usage, some combination of loop optimizations, including loop 
@@ -24,18 +22,15 @@ program along with the auto-parallelization.
 Determining which set of optimizations produces the best results is hard.
 Polyhedral auto-tuning frameworks have shown promising results at simplifying that effort\cite{EJ2011,EJ2012,EJ2013}
 for small computation kernels like the Polybench programs\cite{Polybench}. 
-In addition to the polybench kernels, we also examine two small applications with the polyhedral framework
 to determine the frameworks' effectiveness at reducing overall energy consumption.
-
-This paper has 3 main contributions: 1)  
-Fine-grained measurement of execution time and energy consumption with RCRtool
-and documenting the correlation between the two. 
+ 
+\WW{This paper has 3 main contributions: 1)  
+Documenting the  
 2) Additional speedups up to $20\%$ over the already efficient OpenMP baseline 
 implementation of a small realistic application using polyhedral optimizations 
 on Intel Sandy Bridge and Xeon Phi processors. 3) 
 Evaluation of how different architecture effects the utility of the 
-polyhedral optimizations techniques for execution time and energy.
-
+polyhedral optimizations techniques for execution time and energy.} \\
 The rest of the paper is organized as follows. In Section~\ref{sec:tools}, we describe the tools
 used to measure energy consumptions. Section~\ref{sec:benchmarks} describes the benchmarks used for  
 measuring the energy consumptions and evaluating the effectiveness of polyhedral 

@@ -8,12 +8,10 @@ Understanding that relationship can guide both performance and energy tuning
 for exascale. In this paper, a strong correlation is presented between the
 two that allows tuning for execution to be used as a proxy for 
 energy tuning.  We also show that polyhedral compilers can effectively tune a realistic application 
-for both time and energy.
-
-For a large number of variants of the Polybench programs and LULESH energy consumption is strongly correlated with total execution time.
+for both time and energy. \\
+For a large number of variants of the Polybench programs
 Optimizations can increase the power and energy required between variants, but variant with minimum execution time
 also has the lowest energy usage.
-The polyhedral framework was also used to optimize a 2D cardiac wave propagation simulation application.
 Various loop optimizations including fusion, tiling, 
 vectorization, and auto-parallelization, achieved a $20\%$ speedup over the 
 baseline OpenMP implementation, with an equivalent reduction in energy 
