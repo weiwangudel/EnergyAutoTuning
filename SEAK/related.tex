@@ -7,17 +7,6 @@ curve characteristics comparing RAPL with external measurement\cite{RAPL-Related
 The HAECER framework was not used here because of the need to measure long code
 paths--the executions finish in the order of seconds by testing with large datasets.
 
-Our work is not the first to show that ``hurry up to quit'' can be most energy
-efficient. Yuki {\it et al.} developed a high-level energy model of power consumption
-under Dynamic Voltage and Frequency Scaling (DVFS) and found it best to run
-as fast as possible to completion\cite{SpeedEnergy}. They pointed out that the 
-constant power of current machines were significant enough to render DVFS useless in saving energies.
-Before them, Cho and Melhem\cite{Cho} identified that DVFS might not help if the fraction
-of total power unaffected by DVFS is large.
-We evaluated the energy effects of polyhedral optimizations, rather than DVFS,
-by measuring the energy consumptions of hundreds to thousands of program variants.
-In most cases, programs trying to ``hurry up to finish'' consumed minimum
-amount of energy and that optimizing for execution can be used as a proxy to optimizing for energy.
 
 Rahman {\it et al.}\cite{CF12} studied the impact of application level optimizations from both the 
 performance and power efficiency perspective of various applications. They found

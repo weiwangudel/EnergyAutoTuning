@@ -3,38 +3,30 @@ embedded systems, e.g. smart phones, GPS navigators etc.
 Tuning applications for better energy efficiency is faced with challenges brought by
 diverse architectures, difficulty of obtaining fine-grain measurements of power, 
 as well as enormous amount of tuning choices.
-The design and 
-Controlling application energy usage of increasingly powerful
-compute nodes will be required. 
 Previous work which performed coarse-grain measurement have provided evidence for the 
 existence of opportunities to auto-tune for energy in parallel applications\cite{Tiwari:EnergyAutoTune}.
-Using the Resource Centric Reflection daemon tool (RCRtool) developed at RENCI\cite{us}, 
-energy 
-consumption can be measured at a fine granularity for any OpenMP program. Fine-grain measurements
-enable attribution of energy consumption to particular application regions and 
-even to the individual lines of codes. This allows accurate study of the correlation between execution time
-and energy consumption of an application. \\
-For most scientific applications, nested loops consume the significant 
+This work uses the RCRtool \cite{us}, a fine-grain energy measurement tool, to easily attribute energy consumption to particular
+regions of application kernels and to serve energy tuning. For most applications, nested loops consume the significant 
 portion of the total running time. When tuning the application for
-better performance and energy usage, some combination of loop optimizations, including loop 
+better execution time and energy usage, some combination of loop optimizations, including loop 
 tiling, loop unrolling, and loop fusion, are usually performed on the 
 program along with the auto-parallelization.
 Determining which set of optimizations produces the best results is hard.
-Polyhedral auto-tuning frameworks have shown promising results at simplifying that effort\cite{EJ2011,EJ2012,EJ2013}
-for small computation kernels like the Polybench programs\cite{Polybench}. 
-to determine the frameworks' effectiveness at reducing overall energy consumption.
+Polyhedral auto-tuning frameworks have shown promising results at simplifying that effort\cite{EJ2012}
+for small computation kernels like the Polybench programs. 
+This work investigates the effectiveness of such framework to tune for 
+energy on two different multi-core architectures: Intel Sandy Bridge
+and Many Integrated Core (MIC).
  
-\WW{This paper has 3 main contributions: 1)  
-Documenting the  
-2) Additional speedups up to $20\%$ over the already efficient OpenMP baseline 
-implementation of a small realistic application using polyhedral optimizations 
-on Intel Sandy Bridge and Xeon Phi processors. 3) 
-Evaluation of how different architecture effects the utility of the 
-polyhedral optimizations techniques for execution time and energy.} \\
+This paper has two main contributions: \todo{
+1)Performance speedups and energy savings on Sandy Bridge and MIC for 
+various Polybench kernels applying loop transformations. 
+2)Evaluation of architectural differences of energy behaviours corresponding to the same loop transformations.
+} 
+
 The rest of the paper is organized as follows. In Section~\ref{sec:tools}, we describe the tools
 used to measure energy consumptions. Section~\ref{sec:benchmarks} describes the benchmarks used for  
-measuring the energy consumptions and evaluating the effectiveness of polyhedral 
-compilers in optimizing a realistic application. Experimental setup, results and analysis are presented in Section~\ref{sec:setup} and Section~\ref{sec:results}. 
+measuring the energy consumptions. Experimental setup, results and analysis are presented in Section~\ref{sec:setup} and Section~\ref{sec:results}. 
 Section~\ref{sec:related} explains and compares with related work. Section~\ref{sec:conclusion} has 
 our conclusions.
 
