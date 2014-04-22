@@ -1,31 +1,25 @@
 To understand energy consumption, execution time and various optimizations,
 a light-weight fine-grained measurement RCRtool is required. 
-Finding the optimal combination of compiler optimizations 
-requires a compilation framework, like the Polyhedral Compiler
-Collection, that easily produces a large number of 
-program variants with specific optimization parameters.
-\subsection{RCRtool}
 The Intel Sandy Bridge architecture allows users to track energy usage through 
 the exposed Running Average Power Limit (RAPL) hardware counter. 
-The RCRtool records the current value of the counter at least 1000 times a second by writing 
-into a shared-memory data structure. This ``blackboard'' structure provides a hierarchical view of the system
-where various current performance information is stored. The 
-information is available to any OpenMP applications through a simple API that 
+The RCRtool records the current energy value of the counter at least 1000 times a second by writing 
+into a shared-memory data structure. %This ``blackboard'' structure provides a hierarchical view of the system
+%where various current performance information is stored. 
+The energy value is available to any OpenMP applications through a simple API that 
 delineates a code region for measurement with a start and end call.
 When the program finishes execution,
-the elapsed time, the amount of energy used (in Joules), and the average computed
-power (in Watts) of the kernel regions and the whole application are output. 
-\subsection{RCRtool on Xeon Phi System}
-RCRtool collects power information of Intel Phi natively. 
-Users can track power usage in microWatts through    
-a file (/sys/class/micras/power) updated every 50 millisecond.
+the elapsed time, the amount of energy used, and the average computed
+power of the kernel regions and the whole application are output. 
+On MIC architecture, RCRtool tracks power usage through 
+a file updated every 50 millisecond.
 RCRtool monitors the power at user level and computes the energy
-consumption over time.
-The information is available to the applications through the same simple API as on
-Sandy Bridge.
-\subsection{Polyhedral Optimizations Tools}
+consumption over time. The information is available to the applications 
+through the same simple API as on Sandy Bridge.
+
+Finding the optimal combination of compiler optimizations 
+requires a compilation framework.
 The Polyhedral Compiler Collection (PoCC) was used to generate program 
-variants with different optimizations.
+variants with different optimizations. 
 The PoCC requires that programs contain static control parts (SCoP) so that 
 valid transformations can be applied. Polybench is a collection of programs
-that contain SCoPs and can be polyhedral optimized.  
+that contain SCoPs and we experiment with Polybench in this paper. 
