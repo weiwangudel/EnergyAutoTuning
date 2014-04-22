@@ -1,5 +1,5 @@
-To understand energy consumption, execution time and various optimizations,
-a light-weight fine-grained measurement RCRtool is required. 
+%To understand energy consumption, execution time and various optimizations,
+%a light-weight fine-grained measurement RCRtool is required. 
 The Intel Sandy Bridge architecture allows users to track energy usage through 
 the exposed Running Average Power Limit (RAPL) hardware counter. 
 The RCRtool records the current energy value of the counter at least 1000 times a second by writing 
@@ -20,6 +20,6 @@ Finding the optimal combination of compiler optimizations
 requires a compilation framework.
 The Polyhedral Compiler Collection (PoCC) was used to generate program 
 variants with different optimizations. 
-The PoCC requires that programs contain static control parts (SCoP) so that 
-valid transformations can be applied. Polybench is a collection of programs
-that contain SCoPs and we experiment with Polybench in this paper. 
+%The PoCC requires that programs contain static control parts (SCoP) so that 
+%valid transformations can be applied. Polybench is a collection of programs
+%that contain SCoPs and we experiment with Polybench in this paper. 
