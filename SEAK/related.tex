@@ -1,19 +1,4 @@
-%\todo{Needs work to make sense}
-\subsection{Benchmarks for Polyhedral Framework}
-%\subsection{Benchmarks for Polyhedral Framework and Auto-parallelization}
-There are a few benchmarks available to evaluate polyhedral transformations as 
-an approach to improving application performance.  Our work adds two non-trivial application (LULESH and \emph{brdr2d})
-to the family of benchmarks that are polyhedral optimizable. Polybench\cite{Polybench} and 
-SWIM\cite{SWIM} benchmark are two benchmark suites that are often used. The Polybench programs evaluate polyhedral 
-transformations and are used to construct predictive models by Park {\it et al.}\cite{EJ2011,EJ2012, EJ2013}.
-They are also used to evaluate auto-parallelization techniques targeting different architectures,
-using different tools. Grauer-Gray {\it et al.}\cite{Scott} utilized high level languages 
-to target GPU architecture by annotating Polybench programs. Konstantinidis {\it et al.}\cite{LCPC2013}
-studied GPU code generation given the Polybench programs that contain affine loops. 
-SCoPs in LULESH and \emph{brdr2d} are much complex than polybench programs. 
-In particular, some LULESH SCoPs contain thousands of dependencies. The  
-two benchmarks can be used to evaluate the effectiveness of newly-developed polyhedral techniques. 
-%\subsection{Performance/Energy Measurement and Tuning}
+%\todo{Needs more work to make sense}
 \subsection{Energy Measurement and Tuning}
 The accuracy of our energy-aware polyhedral framework relies on the exactness
 of RAPL. While presenting the HAECER framework for short-term energy measurements 
