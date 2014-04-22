@@ -1,9 +1,5 @@
-The tests ran on a 2-socket 8-core Intel Xeon E5-2680 processor with 20MB (40MB total) L3 cache.
-PoCC v1.2 was used to generate program variants from Polybench v3.2.
-The extra large data set (specified in Polybench) was used. 
-\todo{ICC version?} was the backend compiler. Every executable was compiled with
--O3 optimization flag.  
-
-Experiments were also run on a Xeon Phi coprocessor. 
-The Phi architecture accelerator card contained 61 cores clocked at 1.09GHz. Each core had 512KB of L2 cache. 
+The tests ran on a 2-socket quad-core Intel Xeon E5-2603 processor with 10MB (20MB total) L3 cache.
+PoCC v1.2 was used to generate program variants from Polybench v3.2. ICC v14.0.0 was the backend compiler. Every executable was compiled with
+-O3 optimization flag. Experiments were also run on a Xeon Phi coprocessor. 
+The Phi architecture accelerator card contained 60 cores clocked at 1.053GHz. Each core had 512KB of L2 cache. 
 The generated program variants used ICC v14.0.0 compiler as their backend, producing OpenMP programs that ran natively on the Phi.

@@ -1,36 +1,15 @@
-In this work, we evaluate three kinds of programs for energy auto-tuning with
-polyhedral framework: Polybench programs, publicly-accessible LULESH 
-program\cite{LULESH:versions}, and a realistic application developed and frequently 
-used by our collaborators.
+In this work, we evaluate six representative Polybench programs energy auto-tuning with
+loop optimizations: 2mm, gemm, gramschmidt, covariance, seidel-2d, and jacobi-2d.
 
-\subsection{Polybench}
-Previous work has obtained significant speedups with the 
-polyhedral framework for the Polybench programs\cite{EJ2011,EJ2012,EJ2013}.
 Using PoCC, program variants were generated using
 a different set of the 
-optimizations from the following five groups: 
+optimizations from the following four groups: 
 \begin{itemize}
     \item Loop fusion: smartfuse, maxfuse, nofuse
     \item Loop unrolling factor: 1, 2, 4, 8
     \item Loop tiling: 1, 16, 32, 64. Note that the number of different flags
  depends on the level of nested loops   
     \item Loop vectorization: on, off
-    \item Loop parallelization: on, off
 \end{itemize}
-%\WW{We rely on Tiling Hyperplane method\cite{Hyperplane} to legally perform loop
-%transformations. Loop fusion is performed to maximize locality by fusing statements. 
-%As in\cite{EJ2013}, 1) nofuse means we do not fuse statements at all;
-% 2)smartfuse means we only fuse together statements that carry data reuse and of 
-%similar loop nesting depth; 3) maxfuse means we maximally fuse statements.
-% }
-The Tiling Hyperplane method\cite{Hyperplane} is used to legally perform loop transformations.
-Loop fusion is performed to minimize loop overheads. Depending on reuse patterns, fusion can increase or decrease locality. As in\cite{EJ2013}, 1) nofuse results in no loop fusion 2) smartfuse only
-fuses statements that carry data reuse and are at similar nesting levels 3) maxfuse performs all legal loop fusion.
-If the maximum nested loop level is 3, applying all possible combinations
-of the above flags generates 5135 program variants. The ROSE source-to-source
-compiler was used to add energy profiling calls to each variant.
-GCC(4.4.6) generated the final executable. During execution,
- periodic queries to the RCRtool blackboard provide the energy consumption information.
-Figure~\ref{fig:Workflow} gives the workflow for measuring energy consumption of 
-Polybench programs using the energy-aware polyhedral compiler framework.
-
+Loop parallelization was always turned on.
+%During execution, periodic queries to the RCRtool blackboard provide the energy consumption information.
