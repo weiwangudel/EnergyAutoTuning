@@ -1,22 +1,14 @@
 
 \begin{abstract}
-\todo{}
-%As the HPC community moves into the exascale computing era, application energy 
-%has become a big concern. Tuning for energy will be 
-%essential for the embedded systems to meet. in the effort to overcome the limited power envelope. How is 
-%tuning for lower energy related to tuning for faster execution? 
-%Understanding that relationship can guide both performance and energy tuning
-%for exascale. In this paper, a strong correlation is presented between the
-%two that allows tuning for execution to be used as a proxy for 
-%energy tuning.  We also show that polyhedral compilers can effectively tune a realistic application 
-%for both time and energy. \\
-%For a large number of variants of the Polybench programs
-%Optimizations can increase the power and energy required between variants, but variant with minimum execution time
-%also has the lowest energy usage.
-%Various loop optimizations including fusion, tiling, 
-%vectorization, and auto-parallelization, achieved a $20\%$ speedup over the 
-%baseline OpenMP implementation, with an equivalent reduction in energy 
-%on an Intel Sandy Bridge system. On an Intel Xeon Phi system, improvements
-%as high as 21\% in execution time and 19\% reduction in energy are obtained.
-
+Reducing application energy consumption is important to improve user experience of 
+embedded systems, e.g. smart phones, GPS navigators etc.  
+However applications (kernels) are not energy-aware in its design stage. 
+Tuning for energy efficiency is necessary to meet the system's energy constraints.
+In this work we use energy-aware framework to tune Polybench kernels for energy
+ on two architectures (Intel SandyBridge and Intel MIC).
+We applied combinations of loop optimizations to the kernels and observed 
+for dense matrix kernels like \texttt{2mm} and \texttt{gemm}, \emph{the optimization that has the minimum execution time 
+did not consume the least amount of energy}. This means execution time does \emph{not}
+always correlate to the energy consumption. We also found that the optimizations 
+that work best on one architecture do not carry to another.  
 \end{abstract}
