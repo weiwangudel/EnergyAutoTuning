@@ -1,23 +1,23 @@
 Reducing application energy consumption is important to improve user experience of 
-embedded systems, e.g. smart phones, GPS navigators etc. 
-Tuning applications for better energy efficiency is faced with challenges brought by
-diverse architectures, difficulty of obtaining fine-grain measurements of power, 
-as well as enormous amount of tuning choices.
-This work uses the RCRtool \cite{us}, a fine-grain energy measurement tool, to easily attribute energy consumption to particular
-regions of application kernels and to serve energy tuning. 
-When tuning the application for
-better execution time and energy usage, some combination of loop optimizations, including loop 
-tiling, loop unrolling, and loop fusion, are usually performed on kernels along with the auto-parallelization.
-Determining which set of optimizations produces the best results is hard.
-Polyhedral auto-tuning frameworks have shown promising results at simplifying that effort\cite{EJ2012}
-for small computation kernels like the Polybench programs. 
-This work investigates the effectiveness of such framework to tune for 
-energy on two different multi-core architectures: Intel Sandy Bridge
-and Many Integrated Core (MIC).
+embedded systems, e.g. smart phones, GPS navigators etc.  
+However applications (kernels) are not energy-aware in its design stage. Tuning
+for energy efficiency is necessary to meet the system's energy constraints.
+
+Existing Polyhedral auto-tuning frameworks have shown promising results in tuning for execution
+for small computation kernels like the Polybench programs\cite{EJ2012}. 
+In this work we use the framework added with energy measurement support to enable tuning for energy.
+We choose 6 representative Polybench kernels (from linear-algebra, machine learning, and stencils code) 
+and tune them on two architectures (Intel SandyBridge and Intel MIC).
+When tuning the application for better energy usage, some combination of loop optimizations, including loop 
+tiling, loop unrolling, and loop fusion, are performed on kernels along with the auto-parallelization.
+We observed for dense matrix kernels, \emph{the optimization that has the minimum execution time 
+did not consume the least amount of energy}. This differs from previous observations \cite{Wang2014}.
+We also found that the optimizations that work best on one architecture do not carry to another.  
  
-This paper has two main contributions: 
-(1) Performance speedups and energy savings on Sandy Bridge and MIC for various Polybench kernels applying loop transformations. 
-(2) Evaluation of architectural differences of energy behaviours corresponding to the same loop transformations.
+This paper has three main contributions: 
+(1) Introducing the energy-aware framework for energy auto-tuning
+(2) Observing that it is \emph{not} always the case to be able to reduce energy consumption by reducing execution time.
+(3) Evaluation of architectural differences of energy behaviours corresponding to the same loop transformations.
 
 The rest of the paper is organized as follows. In Section~\ref{sec:tools}, we describe the tools
 used to measure energy consumptions. Section~\ref{sec:benchmarks} describes the benchmarks used for  
