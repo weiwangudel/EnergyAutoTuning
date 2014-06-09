@@ -1,0 +1,13 @@
+set xlabel 'Program Variants' font "Arial-Bold, 9"
+set ylabel 'Power Ratio (With/WO)' font "Arial-Bold,9"
+set y2label 'Execution Time Ratio (With/WO)' font "Arial-Bold,9"
+set xrange [0:1235]
+set ytics nomirror font "Arial-Bold,8"
+set y2tics font "Arial-Bold,8"
+set xtics font "Arial-Bold, 8"
+set key font "Arial-Bold,6"  maxrows 2
+plot  'with-wo-nofuse' using ($12/$24) axes x1y1 title 'Power' w lines lt 1 lw 2.5 , '' using ($4/$16) title 'Time' w lines lt 3 lw 2.5
+
+set term pdfcairo enhanced color font "Arial-Bold,8"
+set output "power-time-compare-nofuse-relative.pdf"
+replot 

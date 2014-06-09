@@ -1,0 +1,13 @@
+set xlabel 'Program Variants' font "Arial-Bold, 9"
+set ylabel 'Power (Watts)' font "Arial-Bold,9"
+#set y2label 'Execution Time (seconds)' font "Arial-Bold,9"
+set xrange [0:1235]
+set ytics nomirror font "Arial-Bold,8"
+set y2tics font "Arial-Bold,8"
+set xtics font "Arial-Bold, 8"
+set key font "Arial-Bold,8"
+plot  'power-with-wo-maxfuse' u 12 axes x1y1 title 'With-Maxfuse' w lines lt 1 lw 2.5 , '' u 24 title 'Without-maxfuse' w lines lt 3 lw 2.5 
+
+set term pdfcairo enhanced color font "Arial-Bold,8"
+set output "power-compare-maxfuse.pdf"
+replot 
