@@ -1,0 +1,22 @@
+%To understand energy consumption, execution time and various optimizations,
+%a light-weight fine-grained measurement RCRtool is required. 
+For energy consumption reporting, \texttt{RCRtool} is available to any
+application through a region-based call API.
+When an application halts elapsed time, energy use, and average computed
+power is reported for (a) each region and (b) the entire application.
+
+The Intel SandyBridge architecture allows users to track energy usage through 
+the exposed Running Average Power Limit (RAPL) hardware counter. 
+The \texttt{RCRtool} records the current energy value of the counter at least 1000 times a second by writing 
+into a shared-memory data structure. %This ``blackboard'' structure provides a hierarchical view of the system
+%where various current performance information is stored. 
+
+On MIC \texttt{RCRtool} tracks power usage through a file updated every 50 millisecond.
+RCRtool monitors the power at user level and computes the energy consumption over time.
+
+Finding the optimal combination of compiler optimizations 
+requires a compilation framework. The Polyhedral Compiler Collection (PoCC) was used to generate program 
+variants with different optimizations. Intel Compiler v14.0.2 was used as the backend compiler for this work. 
+%The PoCC requires that programs contain static control parts (SCoP) so that 
+%valid transformations can be applied. Polybench is a collection of programs
+%that contain SCoPs and we experiment with Polybench in this paper. 

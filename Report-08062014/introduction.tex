@@ -1,0 +1,27 @@
+Dynamic Voltage and Frequency Scaling (DVFS) and Duty Cycle Modulation (DCM)
+are two power saving techinques on Intel Sandy Bridge processors. 
+DVFS saves power by reducing the frequency and voltage supply of the chip. 
+Duty Cycle Modulation reduces power consumption by freezing 
+the cores for a specified time interval -- the effect is that the machine frequency
+is reduced (without changing the voltage).   
+DVFS benefits (in terms of energy) coarse-grained loops more than fine-grain loops,
+because it has larger transition overhead than DCM. 
+Duty Cycle Modulation has fast transition but it only affects frequency -- 
+the power savings might not be as significant as DVFS reduced to the same frequency.
+Because of the faster transition, DCM has more potential in controlling fine-grained code regions
+than DVFS.
+
+In order to optimize applications for energy, we experimented 
+with the community detection application in presence of frequency
+scaling and duty cycle modulation. We found that running the program at a 
+lower frequency yielded the minimum EDP (energy-delay product) 
+without being the minimum energy, as shown in Figure~1.
+We thought it might be due to memory behaviour of the application.
+
+Then we looked at memory counters and found that this counter can in part determine a
+ frequency (or duty cycle modulation level) that will lead to the best energy.
+We also tried to characterize loops and correlate the characteristics to the 
+Frequency/ClockModulation setting. We hope that by running different loops at 
+different low power mode we can achieve a minimum Energy (E) or Energy Delay Product (EDP).
+
+

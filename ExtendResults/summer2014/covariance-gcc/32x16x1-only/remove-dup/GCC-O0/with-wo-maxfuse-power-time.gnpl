@@ -1,0 +1,13 @@
+set xlabel 'Program Variants' font "Arial-Bold, 9"
+set ylabel 'Power (Watts)' font "Arial-Bold,9"
+set y2label 'Execution Time (seconds)' font "Arial-Bold,9"
+set xrange [0:20]
+set ytics nomirror font "Arial-Bold,8"
+set y2tics font "Arial-Bold,8"
+set xtics font "Arial-Bold, 8"
+set key below font "Arial-Bold,6"  maxrows 2 
+plot  'with-wo-32x16x1' u 24 axes x1y1 title 'With-tiling-Power' w lines lt 1 lw 2.5 , '' u 12 title 'W/o-tiling-Power' w lines lt 3 lw 2.5, '' u 16 axes x1y2 w lines lt 2 title 'With-tiling-Time', '' u 4 axes x1y2 w lines lt 4 title 'W/o-tiling-Time' 
+
+set term pdfcairo enhanced color font "Arial-Bold,8"
+set output "power-time-compare-32x16x1.pdf"
+replot 

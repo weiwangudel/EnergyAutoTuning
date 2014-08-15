@@ -1,0 +1,21 @@
+set xlabel 'Power Cap Level (Watts/Socket)' font "Arial-Bold, 9"
+#set ylabel 'Power (Watts)' font "Arial-Bold,9"
+set ylabel 'Energy (Joules)' font "Arial-Bold,9"
+set y2label 'Time (seconds)' font "Arial-Bold,9"
+#set xrange [0:20]
+#set yrange [40:200]
+set ytics nomirror font "Arial-Bold,8"
+set y2tics font "Arial-Bold,8"
+set xtics font "Arial-Bold, 8"
+set xtics rotate by -45
+set key below font "Arial-Bold,6"  maxrows 2 
+plot  'data' u 7:xticlabel(1) axes x1y1 title 'W-DutyCycle-Energy' w linespoints lt 1 lw 2.5, '' u 3 axes x1y1 title 'Original-Energy' w linespoints lt 3 lw 2.5, '' u 6 axes x1y2 title 'W-DutyCycle-Time' w lines lt 2 lw 2.5 , '' u 2 axes x1y2 title 'Original-Time' w lines lt 4 lw 2.5
+
+set term pdfcairo enhanced color font "Arial-Bold,8"
+set output "orig-dutycyle-compare.pdf"
+replot 
+
+#set term png font "Arial-Bold,8" size 800,600
+#set output "orig-dutycyle-compare.png"
+#replot
+#

@@ -1,0 +1,14 @@
+set xlabel 'Program Variants' font "Arial-Bold, 9"
+set ylabel 'Energy (joules)' font "Arial-Bold,9"
+set y2label 'Execution Time (seconds)' font "Arial-Bold,9"
+set xrange [0:9]
+set ytics nomirror font "Arial-Bold,8"
+set y2tics font "Arial-Bold,8"
+set xtics font "Arial-Bold, 8"
+set key font "Arial-Bold,8" maxrows 2
+plot  'data' u 1 axes x1y2 title 'T-Orig' w lines lt 1 lw 7 , '' u 2 title 'E-Orig' w lines lt 2 lw 2, \
+''	     u 11 axes x1y2 title 'T-mtune' w lines lt 5 lw 7, '' u 12 title 'E-mtune' w lines lt 6 lw 2
+
+set term pdfcairo enhanced color font "Arial-Bold,8"
+set output "output.pdf"
+replot 

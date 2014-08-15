@@ -1,0 +1,2287 @@
+15
+/home/wwang/shared/tools/gcc-4.8.1/bin/gcc
+Memory used: 2.0625
+Loading 32-bit binary file: pnnl.bin, numvertices: 2361670, numEdges: 191402826
+File read time: 1.57136
+Before allocating graph
+Allocated graph: 0x128b340
+Processing edges for vertex: 0, range(0, 166)
+Processing edges for vertex: 100000, range(58444108, 58444133)
+Processing edges for vertex: 200000, range(84376057, 84376362)
+Processing edges for vertex: 300000, range(106069163, 106069503)
+Processing edges for vertex: 400000, range(122097114, 122097513)
+Processing edges for vertex: 500000, range(135096418, 135096483)
+Processing edges for vertex: 600000, range(146097008, 146097061)
+Processing edges for vertex: 700000, range(155415410, 155415531)
+Processing edges for vertex: 800000, range(162595900, 162595989)
+Processing edges for vertex: 900000, range(168508374, 168508464)
+Processing edges for vertex: 1000000, range(173203321, 173203442)
+Processing edges for vertex: 1100000, range(176935100, 176935110)
+Processing edges for vertex: 1200000, range(179876260, 179876270)
+Processing edges for vertex: 1300000, range(182240081, 182240092)
+Processing edges for vertex: 1400000, range(184224513, 184224521)
+Processing edges for vertex: 1500000, range(185795161, 185795170)
+Processing edges for vertex: 1600000, range(187104124, 187104130)
+Processing edges for vertex: 1700000, range(188148455, 188148461)
+Processing edges for vertex: 1800000, range(188997836, 188997842)
+Processing edges for vertex: 1900000, range(189691532, 189691535)
+Processing edges for vertex: 2000000, range(190254658, 190254660)
+Processing edges for vertex: 2100000, range(190705814, 190705822)
+Processing edges for vertex: 2200000, range(191052755, 191052764)
+Processing edges for vertex: 2300000, range(191302662, 191302663)
+Graph populate time: 7.67549
+Total I/O time: 9.24689
+Running on: 15 threads
+Loaded graph from file: pnnl.bin
+Memory used: 2949.79
+
+Regional(EnergyStat) - Time 9.263130 Total energy consumed 1305.988410 Ave. Power Level 140.987815 
+Maximum degree for the graph: 5520
+Iteration: 0, conflicts: 13
+Iteration: 1, conflicts: 0
+Total number of colors used: 1196
+Total number of conflicts overall: 0
+Number of rounds: 2
+SUCCESS: No conflicts found
+Coloring time: 1.13553
+Memory used: 2949.79
+Number of reordered colors: 1022
+End position for large colors: 0, node count: 551749, largest: 551749
+Node count cutoff: 472334
+e_xx: 1.15554e+08, a2_x: 6.3741e+11, currMod: 0.603702
+e_xx: 1.57588e+08, a2_x: 5.77404e+11, currMod: 0.823317
+e_xx: 1.64283e+08, a2_x: 4.94714e+11, currMod: 0.858295
+e_xx: 1.67436e+08, a2_x: 4.88969e+11, currMod: 0.874771
+e_xx: 1.69425e+08, a2_x: 5.34826e+11, currMod: 0.885161
+e_xx: 1.71118e+08, a2_x: 5.18172e+11, currMod: 0.894008
+currMod: 0.885161, prevMod: -1
+Louvain time: 18.1228
+numClusters: 200643, time: 0.113207
+Next phase: 2
+Memory used: 2949.79
+End Structure 1271594 200643 vs 2743015
+Build next level time: 4.26189
+Iteration time: 22.501
+Memory used: 2949.79
+e_xx: 1.71118e+08, a2_x: 5.1894e+11, currMod: 0.894025
+e_xx: 1.80902e+08, a2_x: 3.28058e+11, currMod: 0.945146
+e_xx: 1.82778e+08, a2_x: 3.06305e+11, currMod: 0.95495
+e_xx: 1.83219e+08, a2_x: 3.1538e+11, currMod: 0.957251
+e_xx: 1.83278e+08, a2_x: 3.01075e+11, currMod: 0.957561
+e_xx: 1.83402e+08, a2_x: 2.84543e+11, currMod: 0.95821
+e_xx: 1.83374e+08, a2_x: 2.75996e+11, currMod: 0.958066
+currMod: 0.95821, prevMod: 0.885161
+Louvain time: 1.76158
+numClusters: 48863, time: 0.014889
+Next phase: 3
+Memory used: 2949.79
+End Structure 427936 48863 vs 904728
+Build next level time: 0.260773
+Iteration time: 2.03797
+Memory used: 2949.79
+e_xx: 1.83402e+08, a2_x: 2.85178e+11, currMod: 0.958201
+e_xx: 1.84285e+08, a2_x: 1.19861e+11, currMod: 0.962817
+e_xx: 1.84359e+08, a2_x: 6.87106e+10, currMod: 0.963208
+e_xx: 1.84454e+08, a2_x: 5.39771e+10, currMod: 0.963705
+e_xx: 1.84418e+08, a2_x: 8.37045e+10, currMod: 0.963513
+currMod: 0.963705, prevMod: 0.95821
+Louvain time: 0.522806
+numClusters: 24597, time: 0.004861
+Next phase: 4
+Memory used: 2949.79
+End Structure 152569 24597 vs 329735
+Build next level time: 0.074359
+Iteration time: 0.602437
+Memory used: 2949.79
+e_xx: 1.84454e+08, a2_x: 5.5852e+10, currMod: 0.963698
+e_xx: 1.84572e+08, a2_x: 6.12527e+09, currMod: 0.964314
+e_xx: 1.84565e+08, a2_x: -3.46727e+09, currMod: 0.964278
+currMod: 0.964314, prevMod: 0.963705
+Louvain time: 0.146299
+numClusters: 22543, time: 0.003257
+Next phase: 5
+Memory used: 2949.79
+End Structure 98211 22543 vs 218965
+Build next level time: 0.032611
+Iteration time: 0.182464
+Memory used: 2949.79
+e_xx: 1.84572e+08, a2_x: 6.72794e+09, currMod: 0.964314
+e_xx: 1.84582e+08, a2_x: 8.63391e+09, currMod: 0.964365
+e_xx: 1.84586e+08, a2_x: 1.63082e+10, currMod: 0.964387
+e_xx: 1.84587e+08, a2_x: 2.80415e+10, currMod: 0.964389
+e_xx: 1.84592e+08, a2_x: 1.0578e+10, currMod: 0.964417
+e_xx: 1.8459e+08, a2_x: 1.57038e+10, currMod: 0.964407
+currMod: 0.964417, prevMod: 0.964314
+Louvain time: 0.214282
+numClusters: 21947, time: 0.003064
+Next phase: 6
+Memory used: 2949.79
+End Structure 54023 21947 vs 129993
+Build next level time: 0.01915
+Iteration time: 0.236641
+Memory used: 2949.79
+e_xx: 1.84592e+08, a2_x: 1.24339e+10, currMod: 0.964416
+e_xx: 1.84592e+08, a2_x: 2.98352e+09, currMod: 0.964418
+e_xx: 1.84592e+08, a2_x: 3.34514e+09, currMod: 0.964418
+currMod: 0.964418, prevMod: 0.964417
+Louvain time: 0.069307
+numClusters: 21916, time: 0.002983
+Next phase: 7
+Memory used: 2949.79
+End Structure 52752 21916 vs 127420
+Build next level time: 0.016123
+Iteration time: 0.088552
+Memory used: 2949.79
+e_xx: 1.84592e+08, a2_x: -6.92801e+08, currMod: 0.964418
+e_xx: 1.84592e+08, a2_x: -3.31178e+08, currMod: 0.964418
+currMod: 0.964418, prevMod: 0.964418
+Louvain time: 0.040017
+numClusters: 21916, time: 0.002946
+Maximum degree for the graph: 420
+Iteration: 0, conflicts: 0
+Total number of colors used: 156
+Total number of conflicts overall: 0
+Number of rounds: 1
+SUCCESS: No conflicts found
+Number of reordered colors: 155
+End position for large colors: 0, node count: 21557, largest: 21557
+Node count cutoff: 4384
+e_xx: 1.84592e+08, a2_x: -3.31178e+08, currMod: 0.964418
+End Structure 52698 21915 vs 127311
+currMod: 0.964418, prevMod: 0.964418
+numClusters: 21915
+Total iteration time: 25.6491
+
+Loop 0 <line-37> - Time 0.000248 Total energy consumed 0.141855 Ave. Power Level 572.270565
+	-------- Loop 0 (sock 1 consumed 0.075735, avg temp 70.500000, final temp 71 ) ------
+	-------- Loop 0 (sock 2 consumed 0.066120, avg temp 56.500000, final temp 57 ) ------
+Loop 1 <line-57> - Time 0.000234 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 1 (sock 1 consumed 0.000000, avg temp 70.500000, final temp 71 ) ------
+	-------- Loop 1 (sock 2 consumed 0.000000, avg temp 56.500000, final temp 56 ) ------
+Loop 2 <line-79> - Time 0.000340 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 2 (sock 1 consumed 0.000000, avg temp 70.500000, final temp 71 ) ------
+	-------- Loop 2 (sock 2 consumed 0.000000, avg temp 56.500000, final temp 56 ) ------
+Loop 3 <line-173> - Time 0.895077 Total energy consumed 122.566605 Ave. Power Level 136.934104
+	-------- Loop 3 (sock 1 consumed 64.628265, avg temp 70.000000, final temp 70 ) ------
+	-------- Loop 3 (sock 2 consumed 57.938340, avg temp 56.000000, final temp 56 ) ------
+Loop 4 <line-195> - Time 0.000238 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 4 (sock 1 consumed 0.000000, avg temp 70.000000, final temp 70 ) ------
+	-------- Loop 4 (sock 2 consumed 0.000000, avg temp 56.000000, final temp 56 ) ------
+Loop 5 <line-225> - Time 0.138533 Total energy consumed 19.201365 Ave. Power Level 138.605452
+	-------- Loop 5 (sock 1 consumed 10.219635, avg temp 70.500000, final temp 70 ) ------
+	-------- Loop 5 (sock 2 consumed 8.981730, avg temp 56.500000, final temp 56 ) ------
+Loop 6 <line-164> - Time 0.091910 Total energy consumed 12.658230 Ave. Power Level 137.723932
+	-------- Loop 6 (sock 1 consumed 6.702990, avg temp 70.785714, final temp 71 ) ------
+	-------- Loop 6 (sock 2 consumed 5.955240, avg temp 56.500000, final temp 56 ) ------
+Loop 7 <line-344> - Time 0.304073 Total energy consumed 41.519070 Ave. Power Level 136.543053
+	-------- Loop 7 (sock 1 consumed 22.008495, avg temp 70.375000, final temp 70 ) ------
+	-------- Loop 7 (sock 2 consumed 19.510575, avg temp 56.625000, final temp 56 ) ------
+Loop 8 <line-363> - Time 0.000365 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 8 (sock 1 consumed 0.000000, avg temp 70.375000, final temp 70 ) ------
+	-------- Loop 8 (sock 2 consumed 0.000000, avg temp 56.625000, final temp 56 ) ------
+Loop 9 <line-385> - Time 0.000723 Total energy consumed 0.146820 Ave. Power Level 203.111836
+	-------- Loop 9 (sock 1 consumed 0.079680, avg temp 70.375000, final temp 70 ) ------
+	-------- Loop 9 (sock 2 consumed 0.067140, avg temp 56.625000, final temp 56 ) ------
+Loop 10 <line-85> - Time 0.104528 Total energy consumed 13.487190 Ave. Power Level 129.029742
+	-------- Loop 10 (sock 1 consumed 7.044600, avg temp 69.000000, final temp 70 ) ------
+	-------- Loop 10 (sock 2 consumed 6.442590, avg temp 55.500000, final temp 56 ) ------
+Loop 11 <line-131> - Time 0.002481 Total energy consumed 0.358005 Ave. Power Level 144.285875
+	-------- Loop 11 (sock 1 consumed 0.223785, avg temp 69.500000, final temp 70 ) ------
+	-------- Loop 11 (sock 2 consumed 0.134220, avg temp 56.000000, final temp 56 ) ------
+Loop 12 <line-167> - Time 0.147387 Total energy consumed 19.444665 Ave. Power Level 131.929394
+	-------- Loop 12 (sock 1 consumed 10.194240, avg temp 69.500000, final temp 70 ) ------
+	-------- Loop 12 (sock 2 consumed 9.250425, avg temp 55.500000, final temp 56 ) ------
+Loop 13 <line-215> - Time 15.137483 Total energy consumed 2090.775765 Ave. Power Level 138.119114
+	-------- Loop 13 (sock 1 consumed 1106.210670, avg temp 70.571429, final temp 70 ) ------
+	-------- Loop 13 (sock 2 consumed 984.565095, avg temp 56.428571, final temp 57 ) ------
+Loop 14 <line-101> - Time 4.363006 Total energy consumed 592.076385 Ave. Power Level 135.703768
+	-------- Loop 14 (sock 1 consumed 312.791610, avg temp 70.428571, final temp 71 ) ------
+	-------- Loop 14 (sock 2 consumed 279.284775, avg temp 56.428571, final temp 56 ) ------
+Loop 15 <line-277> - Time 2.735845 Total energy consumed 373.748160 Ave. Power Level 136.611589
+	-------- Loop 15 (sock 1 consumed 197.117295, avg temp 70.615385, final temp 71 ) ------
+	-------- Loop 15 (sock 2 consumed 176.630865, avg temp 56.615385, final temp 57 ) ------
+Loop 16 <line-308> - Time 0.003223 Total energy consumed 0.138480 Ave. Power Level 42.969607
+	-------- Loop 16 (sock 1 consumed 0.073800, avg temp 70.700000, final temp 70 ) ------
+	-------- Loop 16 (sock 2 consumed 0.064680, avg temp 56.700000, final temp 57 ) ------
+Loop 17 <line-196> - Time 0.000330 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 17 (sock 1 consumed 0.000000, avg temp 71.000000, final temp 71 ) ------
+	-------- Loop 17 (sock 2 consumed 0.000000, avg temp 57.000000, final temp 57 ) ------
+Application(EnergyStat) - Time 36.147522 Total energy consumed 4999.915725 Ave. Power Level 138.319738 Final Temperature socket 1 : 71  socket 2 : 57 
+	 ParallelApplication(EnergyStat) - Time 23.926023 Total energy consumed 3286.262595 Ave. Power Level 137.350974
+15
+/home/wwang/shared/tools/gcc-4.8.1/bin/gcc
+Memory used: 2.10938
+Loading 32-bit binary file: pnnl.bin, numvertices: 2361670, numEdges: 191402826
+File read time: 1.57997
+Before allocating graph
+Allocated graph: 0x877c60
+Processing edges for vertex: 0, range(0, 166)
+Processing edges for vertex: 100000, range(58444108, 58444133)
+Processing edges for vertex: 200000, range(84376057, 84376362)
+Processing edges for vertex: 300000, range(106069163, 106069503)
+Processing edges for vertex: 400000, range(122097114, 122097513)
+Processing edges for vertex: 500000, range(135096418, 135096483)
+Processing edges for vertex: 600000, range(146097008, 146097061)
+Processing edges for vertex: 700000, range(155415410, 155415531)
+Processing edges for vertex: 800000, range(162595900, 162595989)
+Processing edges for vertex: 900000, range(168508374, 168508464)
+Processing edges for vertex: 1000000, range(173203321, 173203442)
+Processing edges for vertex: 1100000, range(176935100, 176935110)
+Processing edges for vertex: 1200000, range(179876260, 179876270)
+Processing edges for vertex: 1300000, range(182240081, 182240092)
+Processing edges for vertex: 1400000, range(184224513, 184224521)
+Processing edges for vertex: 1500000, range(185795161, 185795170)
+Processing edges for vertex: 1600000, range(187104124, 187104130)
+Processing edges for vertex: 1700000, range(188148455, 188148461)
+Processing edges for vertex: 1800000, range(188997836, 188997842)
+Processing edges for vertex: 1900000, range(189691532, 189691535)
+Processing edges for vertex: 2000000, range(190254658, 190254660)
+Processing edges for vertex: 2100000, range(190705814, 190705822)
+Processing edges for vertex: 2200000, range(191052755, 191052764)
+Processing edges for vertex: 2300000, range(191302662, 191302663)
+Graph populate time: 7.69201
+Total I/O time: 9.27202
+Running on: 15 threads
+Loaded graph from file: pnnl.bin
+Memory used: 2949.83
+
+Regional(EnergyStat) - Time 9.290293 Total energy consumed 1317.202995 Ave. Power Level 141.782714 
+Maximum degree for the graph: 5520
+Iteration: 0, conflicts: 28
+Iteration: 1, conflicts: 5
+Iteration: 2, conflicts: 4
+Iteration: 3, conflicts: 3
+Iteration: 4, conflicts: 2
+Iteration: 5, conflicts: 1
+Iteration: 6, conflicts: 0
+Total number of colors used: 1186
+Total number of conflicts overall: 0
+Number of rounds: 7
+SUCCESS: No conflicts found
+Coloring time: 0.622049
+Memory used: 2949.83
+Number of reordered colors: 1014
+End position for large colors: 0, node count: 550621, largest: 550621
+Node count cutoff: 472334
+e_xx: 1.27275e+08, a2_x: 6.42698e+11, currMod: 0.664942
+e_xx: 1.6762e+08, a2_x: 5.93467e+11, currMod: 0.875727
+e_xx: 1.73624e+08, a2_x: 5.32261e+11, currMod: 0.907099
+e_xx: 1.75982e+08, a2_x: 5.15754e+11, currMod: 0.91942
+e_xx: 1.771e+08, a2_x: 4.48377e+11, currMod: 0.925259
+currMod: 0.91942, prevMod: -1
+Louvain time: 6.5425
+numClusters: 203086, time: 0.114329
+Next phase: 2
+Memory used: 2949.83
+End Structure 1261479 203086 vs 2724299
+Build next level time: 4.19951
+Iteration time: 10.8595
+Memory used: 2949.83
+e_xx: 1.56568e+08, a2_x: 4.50367e+11, currMod: 0.916318
+e_xx: 1.64542e+08, a2_x: 3.76242e+11, currMod: 0.962989
+e_xx: 1.65669e+08, a2_x: 3.15797e+11, currMod: 0.969589
+e_xx: 1.66098e+08, a2_x: 2.71884e+11, currMod: 0.972098
+e_xx: 1.66101e+08, a2_x: 2.7974e+11, currMod: 0.972117
+e_xx: 1.66278e+08, a2_x: 2.36273e+11, currMod: 0.973157
+e_xx: 1.66203e+08, a2_x: 2.8144e+11, currMod: 0.972715
+currMod: 0.973157, prevMod: 0.91942
+Louvain time: 1.47538
+numClusters: 53211, time: 0.016483
+Next phase: 3
+Memory used: 2949.83
+End Structure 513524 53211 vs 1080243
+Build next level time: 0.179832
+Iteration time: 1.67246
+Memory used: 2949.83
+e_xx: 1.66278e+08, a2_x: 2.39001e+11, currMod: 0.973129
+e_xx: 1.67216e+08, a2_x: 1.1974e+11, currMod: 0.978622
+e_xx: 1.67254e+08, a2_x: 1.39555e+11, currMod: 0.978844
+e_xx: 1.6735e+08, a2_x: 1.49966e+11, currMod: 0.979403
+e_xx: 1.67273e+08, a2_x: 9.70172e+10, currMod: 0.978953
+currMod: 0.979403, prevMod: 0.973157
+Louvain time: 0.523309
+numClusters: 25707, time: 0.00523
+Next phase: 4
+Memory used: 2949.83
+End Structure 180387 25707 vs 386481
+Build next level time: 0.067725
+Iteration time: 0.596644
+Memory used: 2949.83
+e_xx: 1.6735e+08, a2_x: 1.46824e+11, currMod: 0.979389
+e_xx: 1.67589e+08, a2_x: 6.46633e+10, currMod: 0.980793
+e_xx: 1.67621e+08, a2_x: 3.76272e+10, currMod: 0.98098
+e_xx: 1.67624e+08, a2_x: 3.58812e+10, currMod: 0.981001
+e_xx: 1.67622e+08, a2_x: 2.99884e+10, currMod: 0.980986
+currMod: 0.981001, prevMod: 0.979403
+Louvain time: 0.247381
+numClusters: 22191, time: 0.003323
+Next phase: 5
+Memory used: 2949.83
+End Structure 91149 22191 vs 204489
+Build next level time: 0.031486
+Iteration time: 0.282527
+Memory used: 2949.83
+e_xx: 1.67624e+08, a2_x: 3.57742e+10, currMod: 0.980999
+e_xx: 1.67627e+08, a2_x: 3.2686e+10, currMod: 0.981016
+e_xx: 1.67628e+08, a2_x: 2.8674e+10, currMod: 0.98102
+e_xx: 1.67628e+08, a2_x: 2.709e+10, currMod: 0.981019
+currMod: 0.98102, prevMod: 0.981001
+Louvain time: 0.119083
+numClusters: 21984, time: 0.003004
+Next phase: 6
+Memory used: 2949.83
+End Structure 73746 21984 vs 169476
+Build next level time: 0.024948
+Iteration time: 0.147175
+Memory used: 2949.83
+e_xx: 1.67628e+08, a2_x: 2.82066e+10, currMod: 0.98102
+e_xx: 1.67628e+08, a2_x: 3.10438e+10, currMod: 0.981021
+currMod: 0.98102, prevMod: 0.98102
+Louvain time: 0.049154
+numClusters: 21984, time: 0.002955
+Maximum degree for the graph: 475
+Iteration: 0, conflicts: 0
+Total number of colors used: 177
+Total number of conflicts overall: 0
+Number of rounds: 1
+SUCCESS: No conflicts found
+Number of reordered colors: 175
+End position for large colors: 0, node count: 21554, largest: 21554
+Node count cutoff: 4397
+e_xx: 1.6987e+08, a2_x: 1.20781e+10, currMod: 0.99414
+e_xx: 1.70421e+08, a2_x: 7.53716e+08, currMod: 0.997364
+e_xx: 1.70424e+08, a2_x: 2.37556e+08, currMod: 0.997386
+e_xx: 1.70437e+08, a2_x: 2.13638e+08, currMod: 0.997462
+e_xx: 1.70466e+08, a2_x: 4.14892e+08, currMod: 0.99763
+e_xx: 1.70477e+08, a2_x: -5.45801e+09, currMod: 0.997694
+e_xx: 1.70544e+08, a2_x: -6.52508e+09, currMod: 0.998088
+e_xx: 1.70543e+08, a2_x: -9.47984e+09, currMod: 0.99808
+End Structure 565 21575 vs 22705
+currMod: 0.998088, prevMod: 0.98102
+numClusters: 21575
+Total iteration time: 13.5583
+
+Loop 0 <line-37> - Time 0.000233 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 0 (sock 1 consumed 0.000000, avg temp 71.000000, final temp 71 ) ------
+	-------- Loop 0 (sock 2 consumed 0.000000, avg temp 56.500000, final temp 57 ) ------
+Loop 1 <line-57> - Time 0.000233 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 1 (sock 1 consumed 0.000000, avg temp 71.000000, final temp 71 ) ------
+	-------- Loop 1 (sock 2 consumed 0.000000, avg temp 56.500000, final temp 57 ) ------
+Loop 2 <line-79> - Time 0.000349 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 2 (sock 1 consumed 0.000000, avg temp 71.000000, final temp 71 ) ------
+	-------- Loop 2 (sock 2 consumed 0.000000, avg temp 56.500000, final temp 57 ) ------
+Loop 3 <line-173> - Time 0.357490 Total energy consumed 49.634895 Ave. Power Level 138.842847
+	-------- Loop 3 (sock 1 consumed 26.539680, avg temp 70.250000, final temp 72 ) ------
+	-------- Loop 3 (sock 2 consumed 23.095215, avg temp 57.000000, final temp 57 ) ------
+Loop 4 <line-195> - Time 0.000244 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 4 (sock 1 consumed 0.000000, avg temp 71.000000, final temp 72 ) ------
+	-------- Loop 4 (sock 2 consumed 0.000000, avg temp 57.000000, final temp 57 ) ------
+Loop 5 <line-225> - Time 0.157799 Total energy consumed 22.048755 Ave. Power Level 139.726789
+	-------- Loop 5 (sock 1 consumed 11.544210, avg temp 71.000000, final temp 72 ) ------
+	-------- Loop 5 (sock 2 consumed 10.504545, avg temp 56.500000, final temp 57 ) ------
+Loop 6 <line-164> - Time 0.079438 Total energy consumed 10.802910 Ave. Power Level 135.992414
+	-------- Loop 6 (sock 1 consumed 5.729115, avg temp 71.083333, final temp 71 ) ------
+	-------- Loop 6 (sock 2 consumed 5.073795, avg temp 56.750000, final temp 57 ) ------
+Loop 7 <line-344> - Time 0.311679 Total energy consumed 42.512760 Ave. Power Level 136.399305
+	-------- Loop 7 (sock 1 consumed 22.517655, avg temp 71.142857, final temp 71 ) ------
+	-------- Loop 7 (sock 2 consumed 19.995105, avg temp 56.571429, final temp 56 ) ------
+Loop 8 <line-363> - Time 0.000356 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 8 (sock 1 consumed 0.000000, avg temp 71.142857, final temp 71 ) ------
+	-------- Loop 8 (sock 2 consumed 0.000000, avg temp 56.571429, final temp 56 ) ------
+Loop 9 <line-385> - Time 0.000720 Total energy consumed 0.146985 Ave. Power Level 204.182700
+	-------- Loop 9 (sock 1 consumed 0.080580, avg temp 71.000000, final temp 71 ) ------
+	-------- Loop 9 (sock 2 consumed 0.066405, avg temp 56.571429, final temp 56 ) ------
+Loop 10 <line-85> - Time 0.103125 Total energy consumed 13.582215 Ave. Power Level 131.705990
+	-------- Loop 10 (sock 1 consumed 7.076445, avg temp 70.000000, final temp 71 ) ------
+	-------- Loop 10 (sock 2 consumed 6.505770, avg temp 55.750000, final temp 57 ) ------
+Loop 11 <line-131> - Time 0.002450 Total energy consumed 0.281580 Ave. Power Level 114.916541
+	-------- Loop 11 (sock 1 consumed 0.149850, avg temp 70.500000, final temp 71 ) ------
+	-------- Loop 11 (sock 2 consumed 0.131730, avg temp 56.000000, final temp 56 ) ------
+Loop 12 <line-167> - Time 0.188865 Total energy consumed 25.343115 Ave. Power Level 134.186207
+	-------- Loop 12 (sock 1 consumed 13.350345, avg temp 69.500000, final temp 70 ) ------
+	-------- Loop 12 (sock 2 consumed 11.992770, avg temp 55.000000, final temp 56 ) ------
+Loop 13 <line-215> - Time 3.820862 Total energy consumed 548.829870 Ave. Power Level 143.640318
+	-------- Loop 13 (sock 1 consumed 291.747960, avg temp 71.230769, final temp 71 ) ------
+	-------- Loop 13 (sock 2 consumed 257.081910, avg temp 56.769231, final temp 56 ) ------
+Loop 14 <line-101> - Time 4.218435 Total energy consumed 574.723890 Ave. Power Level 136.241032
+	-------- Loop 14 (sock 1 consumed 303.062460, avg temp 71.000000, final temp 71 ) ------
+	-------- Loop 14 (sock 2 consumed 271.661430, avg temp 57.000000, final temp 57 ) ------
+Loop 15 <line-277> - Time 2.397873 Total energy consumed 327.019350 Ave. Power Level 136.378952
+	-------- Loop 15 (sock 1 consumed 172.504815, avg temp 71.086957, final temp 71 ) ------
+	-------- Loop 15 (sock 2 consumed 154.514535, avg temp 56.913043, final temp 57 ) ------
+Loop 16 <line-308> - Time 0.001411 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 16 (sock 1 consumed 0.000000, avg temp 71.166667, final temp 71 ) ------
+	-------- Loop 16 (sock 2 consumed 0.000000, avg temp 56.888889, final temp 58 ) ------
+Loop 17 <line-196> - Time 0.000348 Total energy consumed 0.219120 Ave. Power Level 630.552078
+	-------- Loop 17 (sock 1 consumed 0.151875, avg temp 71.000000, final temp 71 ) ------
+	-------- Loop 17 (sock 2 consumed 0.067245, avg temp 57.000000, final temp 57 ) ------
+Application(EnergyStat) - Time 23.562977 Total energy consumed 3295.382010 Ave. Power Level 139.854231 Final Temperature socket 1 : 71  socket 2 : 56 
+	 ParallelApplication(EnergyStat) - Time 11.641908 Total energy consumed 1615.145445 Ave. Power Level 138.735458
+15
+/home/wwang/shared/tools/gcc-4.8.1/bin/gcc
+Memory used: 2.08984
+Loading 32-bit binary file: pnnl.bin, numvertices: 2361670, numEdges: 191402826
+File read time: 1.57972
+Before allocating graph
+Allocated graph: 0x19fa7c0
+Processing edges for vertex: 0, range(0, 166)
+Processing edges for vertex: 100000, range(58444108, 58444133)
+Processing edges for vertex: 200000, range(84376057, 84376362)
+Processing edges for vertex: 300000, range(106069163, 106069503)
+Processing edges for vertex: 400000, range(122097114, 122097513)
+Processing edges for vertex: 500000, range(135096418, 135096483)
+Processing edges for vertex: 600000, range(146097008, 146097061)
+Processing edges for vertex: 700000, range(155415410, 155415531)
+Processing edges for vertex: 800000, range(162595900, 162595989)
+Processing edges for vertex: 900000, range(168508374, 168508464)
+Processing edges for vertex: 1000000, range(173203321, 173203442)
+Processing edges for vertex: 1100000, range(176935100, 176935110)
+Processing edges for vertex: 1200000, range(179876260, 179876270)
+Processing edges for vertex: 1300000, range(182240081, 182240092)
+Processing edges for vertex: 1400000, range(184224513, 184224521)
+Processing edges for vertex: 1500000, range(185795161, 185795170)
+Processing edges for vertex: 1600000, range(187104124, 187104130)
+Processing edges for vertex: 1700000, range(188148455, 188148461)
+Processing edges for vertex: 1800000, range(188997836, 188997842)
+Processing edges for vertex: 1900000, range(189691532, 189691535)
+Processing edges for vertex: 2000000, range(190254658, 190254660)
+Processing edges for vertex: 2100000, range(190705814, 190705822)
+Processing edges for vertex: 2200000, range(191052755, 191052764)
+Processing edges for vertex: 2300000, range(191302662, 191302663)
+Graph populate time: 7.68185
+Total I/O time: 9.26161
+Running on: 15 threads
+Loaded graph from file: pnnl.bin
+Memory used: 2949.81
+
+Regional(EnergyStat) - Time 9.275617 Total energy consumed 1318.294725 Ave. Power Level 142.124753 
+Maximum degree for the graph: 5520
+Iteration: 0, conflicts: 26
+Iteration: 1, conflicts: 4
+Iteration: 2, conflicts: 0
+Total number of colors used: 1192
+Total number of conflicts overall: 0
+Number of rounds: 3
+SUCCESS: No conflicts found
+Coloring time: 0.745794
+Memory used: 2949.81
+Number of reordered colors: 1016
+End position for large colors: 0, node count: 551001, largest: 551001
+Node count cutoff: 472334
+e_xx: 1.27471e+08, a2_x: 6.32944e+11, currMod: 0.665967
+e_xx: 1.66156e+08, a2_x: 5.57172e+11, currMod: 0.868079
+e_xx: 1.73221e+08, a2_x: 4.93617e+11, currMod: 0.904995
+e_xx: 1.76351e+08, a2_x: 4.69381e+11, currMod: 0.92135
+e_xx: 1.77717e+08, a2_x: 5.30808e+11, currMod: 0.928482
+currMod: 0.92135, prevMod: -1
+Louvain time: 10.2746
+numClusters: 202867, time: 0.114024
+Next phase: 2
+Memory used: 2949.81
+End Structure 1245724 202867 vs 2692488
+Build next level time: 6.0622
+Iteration time: 16.4541
+Memory used: 2949.81
+e_xx: 1.5461e+08, a2_x: 5.32027e+11, currMod: 0.918704
+e_xx: 1.61808e+08, a2_x: 3.02313e+11, currMod: 0.96148
+e_xx: 1.63221e+08, a2_x: 2.96765e+11, currMod: 0.96988
+e_xx: 1.6354e+08, a2_x: 2.8191e+11, currMod: 0.971772
+e_xx: 1.63624e+08, a2_x: 2.9308e+11, currMod: 0.972272
+e_xx: 1.63724e+08, a2_x: 2.93367e+11, currMod: 0.972868
+e_xx: 1.63708e+08, a2_x: 2.81597e+11, currMod: 0.972774
+currMod: 0.972868, prevMod: 0.92135
+Louvain time: 1.61627
+numClusters: 51688, time: 0.016231
+Next phase: 3
+Memory used: 2949.81
+End Structure 487238 51688 vs 1026151
+Build next level time: 0.181765
+Iteration time: 1.81483
+Memory used: 2949.81
+e_xx: 1.63724e+08, a2_x: 2.90229e+11, currMod: 0.972837
+e_xx: 1.6468e+08, a2_x: 1.36614e+11, currMod: 0.978523
+e_xx: 1.64714e+08, a2_x: 1.42887e+11, currMod: 0.978727
+e_xx: 1.64831e+08, a2_x: 1.11782e+11, currMod: 0.97942
+e_xx: 1.64751e+08, a2_x: 1.18223e+11, currMod: 0.978944
+currMod: 0.97942, prevMod: 0.972868
+Louvain time: 0.508149
+numClusters: 25584, time: 0.005107
+Next phase: 4
+Memory used: 2949.81
+End Structure 174755 25584 vs 375094
+Build next level time: 0.072632
+Iteration time: 0.586265
+Memory used: 2949.81
+e_xx: 1.64831e+08, a2_x: 1.14083e+11, currMod: 0.979408
+e_xx: 1.65047e+08, a2_x: 3.84533e+10, currMod: 0.980698
+e_xx: 1.65051e+08, a2_x: 5.4151e+10, currMod: 0.980717
+e_xx: 1.65051e+08, a2_x: 6.15683e+10, currMod: 0.980719
+e_xx: 1.65052e+08, a2_x: 5.69145e+10, currMod: 0.980727
+e_xx: 1.65052e+08, a2_x: 6.09278e+10, currMod: 0.980722
+currMod: 0.980727, prevMod: 0.97942
+Louvain time: 0.294553
+numClusters: 22172, time: 0.003329
+Next phase: 5
+Memory used: 2949.81
+End Structure 90738 22172 vs 203648
+Build next level time: 0.031303
+Iteration time: 0.32952
+Memory used: 2949.81
+e_xx: 1.65052e+08, a2_x: 5.68352e+10, currMod: 0.980724
+e_xx: 1.65055e+08, a2_x: 3.48087e+10, currMod: 0.980739
+e_xx: 1.65055e+08, a2_x: 2.0663e+10, currMod: 0.98074
+currMod: 0.980739, prevMod: 0.980727
+Louvain time: 0.091228
+numClusters: 22016, time: 0.002964
+Next phase: 6
+Memory used: 2949.81
+End Structure 80664 22016 vs 183344
+Build next level time: 0.025555
+Iteration time: 0.119899
+Memory used: 2949.81
+e_xx: 1.65055e+08, a2_x: 3.32608e+10, currMod: 0.980739
+e_xx: 1.65055e+08, a2_x: 4.25401e+10, currMod: 0.980741
+e_xx: 1.65055e+08, a2_x: 3.94514e+10, currMod: 0.980741
+currMod: 0.980741, prevMod: 0.980739
+Louvain time: 0.079673
+numClusters: 21992, time: 0.002965
+Next phase: 7
+Memory used: 2949.81
+End Structure 78762 21992 vs 179516
+Build next level time: 0.02659
+Iteration time: 0.109347
+Memory used: 2949.81
+e_xx: 1.65055e+08, a2_x: 4.31029e+10, currMod: 0.980741
+e_xx: 1.65055e+08, a2_x: 3.99944e+10, currMod: 0.980741
+currMod: 0.980741, prevMod: 0.980741
+Louvain time: 0.052386
+numClusters: 21992, time: 0.002974
+Maximum degree for the graph: 484
+Iteration: 0, conflicts: 0
+Total number of colors used: 179
+Total number of conflicts overall: 0
+Number of rounds: 1
+SUCCESS: No conflicts found
+Number of reordered colors: 176
+End position for large colors: 0, node count: 21546, largest: 21546
+Node count cutoff: 4399
+e_xx: 1.65108e+08, a2_x: 2.15591e+10, currMod: 0.981057
+e_xx: 1.65119e+08, a2_x: 2.20723e+10, currMod: 0.981119
+e_xx: 1.6512e+08, a2_x: 1.8606e+10, currMod: 0.981128
+e_xx: 1.65121e+08, a2_x: 1.53476e+10, currMod: 0.981131
+e_xx: 1.6516e+08, a2_x: 1.10283e+10, currMod: 0.981363
+e_xx: 1.65184e+08, a2_x: 5.46142e+09, currMod: 0.981507
+e_xx: 1.65459e+08, a2_x: 2.81847e+10, currMod: 0.983144
+e_xx: 1.65467e+08, a2_x: 2.3491e+10, currMod: 0.983192
+e_xx: 1.65477e+08, a2_x: 1.97436e+10, currMod: 0.983249
+e_xx: 1.6555e+08, a2_x: 1.99235e+10, currMod: 0.983685
+e_xx: 1.65572e+08, a2_x: 2.01728e+10, currMod: 0.983815
+e_xx: 1.68007e+08, a2_x: 2.20783e+09, currMod: 0.998283
+e_xx: 1.68046e+08, a2_x: 1.06359e+10, currMod: 0.998514
+e_xx: 1.67962e+08, a2_x: 6.18294e+09, currMod: 0.998017
+End Structure 216 21556 vs 21988
+currMod: 0.998514, prevMod: 0.980741
+numClusters: 21556
+Total iteration time: 19.4139
+
+Loop 0 <line-37> - Time 0.000233 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 0 (sock 1 consumed 0.000000, avg temp 71.500000, final temp 72 ) ------
+	-------- Loop 0 (sock 2 consumed 0.000000, avg temp 57.000000, final temp 57 ) ------
+Loop 1 <line-57> - Time 0.000236 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 1 (sock 1 consumed 0.000000, avg temp 72.000000, final temp 72 ) ------
+	-------- Loop 1 (sock 2 consumed 0.000000, avg temp 57.500000, final temp 58 ) ------
+Loop 2 <line-79> - Time 0.000318 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 2 (sock 1 consumed 0.000000, avg temp 72.000000, final temp 72 ) ------
+	-------- Loop 2 (sock 2 consumed 0.000000, avg temp 57.500000, final temp 58 ) ------
+Loop 3 <line-173> - Time 0.483018 Total energy consumed 67.051710 Ave. Power Level 138.818356
+	-------- Loop 3 (sock 1 consumed 35.517915, avg temp 71.250000, final temp 72 ) ------
+	-------- Loop 3 (sock 2 consumed 31.533795, avg temp 57.000000, final temp 57 ) ------
+Loop 4 <line-195> - Time 0.000248 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 4 (sock 1 consumed 0.000000, avg temp 71.500000, final temp 72 ) ------
+	-------- Loop 4 (sock 2 consumed 0.000000, avg temp 57.000000, final temp 57 ) ------
+Loop 5 <line-225> - Time 0.158367 Total energy consumed 22.150875 Ave. Power Level 139.870736
+	-------- Loop 5 (sock 1 consumed 11.702235, avg temp 71.000000, final temp 71 ) ------
+	-------- Loop 5 (sock 2 consumed 10.448640, avg temp 58.000000, final temp 58 ) ------
+Loop 6 <line-164> - Time 0.086389 Total energy consumed 12.096195 Ave. Power Level 140.020772
+	-------- Loop 6 (sock 1 consumed 6.380310, avg temp 71.285714, final temp 72 ) ------
+	-------- Loop 6 (sock 2 consumed 5.715885, avg temp 57.500000, final temp 58 ) ------
+Loop 7 <line-344> - Time 0.312216 Total energy consumed 42.638205 Ave. Power Level 136.566267
+	-------- Loop 7 (sock 1 consumed 22.622775, avg temp 71.625000, final temp 71 ) ------
+	-------- Loop 7 (sock 2 consumed 20.015430, avg temp 57.375000, final temp 58 ) ------
+Loop 8 <line-363> - Time 0.000376 Total energy consumed 0.135120 Ave. Power Level 358.885415
+	-------- Loop 8 (sock 1 consumed 0.071085, avg temp 71.500000, final temp 71 ) ------
+	-------- Loop 8 (sock 2 consumed 0.064035, avg temp 57.375000, final temp 58 ) ------
+Loop 9 <line-385> - Time 0.000732 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 9 (sock 1 consumed 0.000000, avg temp 71.500000, final temp 71 ) ------
+	-------- Loop 9 (sock 2 consumed 0.000000, avg temp 57.250000, final temp 58 ) ------
+Loop 10 <line-85> - Time 0.105523 Total energy consumed 13.947480 Ave. Power Level 132.174551
+	-------- Loop 10 (sock 1 consumed 7.292595, avg temp 70.500000, final temp 71 ) ------
+	-------- Loop 10 (sock 2 consumed 6.654885, avg temp 57.250000, final temp 58 ) ------
+Loop 11 <line-131> - Time 0.002495 Total energy consumed 0.419550 Ave. Power Level 168.129156
+	-------- Loop 11 (sock 1 consumed 0.221670, avg temp 71.000000, final temp 71 ) ------
+	-------- Loop 11 (sock 2 consumed 0.197880, avg temp 57.000000, final temp 58 ) ------
+Loop 12 <line-167> - Time 0.170258 Total energy consumed 22.846845 Ave. Power Level 134.189237
+	-------- Loop 12 (sock 1 consumed 12.031245, avg temp 70.500000, final temp 71 ) ------
+	-------- Loop 12 (sock 2 consumed 10.815600, avg temp 56.500000, final temp 57 ) ------
+Loop 13 <line-215> - Time 7.698930 Total energy consumed 1082.284890 Ave. Power Level 140.576012
+	-------- Loop 13 (sock 1 consumed 574.205400, avg temp 71.157895, final temp 71 ) ------
+	-------- Loop 13 (sock 2 consumed 508.079490, avg temp 57.578947, final temp 57 ) ------
+Loop 14 <line-101> - Time 6.097617 Total energy consumed 832.881375 Ave. Power Level 136.591285
+	-------- Loop 14 (sock 1 consumed 442.266150, avg temp 71.571429, final temp 72 ) ------
+	-------- Loop 14 (sock 2 consumed 390.615225, avg temp 57.571429, final temp 58 ) ------
+Loop 15 <line-277> - Time 2.624911 Total energy consumed 358.652070 Ave. Power Level 136.633989
+	-------- Loop 15 (sock 1 consumed 189.615420, avg temp 71.653846, final temp 71 ) ------
+	-------- Loop 15 (sock 2 consumed 169.036650, avg temp 57.269231, final temp 58 ) ------
+Loop 16 <line-308> - Time 0.001476 Total energy consumed 0.134775 Ave. Power Level 91.331828
+	-------- Loop 16 (sock 1 consumed 0.070830, avg temp 71.700000, final temp 72 ) ------
+	-------- Loop 16 (sock 2 consumed 0.063945, avg temp 57.150000, final temp 57 ) ------
+Loop 17 <line-196> - Time 0.000352 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 17 (sock 1 consumed 0.000000, avg temp 72.000000, final temp 72 ) ------
+	-------- Loop 17 (sock 2 consumed 0.000000, avg temp 57.000000, final temp 57 ) ------
+Application(EnergyStat) - Time 29.660844 Total energy consumed 4138.846800 Ave. Power Level 139.539078 Final Temperature socket 1 : 71  socket 2 : 58 
+	 ParallelApplication(EnergyStat) - Time 17.743696 Total energy consumed 2455.239090 Ave. Power Level 138.372475
+15
+/home/wwang/shared/tools/gcc-4.8.1/bin/gcc
+Memory used: 2.10938
+Loading 32-bit binary file: pnnl.bin, numvertices: 2361670, numEdges: 191402826
+File read time: 1.56985
+Before allocating graph
+Allocated graph: 0x1576c60
+Processing edges for vertex: 0, range(0, 166)
+Processing edges for vertex: 100000, range(58444108, 58444133)
+Processing edges for vertex: 200000, range(84376057, 84376362)
+Processing edges for vertex: 300000, range(106069163, 106069503)
+Processing edges for vertex: 400000, range(122097114, 122097513)
+Processing edges for vertex: 500000, range(135096418, 135096483)
+Processing edges for vertex: 600000, range(146097008, 146097061)
+Processing edges for vertex: 700000, range(155415410, 155415531)
+Processing edges for vertex: 800000, range(162595900, 162595989)
+Processing edges for vertex: 900000, range(168508374, 168508464)
+Processing edges for vertex: 1000000, range(173203321, 173203442)
+Processing edges for vertex: 1100000, range(176935100, 176935110)
+Processing edges for vertex: 1200000, range(179876260, 179876270)
+Processing edges for vertex: 1300000, range(182240081, 182240092)
+Processing edges for vertex: 1400000, range(184224513, 184224521)
+Processing edges for vertex: 1500000, range(185795161, 185795170)
+Processing edges for vertex: 1600000, range(187104124, 187104130)
+Processing edges for vertex: 1700000, range(188148455, 188148461)
+Processing edges for vertex: 1800000, range(188997836, 188997842)
+Processing edges for vertex: 1900000, range(189691532, 189691535)
+Processing edges for vertex: 2000000, range(190254658, 190254660)
+Processing edges for vertex: 2100000, range(190705814, 190705822)
+Processing edges for vertex: 2200000, range(191052755, 191052764)
+Processing edges for vertex: 2300000, range(191302662, 191302663)
+Graph populate time: 7.66179
+Total I/O time: 9.23168
+Running on: 15 threads
+Loaded graph from file: pnnl.bin
+Memory used: 2949.83
+
+Regional(EnergyStat) - Time 9.248029 Total energy consumed 1315.527900 Ave. Power Level 142.249536 
+Maximum degree for the graph: 5520
+Iteration: 0, conflicts: 26
+Iteration: 1, conflicts: 2
+Iteration: 2, conflicts: 0
+Total number of colors used: 1186
+Total number of conflicts overall: 0
+Number of rounds: 3
+SUCCESS: No conflicts found
+Coloring time: 0.623654
+Memory used: 2949.83
+Number of reordered colors: 1016
+End position for large colors: 0, node count: 550618, largest: 550618
+Node count cutoff: 472334
+e_xx: 1.25364e+08, a2_x: 6.14839e+11, currMod: 0.654956
+e_xx: 1.67132e+08, a2_x: 5.43101e+11, currMod: 0.873181
+e_xx: 1.73484e+08, a2_x: 5.46867e+11, currMod: 0.906368
+e_xx: 1.76068e+08, a2_x: 5.18025e+11, currMod: 0.919869
+e_xx: 1.77455e+08, a2_x: 5.23814e+11, currMod: 0.927112
+currMod: 0.919869, prevMod: -1
+Louvain time: 6.4855
+numClusters: 203167, time: 0.113687
+Next phase: 2
+Memory used: 2949.83
+End Structure 1262235 203167 vs 2725830
+Build next level time: 3.56646
+Iteration time: 10.1688
+Memory used: 2949.83
+e_xx: 1.55839e+08, a2_x: 5.20081e+11, currMod: 0.917871
+e_xx: 1.63409e+08, a2_x: 3.35066e+11, currMod: 0.962465
+e_xx: 1.64649e+08, a2_x: 2.59804e+11, currMod: 0.969768
+e_xx: 1.64937e+08, a2_x: 2.59177e+11, currMod: 0.971463
+e_xx: 1.64982e+08, a2_x: 2.6237e+11, currMod: 0.971729
+e_xx: 1.65075e+08, a2_x: 2.57393e+11, currMod: 0.972277
+e_xx: 1.65061e+08, a2_x: 2.63347e+11, currMod: 0.972194
+currMod: 0.972277, prevMod: 0.919869
+Louvain time: 1.47759
+numClusters: 52488, time: 0.016165
+Next phase: 3
+Memory used: 2949.83
+End Structure 505004 52488 vs 1062481
+Build next level time: 0.196223
+Iteration time: 1.69071
+Memory used: 2949.83
+e_xx: 1.65075e+08, a2_x: 2.60991e+11, currMod: 0.972249
+e_xx: 1.66029e+08, a2_x: 7.86754e+10, currMod: 0.977874
+e_xx: 1.66079e+08, a2_x: 6.11312e+10, currMod: 0.97817
+e_xx: 1.66103e+08, a2_x: 4.45849e+10, currMod: 0.978311
+e_xx: 1.6611e+08, a2_x: 4.34812e+10, currMod: 0.978354
+e_xx: 1.66122e+08, a2_x: 3.8643e+10, currMod: 0.978424
+e_xx: 1.66117e+08, a2_x: 2.68738e+10, currMod: 0.978393
+currMod: 0.978424, prevMod: 0.972277
+Louvain time: 0.711323
+numClusters: 25145, time: 0.005139
+Next phase: 4
+Memory used: 2949.83
+End Structure 175722 25145 vs 376589
+Build next level time: 0.068276
+Iteration time: 0.785124
+Memory used: 2949.83
+e_xx: 1.66122e+08, a2_x: 3.67001e+10, currMod: 0.978411
+e_xx: 1.6649e+08, a2_x: 7.13067e+09, currMod: 0.980582
+e_xx: 1.66509e+08, a2_x: 2.26109e+10, currMod: 0.980691
+e_xx: 1.6651e+08, a2_x: 2.18993e+10, currMod: 0.980698
+e_xx: 1.66511e+08, a2_x: 1.91353e+10, currMod: 0.980705
+e_xx: 1.66511e+08, a2_x: 2.31861e+10, currMod: 0.980705
+currMod: 0.980705, prevMod: 0.978424
+Louvain time: 0.292505
+numClusters: 22128, time: 0.003328
+Next phase: 5
+Memory used: 2949.83
+End Structure 85248 22128 vs 192624
+Build next level time: 0.031416
+Iteration time: 0.327593
+Memory used: 2949.83
+e_xx: 1.66511e+08, a2_x: 1.76733e+10, currMod: 0.980704
+e_xx: 1.66513e+08, a2_x: 4.059e+09, currMod: 0.980712
+e_xx: 1.66513e+08, a2_x: 1.17865e+10, currMod: 0.980712
+currMod: 0.980712, prevMod: 0.980705
+Louvain time: 0.083876
+numClusters: 21995, time: 0.002942
+Next phase: 6
+Memory used: 2949.83
+End Structure 78203 21995 vs 178401
+Build next level time: 0.022937
+Iteration time: 0.110025
+Memory used: 2949.83
+e_xx: 1.66513e+08, a2_x: 4.79124e+09, currMod: 0.980712
+e_xx: 1.66513e+08, a2_x: 4.49437e+09, currMod: 0.980712
+currMod: 0.980712, prevMod: 0.980712
+Louvain time: 0.052262
+numClusters: 21995, time: 0.002972
+Maximum degree for the graph: 494
+Iteration: 0, conflicts: 0
+Total number of colors used: 180
+Total number of conflicts overall: 0
+Number of rounds: 1
+SUCCESS: No conflicts found
+Number of reordered colors: 179
+End position for large colors: 0, node count: 21544, largest: 21544
+Node count cutoff: 4399
+e_xx: 1.66548e+08, a2_x: 4.35622e+09, currMod: 0.980919
+e_xx: 1.69385e+08, a2_x: -1.36951e+10, currMod: 0.997632
+e_xx: 1.69326e+08, a2_x: -1.36549e+10, currMod: 0.997284
+End Structure 1442 21592 vs 24476
+currMod: 0.997632, prevMod: 0.980712
+numClusters: 21592
+Total iteration time: 13.0823
+
+Loop 0 <line-37> - Time 0.000231 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 0 (sock 1 consumed 0.000000, avg temp 72.000000, final temp 72 ) ------
+	-------- Loop 0 (sock 2 consumed 0.000000, avg temp 57.000000, final temp 57 ) ------
+Loop 1 <line-57> - Time 0.000235 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 1 (sock 1 consumed 0.000000, avg temp 72.000000, final temp 72 ) ------
+	-------- Loop 1 (sock 2 consumed 0.000000, avg temp 57.000000, final temp 57 ) ------
+Loop 2 <line-79> - Time 0.000332 Total energy consumed 0.144750 Ave. Power Level 435.558417
+	-------- Loop 2 (sock 1 consumed 0.077385, avg temp 72.500000, final temp 72 ) ------
+	-------- Loop 2 (sock 2 consumed 0.067365, avg temp 57.500000, final temp 57 ) ------
+Loop 3 <line-173> - Time 0.379006 Total energy consumed 52.679610 Ave. Power Level 138.994144
+	-------- Loop 3 (sock 1 consumed 27.998565, avg temp 72.500000, final temp 71 ) ------
+	-------- Loop 3 (sock 2 consumed 24.681045, avg temp 57.000000, final temp 57 ) ------
+Loop 4 <line-195> - Time 0.000241 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 4 (sock 1 consumed 0.000000, avg temp 72.000000, final temp 71 ) ------
+	-------- Loop 4 (sock 2 consumed 0.000000, avg temp 57.000000, final temp 57 ) ------
+Loop 5 <line-225> - Time 0.138822 Total energy consumed 19.501485 Ave. Power Level 140.478107
+	-------- Loop 5 (sock 1 consumed 10.414110, avg temp 71.500000, final temp 71 ) ------
+	-------- Loop 5 (sock 2 consumed 9.087375, avg temp 57.000000, final temp 57 ) ------
+Loop 6 <line-164> - Time 0.083542 Total energy consumed 11.490015 Ave. Power Level 137.535942
+	-------- Loop 6 (sock 1 consumed 6.089955, avg temp 71.916667, final temp 72 ) ------
+	-------- Loop 6 (sock 2 consumed 5.400060, avg temp 57.250000, final temp 58 ) ------
+Loop 7 <line-344> - Time 0.311809 Total energy consumed 42.717705 Ave. Power Level 136.999697
+	-------- Loop 7 (sock 1 consumed 22.536480, avg temp 71.714286, final temp 71 ) ------
+	-------- Loop 7 (sock 2 consumed 20.181225, avg temp 57.571429, final temp 57 ) ------
+Loop 8 <line-363> - Time 0.000359 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 8 (sock 1 consumed 0.000000, avg temp 71.714286, final temp 71 ) ------
+	-------- Loop 8 (sock 2 consumed 0.000000, avg temp 57.571429, final temp 57 ) ------
+Loop 9 <line-385> - Time 0.000702 Total energy consumed 0.211275 Ave. Power Level 301.056744
+	-------- Loop 9 (sock 1 consumed 0.078870, avg temp 71.857143, final temp 72 ) ------
+	-------- Loop 9 (sock 2 consumed 0.132405, avg temp 57.571429, final temp 57 ) ------
+Loop 10 <line-85> - Time 0.104158 Total energy consumed 13.569075 Ave. Power Level 130.273612
+	-------- Loop 10 (sock 1 consumed 7.028520, avg temp 71.000000, final temp 72 ) ------
+	-------- Loop 10 (sock 2 consumed 6.540555, avg temp 56.500000, final temp 57 ) ------
+Loop 11 <line-131> - Time 0.002477 Total energy consumed 0.354750 Ave. Power Level 143.197137
+	-------- Loop 11 (sock 1 consumed 0.221730, avg temp 71.500000, final temp 72 ) ------
+	-------- Loop 11 (sock 2 consumed 0.133020, avg temp 56.500000, final temp 57 ) ------
+Loop 12 <line-167> - Time 0.171357 Total energy consumed 23.034885 Ave. Power Level 134.426489
+	-------- Loop 12 (sock 1 consumed 12.066750, avg temp 71.000000, final temp 72 ) ------
+	-------- Loop 12 (sock 2 consumed 10.968135, avg temp 55.500000, final temp 56 ) ------
+Loop 13 <line-215> - Time 3.801894 Total energy consumed 547.817640 Ave. Power Level 144.090727
+	-------- Loop 13 (sock 1 consumed 291.340830, avg temp 72.000000, final temp 71 ) ------
+	-------- Loop 13 (sock 2 consumed 256.476810, avg temp 57.750000, final temp 57 ) ------
+Loop 14 <line-101> - Time 3.597105 Total energy consumed 492.407850 Ave. Power Level 136.890043
+	-------- Loop 14 (sock 1 consumed 260.217000, avg temp 72.000000, final temp 72 ) ------
+	-------- Loop 14 (sock 2 consumed 232.190850, avg temp 57.666667, final temp 58 ) ------
+Loop 15 <line-277> - Time 2.600803 Total energy consumed 354.996000 Ave. Power Level 136.494743
+	-------- Loop 15 (sock 1 consumed 187.870545, avg temp 72.200000, final temp 71 ) ------
+	-------- Loop 15 (sock 2 consumed 167.125455, avg temp 57.480000, final temp 57 ) ------
+Loop 16 <line-308> - Time 0.001424 Total energy consumed 0.137700 Ave. Power Level 96.696179
+	-------- Loop 16 (sock 1 consumed 0.073110, avg temp 72.250000, final temp 72 ) ------
+	-------- Loop 16 (sock 2 consumed 0.064590, avg temp 57.400000, final temp 57 ) ------
+Loop 17 <line-196> - Time 0.000308 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 17 (sock 1 consumed 0.000000, avg temp 72.000000, final temp 72 ) ------
+	-------- Loop 17 (sock 2 consumed 0.000000, avg temp 57.000000, final temp 57 ) ------
+Application(EnergyStat) - Time 23.039092 Total energy consumed 3234.024885 Ave. Power Level 140.371196 Final Temperature socket 1 : 71  socket 2 : 57 
+	 ParallelApplication(EnergyStat) - Time 11.194806 Total energy consumed 1559.062740 Ave. Power Level 139.266618
+15
+/home/wwang/shared/tools/gcc-4.8.1/bin/gcc
+Memory used: 2.07422
+Loading 32-bit binary file: pnnl.bin, numvertices: 2361670, numEdges: 191402826
+File read time: 1.57347
+Before allocating graph
+Allocated graph: 0x17d4820
+Processing edges for vertex: 0, range(0, 166)
+Processing edges for vertex: 100000, range(58444108, 58444133)
+Processing edges for vertex: 200000, range(84376057, 84376362)
+Processing edges for vertex: 300000, range(106069163, 106069503)
+Processing edges for vertex: 400000, range(122097114, 122097513)
+Processing edges for vertex: 500000, range(135096418, 135096483)
+Processing edges for vertex: 600000, range(146097008, 146097061)
+Processing edges for vertex: 700000, range(155415410, 155415531)
+Processing edges for vertex: 800000, range(162595900, 162595989)
+Processing edges for vertex: 900000, range(168508374, 168508464)
+Processing edges for vertex: 1000000, range(173203321, 173203442)
+Processing edges for vertex: 1100000, range(176935100, 176935110)
+Processing edges for vertex: 1200000, range(179876260, 179876270)
+Processing edges for vertex: 1300000, range(182240081, 182240092)
+Processing edges for vertex: 1400000, range(184224513, 184224521)
+Processing edges for vertex: 1500000, range(185795161, 185795170)
+Processing edges for vertex: 1600000, range(187104124, 187104130)
+Processing edges for vertex: 1700000, range(188148455, 188148461)
+Processing edges for vertex: 1800000, range(188997836, 188997842)
+Processing edges for vertex: 1900000, range(189691532, 189691535)
+Processing edges for vertex: 2000000, range(190254658, 190254660)
+Processing edges for vertex: 2100000, range(190705814, 190705822)
+Processing edges for vertex: 2200000, range(191052755, 191052764)
+Processing edges for vertex: 2300000, range(191302662, 191302663)
+Graph populate time: 7.68128
+Total I/O time: 9.25479
+Running on: 15 threads
+Loaded graph from file: pnnl.bin
+Memory used: 2949.8
+
+Regional(EnergyStat) - Time 9.268840 Total energy consumed 1319.685150 Ave. Power Level 142.378671 
+Maximum degree for the graph: 5520
+Iteration: 0, conflicts: 49
+Iteration: 1, conflicts: 18
+Iteration: 2, conflicts: 11
+Iteration: 3, conflicts: 8
+Iteration: 4, conflicts: 6
+Iteration: 5, conflicts: 4
+Iteration: 6, conflicts: 2
+Iteration: 7, conflicts: 0
+Total number of colors used: 1189
+Total number of conflicts overall: 0
+Number of rounds: 8
+SUCCESS: No conflicts found
+Coloring time: 0.868229
+Memory used: 2949.8
+Number of reordered colors: 1006
+End position for large colors: 0, node count: 551782, largest: 551782
+Node count cutoff: 472334
+e_xx: 1.15174e+08, a2_x: 5.69107e+11, currMod: 0.601723
+e_xx: 1.58755e+08, a2_x: 5.88993e+11, currMod: 0.829412
+e_xx: 1.66413e+08, a2_x: 5.36571e+11, currMod: 0.869426
+e_xx: 1.68991e+08, a2_x: 5.08312e+11, currMod: 0.882893
+e_xx: 1.70144e+08, a2_x: 5.57069e+11, currMod: 0.888914
+currMod: 0.882893, prevMod: -1
+Louvain time: 12.048
+numClusters: 199680, time: 0.113759
+Next phase: 2
+Memory used: 2949.8
+End Structure 1158549 199680 vs 2514584
+Build next level time: 3.15651
+Iteration time: 15.3216
+Memory used: 2949.8
+e_xx: 1.68151e+08, a2_x: 5.54022e+11, currMod: 0.88777
+e_xx: 1.83169e+08, a2_x: 3.16483e+11, currMod: 0.967069
+e_xx: 1.84517e+08, a2_x: 3.08043e+11, currMod: 0.974184
+e_xx: 1.84898e+08, a2_x: 2.81967e+11, currMod: 0.976197
+e_xx: 1.84941e+08, a2_x: 2.78868e+11, currMod: 0.976426
+e_xx: 1.85046e+08, a2_x: 2.76403e+11, currMod: 0.97698
+e_xx: 1.85017e+08, a2_x: 2.87046e+11, currMod: 0.976827
+currMod: 0.97698, prevMod: 0.882893
+Louvain time: 2.13378
+numClusters: 45692, time: 0.014157
+Next phase: 3
+Memory used: 2949.8
+End Structure 386976 45692 vs 819629
+Build next level time: 0.213991
+Iteration time: 2.36255
+Memory used: 2949.8
+e_xx: 1.85045e+08, a2_x: 2.73123e+11, currMod: 0.976968
+e_xx: 1.85892e+08, a2_x: 9.44627e+10, currMod: 0.981445
+e_xx: 1.86024e+08, a2_x: 1.15629e+11, currMod: 0.982141
+e_xx: 1.86089e+08, a2_x: 9.93818e+10, currMod: 0.982485
+e_xx: 1.86064e+08, a2_x: 9.08232e+10, currMod: 0.982352
+currMod: 0.982485, prevMod: 0.97698
+Louvain time: 0.467166
+numClusters: 24329, time: 0.004668
+Next phase: 4
+Memory used: 2949.8
+End Structure 149773 24329 vs 323875
+Build next level time: 0.068704
+Iteration time: 0.540937
+Memory used: 2949.8
+e_xx: 1.86089e+08, a2_x: 1.011e+11, currMod: 0.982472
+e_xx: 1.86189e+08, a2_x: 2.97404e+10, currMod: 0.982999
+e_xx: 1.86212e+08, a2_x: 3.68007e+10, currMod: 0.983123
+e_xx: 1.86215e+08, a2_x: 1.65652e+10, currMod: 0.983141
+e_xx: 1.86216e+08, a2_x: 4.47957e+10, currMod: 0.983141
+currMod: 0.983141, prevMod: 0.982485
+Louvain time: 0.229993
+numClusters: 22149, time: 0.00325
+Next phase: 5
+Memory used: 2949.8
+End Structure 84349 22149 vs 190847
+Build next level time: 0.026985
+Iteration time: 0.260505
+Memory used: 2949.8
+e_xx: 1.86215e+08, a2_x: 1.67874e+10, currMod: 0.983138
+e_xx: 1.86218e+08, a2_x: 1.8361e+10, currMod: 0.983154
+e_xx: 1.86219e+08, a2_x: 1.12583e+10, currMod: 0.983158
+e_xx: 1.86219e+08, a2_x: 2.05928e+09, currMod: 0.983157
+currMod: 0.983158, prevMod: 0.983141
+Louvain time: 0.121155
+numClusters: 22028, time: 0.003013
+Next phase: 6
+Memory used: 2949.8
+End Structure 75595 22028 vs 173218
+Build next level time: 0.021932
+Iteration time: 0.146223
+Memory used: 2949.8
+e_xx: 1.86219e+08, a2_x: 1.06516e+10, currMod: 0.983158
+e_xx: 1.86219e+08, a2_x: 1.33223e+10, currMod: 0.983158
+currMod: 0.983158, prevMod: 0.983158
+Louvain time: 0.051121
+numClusters: 22028, time: 0.00295
+Maximum degree for the graph: 509
+Iteration: 0, conflicts: 0
+Total number of colors used: 178
+Total number of conflicts overall: 0
+Number of rounds: 1
+SUCCESS: No conflicts found
+Number of reordered colors: 176
+End position for large colors: 0, node count: 21588, largest: 21588
+Node count cutoff: 4406
+e_xx: 1.86219e+08, a2_x: 1.33223e+10, currMod: 0.983158
+End Structure 75295 22022 vs 172612
+currMod: 0.983158, prevMod: 0.983158
+numClusters: 22022
+Total iteration time: 18.6318
+
+Loop 0 <line-37> - Time 0.000234 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 0 (sock 1 consumed 0.000000, avg temp 72.000000, final temp 72 ) ------
+	-------- Loop 0 (sock 2 consumed 0.000000, avg temp 57.500000, final temp 57 ) ------
+Loop 1 <line-57> - Time 0.000239 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 1 (sock 1 consumed 0.000000, avg temp 72.500000, final temp 72 ) ------
+	-------- Loop 1 (sock 2 consumed 0.000000, avg temp 57.500000, final temp 57 ) ------
+Loop 2 <line-79> - Time 0.000335 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 2 (sock 1 consumed 0.000000, avg temp 72.500000, final temp 72 ) ------
+	-------- Loop 2 (sock 2 consumed 0.000000, avg temp 57.500000, final temp 57 ) ------
+Loop 3 <line-173> - Time 0.626910 Total energy consumed 87.058845 Ave. Power Level 138.869722
+	-------- Loop 3 (sock 1 consumed 45.961365, avg temp 72.777778, final temp 71 ) ------
+	-------- Loop 3 (sock 2 consumed 41.097480, avg temp 57.111111, final temp 58 ) ------
+Loop 4 <line-195> - Time 0.000258 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 4 (sock 1 consumed 0.000000, avg temp 72.000000, final temp 71 ) ------
+	-------- Loop 4 (sock 2 consumed 0.000000, avg temp 57.500000, final temp 58 ) ------
+Loop 5 <line-225> - Time 0.138177 Total energy consumed 19.495455 Ave. Power Level 141.089987
+	-------- Loop 5 (sock 1 consumed 10.388715, avg temp 71.500000, final temp 71 ) ------
+	-------- Loop 5 (sock 2 consumed 9.106740, avg temp 57.500000, final temp 58 ) ------
+Loop 6 <line-164> - Time 0.078177 Total energy consumed 10.804230 Ave. Power Level 138.202712
+	-------- Loop 6 (sock 1 consumed 5.729550, avg temp 72.166667, final temp 72 ) ------
+	-------- Loop 6 (sock 2 consumed 5.074680, avg temp 57.416667, final temp 57 ) ------
+Loop 7 <line-344> - Time 0.310672 Total energy consumed 42.671655 Ave. Power Level 137.352699
+	-------- Loop 7 (sock 1 consumed 22.575465, avg temp 71.857143, final temp 71 ) ------
+	-------- Loop 7 (sock 2 consumed 20.096190, avg temp 57.571429, final temp 58 ) ------
+Loop 8 <line-363> - Time 0.000368 Total energy consumed 0.136560 Ave. Power Level 371.539265
+	-------- Loop 8 (sock 1 consumed 0.072390, avg temp 71.857143, final temp 71 ) ------
+	-------- Loop 8 (sock 2 consumed 0.064170, avg temp 57.428571, final temp 58 ) ------
+Loop 9 <line-385> - Time 0.000672 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 9 (sock 1 consumed 0.000000, avg temp 71.857143, final temp 71 ) ------
+	-------- Loop 9 (sock 2 consumed 0.000000, avg temp 57.571429, final temp 58 ) ------
+Loop 10 <line-85> - Time 0.104832 Total energy consumed 13.925685 Ave. Power Level 132.837996
+	-------- Loop 10 (sock 1 consumed 7.253745, avg temp 71.500000, final temp 72 ) ------
+	-------- Loop 10 (sock 2 consumed 6.671940, avg temp 56.500000, final temp 57 ) ------
+Loop 11 <line-131> - Time 0.002433 Total energy consumed 0.418620 Ave. Power Level 172.025743
+	-------- Loop 11 (sock 1 consumed 0.222225, avg temp 71.500000, final temp 72 ) ------
+	-------- Loop 11 (sock 2 consumed 0.196395, avg temp 57.000000, final temp 57 ) ------
+Loop 12 <line-167> - Time 0.171373 Total energy consumed 23.040900 Ave. Power Level 134.449017
+	-------- Loop 12 (sock 1 consumed 12.113160, avg temp 71.500000, final temp 72 ) ------
+	-------- Loop 12 (sock 2 consumed 10.927740, avg temp 56.500000, final temp 57 ) ------
+Loop 13 <line-215> - Time 9.445995 Total energy consumed 1325.014275 Ave. Power Level 140.272595
+	-------- Loop 13 (sock 1 consumed 701.696670, avg temp 72.500000, final temp 72 ) ------
+	-------- Loop 13 (sock 2 consumed 623.317605, avg temp 57.666667, final temp 58 ) ------
+Loop 14 <line-101> - Time 3.236175 Total energy consumed 443.326845 Ave. Power Level 136.990991
+	-------- Loop 14 (sock 1 consumed 232.431180, avg temp 71.833333, final temp 72 ) ------
+	-------- Loop 14 (sock 2 consumed 210.895665, avg temp 57.500000, final temp 58 ) ------
+Loop 15 <line-277> - Time 2.987911 Total energy consumed 408.765030 Ave. Power Level 136.806283
+	-------- Loop 15 (sock 1 consumed 215.155980, avg temp 72.217391, final temp 72 ) ------
+	-------- Loop 15 (sock 2 consumed 193.609050, avg temp 57.391304, final temp 58 ) ------
+Loop 16 <line-308> - Time 0.001362 Total energy consumed 0.209190 Ave. Power Level 153.557387
+	-------- Loop 16 (sock 1 consumed 0.143970, avg temp 72.388889, final temp 73 ) ------
+	-------- Loop 16 (sock 2 consumed 0.065220, avg temp 57.444444, final temp 57 ) ------
+Loop 17 <line-196> - Time 0.000352 Total energy consumed 0.208635 Ave. Power Level 593.243954
+	-------- Loop 17 (sock 1 consumed 0.075150, avg temp 72.000000, final temp 72 ) ------
+	-------- Loop 17 (sock 2 consumed 0.133485, avg temp 57.000000, final temp 57 ) ------
+Application(EnergyStat) - Time 28.882472 Total energy consumed 4041.260100 Ave. Power Level 139.920850 Final Temperature socket 1 : 72  socket 2 : 58 
+	 ParallelApplication(EnergyStat) - Time 17.106477 Total energy consumed 2375.075925 Ave. Power Level 138.840742
+15
+/home/wwang/shared/tools/gcc-4.8.1/bin/gcc
+Memory used: 2.10938
+Loading 32-bit binary file: pnnl.bin, numvertices: 2361670, numEdges: 191402826
+File read time: 1.56965
+Before allocating graph
+Allocated graph: 0x9a0c60
+Processing edges for vertex: 0, range(0, 166)
+Processing edges for vertex: 100000, range(58444108, 58444133)
+Processing edges for vertex: 200000, range(84376057, 84376362)
+Processing edges for vertex: 300000, range(106069163, 106069503)
+Processing edges for vertex: 400000, range(122097114, 122097513)
+Processing edges for vertex: 500000, range(135096418, 135096483)
+Processing edges for vertex: 600000, range(146097008, 146097061)
+Processing edges for vertex: 700000, range(155415410, 155415531)
+Processing edges for vertex: 800000, range(162595900, 162595989)
+Processing edges for vertex: 900000, range(168508374, 168508464)
+Processing edges for vertex: 1000000, range(173203321, 173203442)
+Processing edges for vertex: 1100000, range(176935100, 176935110)
+Processing edges for vertex: 1200000, range(179876260, 179876270)
+Processing edges for vertex: 1300000, range(182240081, 182240092)
+Processing edges for vertex: 1400000, range(184224513, 184224521)
+Processing edges for vertex: 1500000, range(185795161, 185795170)
+Processing edges for vertex: 1600000, range(187104124, 187104130)
+Processing edges for vertex: 1700000, range(188148455, 188148461)
+Processing edges for vertex: 1800000, range(188997836, 188997842)
+Processing edges for vertex: 1900000, range(189691532, 189691535)
+Processing edges for vertex: 2000000, range(190254658, 190254660)
+Processing edges for vertex: 2100000, range(190705814, 190705822)
+Processing edges for vertex: 2200000, range(191052755, 191052764)
+Processing edges for vertex: 2300000, range(191302662, 191302663)
+Graph populate time: 7.67472
+Total I/O time: 9.2444
+Running on: 15 threads
+Loaded graph from file: pnnl.bin
+Memory used: 2949.83
+
+Regional(EnergyStat) - Time 9.256389 Total energy consumed 1318.411740 Ave. Power Level 142.432615 
+Maximum degree for the graph: 5520
+Iteration: 0, conflicts: 28
+Iteration: 1, conflicts: 1
+Iteration: 2, conflicts: 0
+Total number of colors used: 1186
+Total number of conflicts overall: 0
+Number of rounds: 3
+SUCCESS: No conflicts found
+Coloring time: 0.620593
+Memory used: 2949.83
+Number of reordered colors: 1031
+End position for large colors: 0, node count: 550718, largest: 550718
+Node count cutoff: 472334
+e_xx: 1.17416e+08, a2_x: 5.70148e+11, currMod: 0.613434
+e_xx: 1.59938e+08, a2_x: 6.19587e+11, currMod: 0.835592
+e_xx: 1.68326e+08, a2_x: 5.76068e+11, currMod: 0.879416
+e_xx: 1.7262e+08, a2_x: 5.85189e+11, currMod: 0.901851
+e_xx: 1.74202e+08, a2_x: 5.49481e+11, currMod: 0.910117
+currMod: 0.901851, prevMod: -1
+Louvain time: 6.55425
+numClusters: 204362, time: 0.114055
+Next phase: 2
+Memory used: 2949.83
+End Structure 1294620 204362 vs 2791785
+Build next level time: 3.38091
+Iteration time: 10.0524
+Memory used: 2949.83
+e_xx: 1.66668e+08, a2_x: 5.51108e+11, currMod: 0.906463
+e_xx: 1.77295e+08, a2_x: 2.96384e+11, currMod: 0.96427
+e_xx: 1.78793e+08, a2_x: 2.65221e+11, currMod: 0.97242
+e_xx: 1.79084e+08, a2_x: 2.10025e+11, currMod: 0.974001
+e_xx: 1.79133e+08, a2_x: 2.51234e+11, currMod: 0.974268
+e_xx: 1.79245e+08, a2_x: 2.28187e+11, currMod: 0.974878
+e_xx: 1.79208e+08, a2_x: 2.69534e+11, currMod: 0.974674
+currMod: 0.974878, prevMod: 0.901851
+Louvain time: 1.5395
+numClusters: 54933, time: 0.017259
+Next phase: 3
+Memory used: 2949.83
+End Structure 552421 54933 vs 1159760
+Build next level time: 0.17836
+Iteration time: 1.73589
+Memory used: 2949.83
+e_xx: 1.79245e+08, a2_x: 2.32169e+11, currMod: 0.97486
+e_xx: 1.80173e+08, a2_x: 9.0488e+10, currMod: 0.979914
+e_xx: 1.80336e+08, a2_x: 5.25148e+10, currMod: 0.980798
+e_xx: 1.80378e+08, a2_x: 2.32999e+10, currMod: 0.981029
+e_xx: 1.80386e+08, a2_x: 7.48879e+10, currMod: 0.981071
+e_xx: 1.80392e+08, a2_x: 4.02426e+10, currMod: 0.981107
+e_xx: 1.80389e+08, a2_x: 5.41438e+10, currMod: 0.981087
+currMod: 0.981107, prevMod: 0.974878
+Louvain time: 0.737804
+numClusters: 25184, time: 0.005175
+Next phase: 4
+Memory used: 2949.83
+End Structure 174357 25184 vs 373898
+Build next level time: 0.075235
+Iteration time: 0.818585
+Memory used: 2949.83
+e_xx: 1.80392e+08, a2_x: 4.01344e+10, currMod: 0.981094
+e_xx: 1.8062e+08, a2_x: 1.7054e+10, currMod: 0.982331
+e_xx: 1.80627e+08, a2_x: 3.03155e+10, currMod: 0.98237
+e_xx: 1.80628e+08, a2_x: 9.09678e+09, currMod: 0.982375
+e_xx: 1.8063e+08, a2_x: 1.5925e+10, currMod: 0.982387
+e_xx: 1.80629e+08, a2_x: 1.5496e+10, currMod: 0.982382
+currMod: 0.982387, prevMod: 0.981107
+Louvain time: 0.281003
+numClusters: 22131, time: 0.003331
+Next phase: 5
+Memory used: 2949.83
+End Structure 82346 22131 vs 186823
+Build next level time: 0.029776
+Iteration time: 0.314461
+Memory used: 2949.83
+e_xx: 1.8063e+08, a2_x: 1.67396e+10, currMod: 0.982385
+e_xx: 1.80633e+08, a2_x: 2.82526e+10, currMod: 0.982398
+e_xx: 1.80633e+08, a2_x: 2.82383e+10, currMod: 0.982398
+currMod: 0.982398, prevMod: 0.982387
+Louvain time: 0.080666
+numClusters: 21990, time: 0.002992
+Next phase: 6
+Memory used: 2949.83
+End Structure 73596 21990 vs 169182
+Build next level time: 0.022568
+Iteration time: 0.106409
+Memory used: 2949.83
+e_xx: 1.80633e+08, a2_x: 2.90302e+10, currMod: 0.982398
+e_xx: 1.80633e+08, a2_x: 3.042e+10, currMod: 0.982398
+currMod: 0.982398, prevMod: 0.982398
+Louvain time: 0.049226
+numClusters: 21990, time: 0.002981
+Maximum degree for the graph: 486
+Iteration: 0, conflicts: 0
+Total number of colors used: 181
+Total number of conflicts overall: 0
+Number of rounds: 1
+SUCCESS: No conflicts found
+Number of reordered colors: 179
+End position for large colors: 0, node count: 21559, largest: 21559
+Node count cutoff: 4398
+e_xx: 1.80693e+08, a2_x: 1.51788e+10, currMod: 0.982724
+e_xx: 1.80852e+08, a2_x: -1.16195e+10, currMod: 0.983595
+e_xx: 1.81359e+08, a2_x: 1.2578e+09, currMod: 0.98635
+e_xx: 1.82112e+08, a2_x: -1.5339e+09, currMod: 0.990444
+e_xx: 1.82064e+08, a2_x: -5.92536e+09, currMod: 0.990185
+End Structure 3232 21625 vs 28089
+currMod: 0.990444, prevMod: 0.982398
+numClusters: 21625
+Total iteration time: 13.0277
+
+Loop 0 <line-37> - Time 0.000236 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 0 (sock 1 consumed 0.000000, avg temp 72.500000, final temp 72 ) ------
+	-------- Loop 0 (sock 2 consumed 0.000000, avg temp 57.000000, final temp 57 ) ------
+Loop 1 <line-57> - Time 0.000234 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 1 (sock 1 consumed 0.000000, avg temp 73.000000, final temp 73 ) ------
+	-------- Loop 1 (sock 2 consumed 0.000000, avg temp 57.500000, final temp 58 ) ------
+Loop 2 <line-79> - Time 0.000330 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 2 (sock 1 consumed 0.000000, avg temp 73.000000, final temp 73 ) ------
+	-------- Loop 2 (sock 2 consumed 0.000000, avg temp 57.500000, final temp 58 ) ------
+Loop 3 <line-173> - Time 0.358824 Total energy consumed 49.927140 Ave. Power Level 139.140902
+	-------- Loop 3 (sock 1 consumed 26.616300, avg temp 72.750000, final temp 72 ) ------
+	-------- Loop 3 (sock 2 consumed 23.310840, avg temp 57.250000, final temp 58 ) ------
+Loop 4 <line-195> - Time 0.000246 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 4 (sock 1 consumed 0.000000, avg temp 72.500000, final temp 72 ) ------
+	-------- Loop 4 (sock 2 consumed 0.000000, avg temp 57.500000, final temp 58 ) ------
+Loop 5 <line-225> - Time 0.156010 Total energy consumed 21.795150 Ave. Power Level 139.703884
+	-------- Loop 5 (sock 1 consumed 11.447790, avg temp 72.000000, final temp 72 ) ------
+	-------- Loop 5 (sock 2 consumed 10.347360, avg temp 57.500000, final temp 58 ) ------
+Loop 6 <line-164> - Time 0.087480 Total energy consumed 11.978055 Ave. Power Level 136.924075
+	-------- Loop 6 (sock 1 consumed 6.384525, avg temp 72.333333, final temp 72 ) ------
+	-------- Loop 6 (sock 2 consumed 5.593530, avg temp 57.250000, final temp 57 ) ------
+Loop 7 <line-344> - Time 0.304508 Total energy consumed 42.046905 Ave. Power Level 138.081382
+	-------- Loop 7 (sock 1 consumed 22.399635, avg temp 72.285714, final temp 72 ) ------
+	-------- Loop 7 (sock 2 consumed 19.647270, avg temp 57.428571, final temp 57 ) ------
+Loop 8 <line-363> - Time 0.000359 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 8 (sock 1 consumed 0.000000, avg temp 72.285714, final temp 72 ) ------
+	-------- Loop 8 (sock 2 consumed 0.000000, avg temp 57.428571, final temp 57 ) ------
+Loop 9 <line-385> - Time 0.000716 Total energy consumed 0.132495 Ave. Power Level 185.068527
+	-------- Loop 9 (sock 1 consumed 0.068085, avg temp 72.285714, final temp 72 ) ------
+	-------- Loop 9 (sock 2 consumed 0.064410, avg temp 57.428571, final temp 57 ) ------
+Loop 10 <line-85> - Time 0.104960 Total energy consumed 14.005020 Ave. Power Level 133.431561
+	-------- Loop 10 (sock 1 consumed 7.330455, avg temp 71.250000, final temp 72 ) ------
+	-------- Loop 10 (sock 2 consumed 6.674565, avg temp 56.500000, final temp 57 ) ------
+Loop 11 <line-131> - Time 0.002452 Total energy consumed 0.340500 Ave. Power Level 138.872178
+	-------- Loop 11 (sock 1 consumed 0.144600, avg temp 71.500000, final temp 72 ) ------
+	-------- Loop 11 (sock 2 consumed 0.195900, avg temp 56.500000, final temp 57 ) ------
+Loop 12 <line-167> - Time 0.189423 Total energy consumed 25.456545 Ave. Power Level 134.390130
+	-------- Loop 12 (sock 1 consumed 13.408605, avg temp 72.000000, final temp 73 ) ------
+	-------- Loop 12 (sock 2 consumed 12.047940, avg temp 56.500000, final temp 57 ) ------
+Loop 13 <line-215> - Time 3.867788 Total energy consumed 557.348790 Ave. Power Level 144.100152
+	-------- Loop 13 (sock 1 consumed 296.320905, avg temp 72.900000, final temp 72 ) ------
+	-------- Loop 13 (sock 2 consumed 261.027885, avg temp 57.700000, final temp 57 ) ------
+Loop 14 <line-101> - Time 3.395993 Total energy consumed 465.611415 Ave. Power Level 137.106122
+	-------- Loop 14 (sock 1 consumed 245.378280, avg temp 72.333333, final temp 72 ) ------
+	-------- Loop 14 (sock 2 consumed 220.233135, avg temp 57.333333, final temp 57 ) ------
+Loop 15 <line-277> - Time 2.671552 Total energy consumed 365.029890 Ave. Power Level 136.635878
+	-------- Loop 15 (sock 1 consumed 193.178940, avg temp 72.480000, final temp 72 ) ------
+	-------- Loop 15 (sock 2 consumed 171.850950, avg temp 57.800000, final temp 58 ) ------
+Loop 16 <line-308> - Time 0.001484 Total energy consumed 0.271245 Ave. Power Level 182.777063
+	-------- Loop 16 (sock 1 consumed 0.143535, avg temp 72.600000, final temp 73 ) ------
+	-------- Loop 16 (sock 2 consumed 0.127710, avg temp 57.900000, final temp 58 ) ------
+Loop 17 <line-196> - Time 0.000319 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 17 (sock 1 consumed 0.000000, avg temp 72.000000, final temp 72 ) ------
+	-------- Loop 17 (sock 2 consumed 0.000000, avg temp 57.000000, final temp 57 ) ------
+Application(EnergyStat) - Time 22.991452 Total energy consumed 3230.941530 Ave. Power Level 140.527945 Final Temperature socket 1 : 72  socket 2 : 58 
+	 ParallelApplication(EnergyStat) - Time 11.142913 Total energy consumed 1553.943150 Ave. Power Level 139.455742
+15
+/home/wwang/shared/tools/gcc-4.8.1/bin/gcc
+Memory used: 2.10547
+Loading 32-bit binary file: pnnl.bin, numvertices: 2361670, numEdges: 191402826
+File read time: 1.57134
+Before allocating graph
+Allocated graph: 0xd38c60
+Processing edges for vertex: 0, range(0, 166)
+Processing edges for vertex: 100000, range(58444108, 58444133)
+Processing edges for vertex: 200000, range(84376057, 84376362)
+Processing edges for vertex: 300000, range(106069163, 106069503)
+Processing edges for vertex: 400000, range(122097114, 122097513)
+Processing edges for vertex: 500000, range(135096418, 135096483)
+Processing edges for vertex: 600000, range(146097008, 146097061)
+Processing edges for vertex: 700000, range(155415410, 155415531)
+Processing edges for vertex: 800000, range(162595900, 162595989)
+Processing edges for vertex: 900000, range(168508374, 168508464)
+Processing edges for vertex: 1000000, range(173203321, 173203442)
+Processing edges for vertex: 1100000, range(176935100, 176935110)
+Processing edges for vertex: 1200000, range(179876260, 179876270)
+Processing edges for vertex: 1300000, range(182240081, 182240092)
+Processing edges for vertex: 1400000, range(184224513, 184224521)
+Processing edges for vertex: 1500000, range(185795161, 185795170)
+Processing edges for vertex: 1600000, range(187104124, 187104130)
+Processing edges for vertex: 1700000, range(188148455, 188148461)
+Processing edges for vertex: 1800000, range(188997836, 188997842)
+Processing edges for vertex: 1900000, range(189691532, 189691535)
+Processing edges for vertex: 2000000, range(190254658, 190254660)
+Processing edges for vertex: 2100000, range(190705814, 190705822)
+Processing edges for vertex: 2200000, range(191052755, 191052764)
+Processing edges for vertex: 2300000, range(191302662, 191302663)
+Graph populate time: 7.66532
+Total I/O time: 9.23669
+Running on: 15 threads
+Loaded graph from file: pnnl.bin
+Memory used: 2949.83
+
+Regional(EnergyStat) - Time 9.251070 Total energy consumed 1318.437360 Ave. Power Level 142.517277 
+Maximum degree for the graph: 5520
+Iteration: 0, conflicts: 28
+Iteration: 1, conflicts: 2
+Iteration: 2, conflicts: 1
+Iteration: 3, conflicts: 0
+Total number of colors used: 1190
+Total number of conflicts overall: 0
+Number of rounds: 4
+SUCCESS: No conflicts found
+Coloring time: 0.652898
+Memory used: 2949.83
+Number of reordered colors: 1023
+End position for large colors: 0, node count: 550741, largest: 550741
+Node count cutoff: 472334
+e_xx: 1.27261e+08, a2_x: 5.48577e+11, currMod: 0.664872
+e_xx: 1.67349e+08, a2_x: 5.95109e+11, currMod: 0.874312
+e_xx: 1.73173e+08, a2_x: 5.33476e+11, currMod: 0.904743
+e_xx: 1.75476e+08, a2_x: 4.92108e+11, currMod: 0.916778
+e_xx: 1.76723e+08, a2_x: 5.06474e+11, currMod: 0.923289
+currMod: 0.916778, prevMod: -1
+Louvain time: 6.49635
+numClusters: 204045, time: 0.115095
+Next phase: 2
+Memory used: 2949.83
+End Structure 1292150 204045 vs 2786542
+Build next level time: 3.5405
+Iteration time: 10.1552
+Memory used: 2949.83
+e_xx: 1.56237e+08, a2_x: 5.09592e+11, currMod: 0.914135
+e_xx: 1.64157e+08, a2_x: 3.52181e+11, currMod: 0.960483
+e_xx: 1.65277e+08, a2_x: 2.81853e+11, currMod: 0.967036
+e_xx: 1.65561e+08, a2_x: 2.42994e+11, currMod: 0.968702
+e_xx: 1.65673e+08, a2_x: 2.65727e+11, currMod: 0.969356
+e_xx: 1.65758e+08, a2_x: 2.45776e+11, currMod: 0.969853
+e_xx: 1.65766e+08, a2_x: 2.62582e+11, currMod: 0.969899
+e_xx: 1.65813e+08, a2_x: 2.45011e+11, currMod: 0.970172
+e_xx: 1.658e+08, a2_x: 2.58201e+11, currMod: 0.9701
+currMod: 0.970172, prevMod: 0.916778
+Louvain time: 1.90651
+numClusters: 52357, time: 0.016056
+Next phase: 3
+Memory used: 2949.83
+End Structure 523709 52357 vs 1099764
+Build next level time: 0.178001
+Iteration time: 2.10133
+Memory used: 2949.83
+e_xx: 1.65812e+08, a2_x: 2.45967e+11, currMod: 0.970141
+e_xx: 1.67223e+08, a2_x: 9.27379e+10, currMod: 0.978401
+e_xx: 1.67305e+08, a2_x: 3.59866e+10, currMod: 0.978879
+e_xx: 1.67407e+08, a2_x: 2.70447e+10, currMod: 0.97948
+e_xx: 1.67337e+08, a2_x: 2.27723e+10, currMod: 0.979069
+currMod: 0.97948, prevMod: 0.970172
+Louvain time: 0.541661
+numClusters: 25769, time: 0.005213
+Next phase: 4
+Memory used: 2949.83
+End Structure 181409 25769 vs 388587
+Build next level time: 0.076697
+Iteration time: 0.623951
+Memory used: 2949.83
+e_xx: 1.67407e+08, a2_x: 2.64128e+10, currMod: 0.979468
+e_xx: 1.67678e+08, a2_x: 1.24191e+10, currMod: 0.981054
+e_xx: 1.6768e+08, a2_x: 1.7584e+10, currMod: 0.981064
+e_xx: 1.67682e+08, a2_x: 1.22339e+10, currMod: 0.981075
+e_xx: 1.67681e+08, a2_x: 1.56557e+10, currMod: 0.981068
+currMod: 0.981075, prevMod: 0.97948
+Louvain time: 0.249301
+numClusters: 22184, time: 0.003396
+Next phase: 5
+Memory used: 2949.83
+End Structure 91156 22184 vs 204496
+Build next level time: 0.032741
+Iteration time: 0.285776
+Memory used: 2949.83
+e_xx: 1.67682e+08, a2_x: 1.39828e+10, currMod: 0.981073
+e_xx: 1.67685e+08, a2_x: 4.41589e+09, currMod: 0.981091
+e_xx: 1.67685e+08, a2_x: -1.62245e+09, currMod: 0.981092
+e_xx: 1.67685e+08, a2_x: -3.96068e+09, currMod: 0.981093
+currMod: 0.981092, prevMod: 0.981075
+Louvain time: 0.118905
+numClusters: 21994, time: 0.002976
+Next phase: 6
+Memory used: 2949.83
+End Structure 79341 21994 vs 180676
+Build next level time: 0.022208
+Iteration time: 0.144355
+Memory used: 2949.83
+e_xx: 1.67685e+08, a2_x: -1.93382e+09, currMod: 0.981092
+e_xx: 1.67685e+08, a2_x: 2.0887e+09, currMod: 0.981093
+currMod: 0.981092, prevMod: 0.981092
+Louvain time: 0.054284
+numClusters: 21994, time: 0.002974
+Maximum degree for the graph: 488
+Iteration: 0, conflicts: 0
+Total number of colors used: 182
+Total number of conflicts overall: 0
+Number of rounds: 1
+SUCCESS: No conflicts found
+Number of reordered colors: 181
+End position for large colors: 0, node count: 21547, largest: 21547
+Node count cutoff: 4399
+e_xx: 1.67685e+08, a2_x: 8.71742e+08, currMod: 0.981093
+End Structure 78565 21985 vs 179115
+currMod: 0.981092, prevMod: 0.981092
+numClusters: 21985
+Total iteration time: 13.3106
+
+Loop 0 <line-37> - Time 0.000237 Total energy consumed 0.145080 Ave. Power Level 612.425811
+	-------- Loop 0 (sock 1 consumed 0.077610, avg temp 73.000000, final temp 73 ) ------
+	-------- Loop 0 (sock 2 consumed 0.067470, avg temp 57.500000, final temp 58 ) ------
+Loop 1 <line-57> - Time 0.000236 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 1 (sock 1 consumed 0.000000, avg temp 72.000000, final temp 72 ) ------
+	-------- Loop 1 (sock 2 consumed 0.000000, avg temp 57.500000, final temp 58 ) ------
+Loop 2 <line-79> - Time 0.000330 Total energy consumed 0.144030 Ave. Power Level 436.506133
+	-------- Loop 2 (sock 1 consumed 0.077610, avg temp 72.500000, final temp 72 ) ------
+	-------- Loop 2 (sock 2 consumed 0.066420, avg temp 58.000000, final temp 58 ) ------
+Loop 3 <line-173> - Time 0.385532 Total energy consumed 53.399490 Ave. Power Level 138.508472
+	-------- Loop 3 (sock 1 consumed 28.353675, avg temp 73.000000, final temp 73 ) ------
+	-------- Loop 3 (sock 2 consumed 25.045815, avg temp 57.200000, final temp 58 ) ------
+Loop 4 <line-195> - Time 0.000263 Total energy consumed 0.137715 Ave. Power Level 522.722873
+	-------- Loop 4 (sock 1 consumed 0.073050, avg temp 73.000000, final temp 73 ) ------
+	-------- Loop 4 (sock 2 consumed 0.064665, avg temp 57.500000, final temp 58 ) ------
+Loop 5 <line-225> - Time 0.161548 Total energy consumed 22.479060 Ave. Power Level 139.147906
+	-------- Loop 5 (sock 1 consumed 11.719290, avg temp 73.000000, final temp 73 ) ------
+	-------- Loop 5 (sock 2 consumed 10.759770, avg temp 57.500000, final temp 58 ) ------
+Loop 6 <line-164> - Time 0.087055 Total energy consumed 11.790015 Ave. Power Level 135.431435
+	-------- Loop 6 (sock 1 consumed 6.268320, avg temp 72.083333, final temp 72 ) ------
+	-------- Loop 6 (sock 2 consumed 5.521695, avg temp 57.666667, final temp 58 ) ------
+Loop 7 <line-344> - Time 0.312194 Total energy consumed 42.851475 Ave. Power Level 137.259253
+	-------- Loop 7 (sock 1 consumed 22.648770, avg temp 72.142857, final temp 72 ) ------
+	-------- Loop 7 (sock 2 consumed 20.202705, avg temp 57.714286, final temp 58 ) ------
+Loop 8 <line-363> - Time 0.000364 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 8 (sock 1 consumed 0.000000, avg temp 72.142857, final temp 72 ) ------
+	-------- Loop 8 (sock 2 consumed 0.000000, avg temp 57.714286, final temp 58 ) ------
+Loop 9 <line-385> - Time 0.000733 Total energy consumed 0.147555 Ave. Power Level 201.426524
+	-------- Loop 9 (sock 1 consumed 0.080220, avg temp 72.000000, final temp 72 ) ------
+	-------- Loop 9 (sock 2 consumed 0.067335, avg temp 57.714286, final temp 58 ) ------
+Loop 10 <line-85> - Time 0.106207 Total energy consumed 14.047965 Ave. Power Level 132.269364
+	-------- Loop 10 (sock 1 consumed 7.368510, avg temp 71.750000, final temp 72 ) ------
+	-------- Loop 10 (sock 2 consumed 6.679455, avg temp 57.000000, final temp 58 ) ------
+Loop 11 <line-131> - Time 0.002436 Total energy consumed 0.420900 Ave. Power Level 172.794317
+	-------- Loop 11 (sock 1 consumed 0.223830, avg temp 72.000000, final temp 72 ) ------
+	-------- Loop 11 (sock 2 consumed 0.197070, avg temp 57.500000, final temp 58 ) ------
+Loop 12 <line-167> - Time 0.157913 Total energy consumed 21.137550 Ave. Power Level 133.855700
+	-------- Loop 12 (sock 1 consumed 11.152305, avg temp 71.000000, final temp 72 ) ------
+	-------- Loop 12 (sock 2 consumed 9.985245, avg temp 57.000000, final temp 58 ) ------
+Loop 13 <line-215> - Time 3.809276 Total energy consumed 549.677610 Ave. Power Level 144.299775
+	-------- Loop 13 (sock 1 consumed 292.437840, avg temp 73.000000, final temp 73 ) ------
+	-------- Loop 13 (sock 2 consumed 257.239770, avg temp 58.833333, final temp 58 ) ------
+Loop 14 <line-101> - Time 3.574542 Total energy consumed 489.877110 Ave. Power Level 137.046130
+	-------- Loop 14 (sock 1 consumed 257.974890, avg temp 72.333333, final temp 73 ) ------
+	-------- Loop 14 (sock 2 consumed 231.902220, avg temp 57.833333, final temp 58 ) ------
+Loop 15 <line-277> - Time 2.853670 Total energy consumed 390.860010 Ave. Power Level 136.967464
+	-------- Loop 15 (sock 1 consumed 206.930280, avg temp 72.360000, final temp 73 ) ------
+	-------- Loop 15 (sock 2 consumed 183.929730, avg temp 58.000000, final temp 58 ) ------
+Loop 16 <line-308> - Time 0.001624 Total energy consumed 0.272160 Ave. Power Level 167.620371
+	-------- Loop 16 (sock 1 consumed 0.144285, avg temp 72.300000, final temp 72 ) ------
+	-------- Loop 16 (sock 2 consumed 0.127875, avg temp 58.000000, final temp 59 ) ------
+Loop 17 <line-196> - Time 0.000357 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 17 (sock 1 consumed 0.000000, avg temp 73.000000, final temp 73 ) ------
+	-------- Loop 17 (sock 2 consumed 0.000000, avg temp 58.000000, final temp 58 ) ------
+Application(EnergyStat) - Time 23.313774 Total energy consumed 3277.398570 Ave. Power Level 140.577781 Final Temperature socket 1 : 72  socket 2 : 58 
+	 ParallelApplication(EnergyStat) - Time 11.454516 Total energy consumed 1597.387725 Ave. Power Level 139.454838
+15
+/home/wwang/shared/tools/gcc-4.8.1/bin/gcc
+Memory used: 2.10938
+Loading 32-bit binary file: pnnl.bin, numvertices: 2361670, numEdges: 191402826
+File read time: 1.57131
+Before allocating graph
+Allocated graph: 0x152ec60
+Processing edges for vertex: 0, range(0, 166)
+Processing edges for vertex: 100000, range(58444108, 58444133)
+Processing edges for vertex: 200000, range(84376057, 84376362)
+Processing edges for vertex: 300000, range(106069163, 106069503)
+Processing edges for vertex: 400000, range(122097114, 122097513)
+Processing edges for vertex: 500000, range(135096418, 135096483)
+Processing edges for vertex: 600000, range(146097008, 146097061)
+Processing edges for vertex: 700000, range(155415410, 155415531)
+Processing edges for vertex: 800000, range(162595900, 162595989)
+Processing edges for vertex: 900000, range(168508374, 168508464)
+Processing edges for vertex: 1000000, range(173203321, 173203442)
+Processing edges for vertex: 1100000, range(176935100, 176935110)
+Processing edges for vertex: 1200000, range(179876260, 179876270)
+Processing edges for vertex: 1300000, range(182240081, 182240092)
+Processing edges for vertex: 1400000, range(184224513, 184224521)
+Processing edges for vertex: 1500000, range(185795161, 185795170)
+Processing edges for vertex: 1600000, range(187104124, 187104130)
+Processing edges for vertex: 1700000, range(188148455, 188148461)
+Processing edges for vertex: 1800000, range(188997836, 188997842)
+Processing edges for vertex: 1900000, range(189691532, 189691535)
+Processing edges for vertex: 2000000, range(190254658, 190254660)
+Processing edges for vertex: 2100000, range(190705814, 190705822)
+Processing edges for vertex: 2200000, range(191052755, 191052764)
+Processing edges for vertex: 2300000, range(191302662, 191302663)
+Graph populate time: 7.68137
+Total I/O time: 9.25272
+Running on: 15 threads
+Loaded graph from file: pnnl.bin
+Memory used: 2949.83
+
+Regional(EnergyStat) - Time 9.266585 Total energy consumed 1321.374825 Ave. Power Level 142.595663 
+Maximum degree for the graph: 5520
+Iteration: 0, conflicts: 21
+Iteration: 1, conflicts: 2
+Iteration: 2, conflicts: 1
+Iteration: 3, conflicts: 0
+Total number of colors used: 1190
+Total number of conflicts overall: 0
+Number of rounds: 4
+SUCCESS: No conflicts found
+Coloring time: 0.623917
+Memory used: 2949.83
+Number of reordered colors: 1016
+End position for large colors: 0, node count: 550643, largest: 550643
+Node count cutoff: 472334
+e_xx: 1.17315e+08, a2_x: 6.35135e+11, currMod: 0.612905
+e_xx: 1.61628e+08, a2_x: 6.01379e+11, currMod: 0.844423
+e_xx: 1.68975e+08, a2_x: 4.93293e+11, currMod: 0.882811
+e_xx: 1.71933e+08, a2_x: 5.17879e+11, currMod: 0.898262
+e_xx: 1.73368e+08, a2_x: 5.40213e+11, currMod: 0.905763
+currMod: 0.898262, prevMod: -1
+Louvain time: 6.45384
+numClusters: 203076, time: 0.114713
+Next phase: 2
+Memory used: 2949.83
+End Structure 1270556 203076 vs 2742404
+Build next level time: 3.47546
+Iteration time: 10.0473
+Memory used: 2949.83
+e_xx: 1.60561e+08, a2_x: 5.4177e+11, currMod: 0.899036
+e_xx: 1.71824e+08, a2_x: 3.6025e+11, currMod: 0.96211
+e_xx: 1.73372e+08, a2_x: 3.33773e+11, currMod: 0.970779
+e_xx: 1.73707e+08, a2_x: 3.09603e+11, currMod: 0.972652
+e_xx: 1.73857e+08, a2_x: 2.77451e+11, currMod: 0.973494
+e_xx: 1.73922e+08, a2_x: 2.90749e+11, currMod: 0.973859
+e_xx: 1.7395e+08, a2_x: 2.5643e+11, currMod: 0.974018
+e_xx: 1.73975e+08, a2_x: 2.80707e+11, currMod: 0.974155
+e_xx: 1.73987e+08, a2_x: 2.61051e+11, currMod: 0.974224
+e_xx: 1.73998e+08, a2_x: 2.91235e+11, currMod: 0.974284
+e_xx: 1.73998e+08, a2_x: 2.66778e+11, currMod: 0.974285
+currMod: 0.974284, prevMod: 0.898262
+Louvain time: 2.18685
+numClusters: 48643, time: 0.015571
+Next phase: 3
+Memory used: 2949.83
+End Structure 452468 48643 vs 953574
+Build next level time: 0.186903
+Iteration time: 2.38991
+Memory used: 2949.83
+e_xx: 1.73998e+08, a2_x: 2.89234e+11, currMod: 0.974261
+e_xx: 1.74973e+08, a2_x: 1.25928e+11, currMod: 0.979728
+e_xx: 1.75008e+08, a2_x: 6.21636e+10, currMod: 0.979921
+e_xx: 1.75119e+08, a2_x: 1.06431e+11, currMod: 0.980542
+e_xx: 1.75024e+08, a2_x: 1.02101e+11, currMod: 0.98001
+currMod: 0.980542, prevMod: 0.974284
+Louvain time: 0.48341
+numClusters: 25239, time: 0.00508
+Next phase: 4
+Memory used: 2949.83
+End Structure 167201 25239 vs 359641
+Build next level time: 0.060518
+Iteration time: 0.549405
+Memory used: 2949.83
+e_xx: 1.75119e+08, a2_x: 1.07641e+11, currMod: 0.980532
+e_xx: 1.75335e+08, a2_x: 1.38715e+10, currMod: 0.98175
+e_xx: 1.75355e+08, a2_x: 4.32094e+09, currMod: 0.981859
+e_xx: 1.75355e+08, a2_x: -7.04622e+09, currMod: 0.981858
+currMod: 0.981859, prevMod: 0.980542
+Louvain time: 0.19321
+numClusters: 22258, time: 0.003353
+Next phase: 5
+Memory used: 2949.83
+End Structure 93465 22258 vs 209188
+Build next level time: 0.031568
+Iteration time: 0.22846
+Memory used: 2949.83
+e_xx: 1.75355e+08, a2_x: 2.77482e+09, currMod: 0.981858
+e_xx: 1.75357e+08, a2_x: 1.88813e+08, currMod: 0.981871
+e_xx: 1.75358e+08, a2_x: -8.1295e+09, currMod: 0.981873
+e_xx: 1.75357e+08, a2_x: -1.06269e+10, currMod: 0.981872
+currMod: 0.981873, prevMod: 0.981859
+Louvain time: 0.122115
+numClusters: 22013, time: 0.002986
+Next phase: 6
+Memory used: 2949.83
+End Structure 80159 22013 vs 182331
+Build next level time: 0.025223
+Iteration time: 0.150491
+Memory used: 2949.83
+e_xx: 1.75358e+08, a2_x: -5.74099e+09, currMod: 0.981873
+e_xx: 1.75358e+08, a2_x: -8.76908e+09, currMod: 0.981874
+currMod: 0.981873, prevMod: 0.981873
+Louvain time: 0.053438
+numClusters: 22013, time: 0.002974
+Maximum degree for the graph: 501
+Iteration: 0, conflicts: 0
+Total number of colors used: 177
+Total number of conflicts overall: 0
+Number of rounds: 1
+SUCCESS: No conflicts found
+Number of reordered colors: 174
+End position for large colors: 0, node count: 21559, largest: 21559
+Node count cutoff: 4403
+e_xx: 1.75459e+08, a2_x: -1.2102e+10, currMod: 0.982441
+e_xx: 1.75822e+08, a2_x: -1.49242e+10, currMod: 0.984475
+e_xx: 1.77968e+08, a2_x: 1.00686e+10, currMod: 0.99649
+e_xx: 1.77593e+08, a2_x: 9.14498e+09, currMod: 0.994388
+End Structure 2310 21623 vs 26243
+currMod: 0.99649, prevMod: 0.981873
+numClusters: 21623
+Total iteration time: 13.3656
+
+Loop 0 <line-37> - Time 0.000227 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 0 (sock 1 consumed 0.000000, avg temp 73.000000, final temp 73 ) ------
+	-------- Loop 0 (sock 2 consumed 0.000000, avg temp 57.500000, final temp 58 ) ------
+Loop 1 <line-57> - Time 0.000237 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 1 (sock 1 consumed 0.000000, avg temp 72.500000, final temp 72 ) ------
+	-------- Loop 1 (sock 2 consumed 0.000000, avg temp 57.500000, final temp 57 ) ------
+Loop 2 <line-79> - Time 0.000348 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 2 (sock 1 consumed 0.000000, avg temp 72.500000, final temp 72 ) ------
+	-------- Loop 2 (sock 2 consumed 0.000000, avg temp 57.500000, final temp 57 ) ------
+Loop 3 <line-173> - Time 0.358525 Total energy consumed 50.078400 Ave. Power Level 139.678924
+	-------- Loop 3 (sock 1 consumed 26.793180, avg temp 72.800000, final temp 72 ) ------
+	-------- Loop 3 (sock 2 consumed 23.285220, avg temp 57.200000, final temp 58 ) ------
+Loop 4 <line-195> - Time 0.000241 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 4 (sock 1 consumed 0.000000, avg temp 72.500000, final temp 72 ) ------
+	-------- Loop 4 (sock 2 consumed 0.000000, avg temp 57.500000, final temp 58 ) ------
+Loop 5 <line-225> - Time 0.159572 Total energy consumed 22.343580 Ave. Power Level 140.021995
+	-------- Loop 5 (sock 1 consumed 11.701050, avg temp 72.500000, final temp 72 ) ------
+	-------- Loop 5 (sock 2 consumed 10.642530, avg temp 58.000000, final temp 58 ) ------
+Loop 6 <line-164> - Time 0.079684 Total energy consumed 11.172315 Ave. Power Level 140.207654
+	-------- Loop 6 (sock 1 consumed 5.906280, avg temp 72.666667, final temp 73 ) ------
+	-------- Loop 6 (sock 2 consumed 5.266035, avg temp 57.583333, final temp 58 ) ------
+Loop 7 <line-344> - Time 0.311480 Total energy consumed 43.066245 Ave. Power Level 138.263297
+	-------- Loop 7 (sock 1 consumed 22.795710, avg temp 72.857143, final temp 73 ) ------
+	-------- Loop 7 (sock 2 consumed 20.270535, avg temp 57.571429, final temp 58 ) ------
+Loop 8 <line-363> - Time 0.000354 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 8 (sock 1 consumed 0.000000, avg temp 72.857143, final temp 73 ) ------
+	-------- Loop 8 (sock 2 consumed 0.000000, avg temp 57.571429, final temp 58 ) ------
+Loop 9 <line-385> - Time 0.000726 Total energy consumed 0.148005 Ave. Power Level 203.960841
+	-------- Loop 9 (sock 1 consumed 0.080895, avg temp 72.857143, final temp 73 ) ------
+	-------- Loop 9 (sock 2 consumed 0.067110, avg temp 57.571429, final temp 58 ) ------
+Loop 10 <line-85> - Time 0.103359 Total energy consumed 13.684725 Ave. Power Level 132.400384
+	-------- Loop 10 (sock 1 consumed 7.133580, avg temp 72.000000, final temp 72 ) ------
+	-------- Loop 10 (sock 2 consumed 6.551145, avg temp 57.250000, final temp 57 ) ------
+Loop 11 <line-131> - Time 0.002437 Total energy consumed 0.282525 Ave. Power Level 115.943224
+	-------- Loop 11 (sock 1 consumed 0.150255, avg temp 72.500000, final temp 73 ) ------
+	-------- Loop 11 (sock 2 consumed 0.132270, avg temp 58.000000, final temp 58 ) ------
+Loop 12 <line-167> - Time 0.160293 Total energy consumed 21.506550 Ave. Power Level 134.170200
+	-------- Loop 12 (sock 1 consumed 11.374140, avg temp 71.500000, final temp 72 ) ------
+	-------- Loop 12 (sock 2 consumed 10.132410, avg temp 57.000000, final temp 58 ) ------
+Loop 13 <line-215> - Time 3.815608 Total energy consumed 551.406990 Ave. Power Level 144.513522
+	-------- Loop 13 (sock 1 consumed 293.493810, avg temp 73.000000, final temp 72 ) ------
+	-------- Loop 13 (sock 2 consumed 257.913180, avg temp 57.888889, final temp 57 ) ------
+Loop 14 <line-101> - Time 3.505254 Total energy consumed 480.358920 Ave. Power Level 137.039690
+	-------- Loop 14 (sock 1 consumed 254.234055, avg temp 72.833333, final temp 73 ) ------
+	-------- Loop 14 (sock 2 consumed 226.124865, avg temp 57.500000, final temp 58 ) ------
+Loop 15 <line-277> - Time 3.022182 Total energy consumed 413.715630 Ave. Power Level 136.893014
+	-------- Loop 15 (sock 1 consumed 218.797635, avg temp 72.769231, final temp 73 ) ------
+	-------- Loop 15 (sock 2 consumed 194.917995, avg temp 57.730769, final temp 57 ) ------
+Loop 16 <line-308> - Time 0.001946 Total energy consumed 0.136185 Ave. Power Level 69.990646
+	-------- Loop 16 (sock 1 consumed 0.071955, avg temp 72.809524, final temp 73 ) ------
+	-------- Loop 16 (sock 2 consumed 0.064230, avg temp 57.714286, final temp 57 ) ------
+Loop 17 <line-196> - Time 0.000331 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 17 (sock 1 consumed 0.000000, avg temp 73.000000, final temp 73 ) ------
+	-------- Loop 17 (sock 2 consumed 0.000000, avg temp 58.000000, final temp 58 ) ------
+Application(EnergyStat) - Time 23.347285 Total energy consumed 3284.381700 Ave. Power Level 140.675105 Final Temperature socket 1 : 72  socket 2 : 58 
+	 ParallelApplication(EnergyStat) - Time 11.522804 Total energy consumed 1607.900070 Ave. Power Level 139.540697
+15
+/home/wwang/shared/tools/gcc-4.8.1/bin/gcc
+Memory used: 2.10156
+Loading 32-bit binary file: pnnl.bin, numvertices: 2361670, numEdges: 191402826
+File read time: 1.57156
+Before allocating graph
+Allocated graph: 0x1824560
+Processing edges for vertex: 0, range(0, 166)
+Processing edges for vertex: 100000, range(58444108, 58444133)
+Processing edges for vertex: 200000, range(84376057, 84376362)
+Processing edges for vertex: 300000, range(106069163, 106069503)
+Processing edges for vertex: 400000, range(122097114, 122097513)
+Processing edges for vertex: 500000, range(135096418, 135096483)
+Processing edges for vertex: 600000, range(146097008, 146097061)
+Processing edges for vertex: 700000, range(155415410, 155415531)
+Processing edges for vertex: 800000, range(162595900, 162595989)
+Processing edges for vertex: 900000, range(168508374, 168508464)
+Processing edges for vertex: 1000000, range(173203321, 173203442)
+Processing edges for vertex: 1100000, range(176935100, 176935110)
+Processing edges for vertex: 1200000, range(179876260, 179876270)
+Processing edges for vertex: 1300000, range(182240081, 182240092)
+Processing edges for vertex: 1400000, range(184224513, 184224521)
+Processing edges for vertex: 1500000, range(185795161, 185795170)
+Processing edges for vertex: 1600000, range(187104124, 187104130)
+Processing edges for vertex: 1700000, range(188148455, 188148461)
+Processing edges for vertex: 1800000, range(188997836, 188997842)
+Processing edges for vertex: 1900000, range(189691532, 189691535)
+Processing edges for vertex: 2000000, range(190254658, 190254660)
+Processing edges for vertex: 2100000, range(190705814, 190705822)
+Processing edges for vertex: 2200000, range(191052755, 191052764)
+Processing edges for vertex: 2300000, range(191302662, 191302663)
+Graph populate time: 7.6775
+Total I/O time: 9.2491
+Running on: 15 threads
+Loaded graph from file: pnnl.bin
+Memory used: 2949.82
+
+Regional(EnergyStat) - Time 9.262803 Total energy consumed 1320.958155 Ave. Power Level 142.608905 
+Maximum degree for the graph: 5520
+Iteration: 0, conflicts: 38
+Iteration: 1, conflicts: 12
+Iteration: 2, conflicts: 10
+Iteration: 3, conflicts: 7
+Iteration: 4, conflicts: 5
+Iteration: 5, conflicts: 4
+Iteration: 6, conflicts: 3
+Iteration: 7, conflicts: 2
+Iteration: 8, conflicts: 1
+Iteration: 9, conflicts: 0
+Total number of colors used: 1191
+Total number of conflicts overall: 0
+Number of rounds: 10
+SUCCESS: No conflicts found
+Coloring time: 0.622335
+Memory used: 2949.82
+Number of reordered colors: 1010
+End position for large colors: 0, node count: 550843, largest: 550843
+Node count cutoff: 472334
+e_xx: 1.28531e+08, a2_x: 5.58033e+11, currMod: 0.671507
+e_xx: 1.68535e+08, a2_x: 5.44658e+11, currMod: 0.880509
+e_xx: 1.74208e+08, a2_x: 5.84259e+11, currMod: 0.910146
+e_xx: 1.76343e+08, a2_x: 5.74383e+11, currMod: 0.921305
+e_xx: 1.77398e+08, a2_x: 5.6409e+11, currMod: 0.926816
+currMod: 0.921305, prevMod: -1
+Louvain time: 7.56744
+numClusters: 202463, time: 0.114319
+Next phase: 2
+Memory used: 2949.82
+End Structure 1275771 202463 vs 2752324
+Build next level time: 5.46285
+Iteration time: 13.1477
+Memory used: 2949.82
+e_xx: 1.57777e+08, a2_x: 5.60813e+11, currMod: 0.918495
+e_xx: 1.65382e+08, a2_x: 3.24716e+11, currMod: 0.962776
+e_xx: 1.66611e+08, a2_x: 2.48193e+11, currMod: 0.969932
+e_xx: 1.67032e+08, a2_x: 2.30532e+11, currMod: 0.972383
+e_xx: 1.67207e+08, a2_x: 2.50086e+11, currMod: 0.973402
+e_xx: 1.67378e+08, a2_x: 2.58656e+11, currMod: 0.974398
+e_xx: 1.67427e+08, a2_x: 2.49617e+11, currMod: 0.974683
+e_xx: 1.67519e+08, a2_x: 2.46263e+11, currMod: 0.975219
+e_xx: 1.67512e+08, a2_x: 2.33889e+11, currMod: 0.97518
+currMod: 0.975219, prevMod: 0.921305
+Louvain time: 1.87634
+numClusters: 47806, time: 0.016163
+Next phase: 3
+Memory used: 2949.82
+End Structure 410924 47806 vs 869642
+Build next level time: 0.244216
+Iteration time: 2.13749
+Memory used: 2949.82
+e_xx: 1.67519e+08, a2_x: 2.44107e+11, currMod: 0.975188
+e_xx: 1.68338e+08, a2_x: 1.10348e+11, currMod: 0.979961
+e_xx: 1.68456e+08, a2_x: 5.32586e+10, currMod: 0.98065
+e_xx: 1.68484e+08, a2_x: 6.22969e+10, currMod: 0.980811
+e_xx: 1.68485e+08, a2_x: 6.92807e+10, currMod: 0.980816
+e_xx: 1.68489e+08, a2_x: 6.58078e+10, currMod: 0.98084
+e_xx: 1.68485e+08, a2_x: 6.50347e+10, currMod: 0.980819
+currMod: 0.98084, prevMod: 0.975219
+Louvain time: 0.614343
+numClusters: 24424, time: 0.004869
+Next phase: 4
+Memory used: 2949.82
+End Structure 157038 24424 vs 338500
+Build next level time: 0.063292
+Iteration time: 0.682887
+Memory used: 2949.82
+e_xx: 1.68489e+08, a2_x: 6.56082e+10, currMod: 0.98083
+e_xx: 1.6855e+08, a2_x: 2.53745e+10, currMod: 0.98119
+e_xx: 1.68553e+08, a2_x: 2.77959e+10, currMod: 0.981204
+e_xx: 1.68553e+08, a2_x: 1.68011e+10, currMod: 0.981209
+e_xx: 1.68553e+08, a2_x: 2.31502e+10, currMod: 0.981206
+currMod: 0.981209, prevMod: 0.98084
+Louvain time: 0.235389
+numClusters: 22212, time: 0.003268
+Next phase: 5
+Memory used: 2949.82
+End Structure 92277 22212 vs 206766
+Build next level time: 0.031797
+Iteration time: 0.270775
+Memory used: 2949.82
+e_xx: 1.68553e+08, a2_x: 1.69559e+10, currMod: 0.981207
+e_xx: 1.68557e+08, a2_x: -4.61241e+09, currMod: 0.981229
+e_xx: 1.68557e+08, a2_x: 1.28398e+10, currMod: 0.98123
+currMod: 0.981229, prevMod: 0.981209
+Louvain time: 0.094863
+numClusters: 22072, time: 0.002966
+Next phase: 6
+Memory used: 2949.82
+End Structure 80882 22072 vs 183836
+Build next level time: 0.026089
+Iteration time: 0.124064
+Memory used: 2949.82
+e_xx: 1.68557e+08, a2_x: -3.14133e+09, currMod: 0.981229
+e_xx: 1.68557e+08, a2_x: -9.73848e+08, currMod: 0.98123
+currMod: 0.981229, prevMod: 0.981229
+Louvain time: 0.056595
+numClusters: 22072, time: 0.002969
+Maximum degree for the graph: 560
+Iteration: 0, conflicts: 0
+Total number of colors used: 173
+Total number of conflicts overall: 0
+Number of rounds: 1
+SUCCESS: No conflicts found
+Number of reordered colors: 172
+End position for large colors: 0, node count: 21601, largest: 21601
+Node count cutoff: 4415
+e_xx: 1.68592e+08, a2_x: -1.54068e+10, currMod: 0.98143
+e_xx: 1.7139e+08, a2_x: -1.10707e+10, currMod: 0.997723
+e_xx: 1.71372e+08, a2_x: -1.52645e+10, currMod: 0.997615
+End Structure 1103 21639 vs 23845
+currMod: 0.997723, prevMod: 0.981229
+numClusters: 21639
+Total iteration time: 16.363
+
+Loop 0 <line-37> - Time 0.000233 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 0 (sock 1 consumed 0.000000, avg temp 73.500000, final temp 74 ) ------
+	-------- Loop 0 (sock 2 consumed 0.000000, avg temp 58.000000, final temp 58 ) ------
+Loop 1 <line-57> - Time 0.000230 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 1 (sock 1 consumed 0.000000, avg temp 73.500000, final temp 74 ) ------
+	-------- Loop 1 (sock 2 consumed 0.000000, avg temp 58.000000, final temp 58 ) ------
+Loop 2 <line-79> - Time 0.000343 Total energy consumed 0.144555 Ave. Power Level 421.890870
+	-------- Loop 2 (sock 1 consumed 0.077520, avg temp 73.500000, final temp 74 ) ------
+	-------- Loop 2 (sock 2 consumed 0.067035, avg temp 58.000000, final temp 58 ) ------
+Loop 3 <line-173> - Time 0.356468 Total energy consumed 50.045175 Ave. Power Level 140.391738
+	-------- Loop 3 (sock 1 consumed 26.847705, avg temp 72.818182, final temp 74 ) ------
+	-------- Loop 3 (sock 2 consumed 23.197470, avg temp 57.272727, final temp 57 ) ------
+Loop 4 <line-195> - Time 0.000247 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 4 (sock 1 consumed 0.000000, avg temp 73.000000, final temp 74 ) ------
+	-------- Loop 4 (sock 2 consumed 0.000000, avg temp 57.500000, final temp 57 ) ------
+Loop 5 <line-225> - Time 0.160303 Total energy consumed 22.333935 Ave. Power Level 139.323299
+	-------- Loop 5 (sock 1 consumed 11.700255, avg temp 73.500000, final temp 74 ) ------
+	-------- Loop 5 (sock 2 consumed 10.633680, avg temp 57.500000, final temp 57 ) ------
+Loop 6 <line-164> - Time 0.079014 Total energy consumed 11.106675 Ave. Power Level 140.565082
+	-------- Loop 6 (sock 1 consumed 5.902290, avg temp 73.333333, final temp 74 ) ------
+	-------- Loop 6 (sock 2 consumed 5.204385, avg temp 58.083333, final temp 58 ) ------
+Loop 7 <line-344> - Time 0.304428 Total energy consumed 42.054495 Ave. Power Level 138.142891
+	-------- Loop 7 (sock 1 consumed 22.407000, avg temp 73.000000, final temp 73 ) ------
+	-------- Loop 7 (sock 2 consumed 19.647495, avg temp 57.857143, final temp 58 ) ------
+Loop 8 <line-363> - Time 0.000354 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 8 (sock 1 consumed 0.000000, avg temp 73.000000, final temp 73 ) ------
+	-------- Loop 8 (sock 2 consumed 0.000000, avg temp 57.857143, final temp 58 ) ------
+Loop 9 <line-385> - Time 0.000692 Total energy consumed 0.227415 Ave. Power Level 328.809727
+	-------- Loop 9 (sock 1 consumed 0.159330, avg temp 73.000000, final temp 73 ) ------
+	-------- Loop 9 (sock 2 consumed 0.068085, avg temp 58.000000, final temp 58 ) ------
+Loop 10 <line-85> - Time 0.101512 Total energy consumed 13.461570 Ave. Power Level 132.611220
+	-------- Loop 10 (sock 1 consumed 7.040295, avg temp 72.250000, final temp 74 ) ------
+	-------- Loop 10 (sock 2 consumed 6.421275, avg temp 57.000000, final temp 57 ) ------
+Loop 11 <line-131> - Time 0.002473 Total energy consumed 0.285390 Ave. Power Level 115.421434
+	-------- Loop 11 (sock 1 consumed 0.153360, avg temp 72.000000, final temp 73 ) ------
+	-------- Loop 11 (sock 2 consumed 0.132030, avg temp 57.500000, final temp 58 ) ------
+Loop 12 <line-167> - Time 0.162517 Total energy consumed 21.784305 Ave. Power Level 134.043241
+	-------- Loop 12 (sock 1 consumed 11.471535, avg temp 72.500000, final temp 74 ) ------
+	-------- Loop 12 (sock 2 consumed 10.312770, avg temp 56.500000, final temp 57 ) ------
+Loop 13 <line-215> - Time 4.857771 Total energy consumed 696.544485 Ave. Power Level 143.387686
+	-------- Loop 13 (sock 1 consumed 370.817145, avg temp 73.250000, final temp 73 ) ------
+	-------- Loop 13 (sock 2 consumed 325.727340, avg temp 58.125000, final temp 57 ) ------
+Loop 14 <line-101> - Time 5.552810 Total energy consumed 757.786695 Ave. Power Level 136.469057
+	-------- Loop 14 (sock 1 consumed 401.486865, avg temp 73.166667, final temp 73 ) ------
+	-------- Loop 14 (sock 2 consumed 356.299830, avg temp 57.666667, final temp 57 ) ------
+Loop 15 <line-277> - Time 2.861081 Total energy consumed 391.903770 Ave. Power Level 136.977530
+	-------- Loop 15 (sock 1 consumed 207.385710, avg temp 73.269231, final temp 73 ) ------
+	-------- Loop 15 (sock 2 consumed 184.518060, avg temp 58.115385, final temp 58 ) ------
+Loop 16 <line-308> - Time 0.001680 Total energy consumed 0.137355 Ave. Power Level 81.750024
+	-------- Loop 16 (sock 1 consumed 0.072870, avg temp 73.190476, final temp 74 ) ------
+	-------- Loop 16 (sock 2 consumed 0.064485, avg temp 58.095238, final temp 58 ) ------
+Loop 17 <line-196> - Time 0.000326 Total energy consumed 0.142275 Ave. Power Level 437.064548
+	-------- Loop 17 (sock 1 consumed 0.076110, avg temp 74.000000, final temp 74 ) ------
+	-------- Loop 17 (sock 2 consumed 0.066165, avg temp 58.000000, final temp 58 ) ------
+Application(EnergyStat) - Time 26.347608 Total energy consumed 3694.726605 Ave. Power Level 140.230058 Final Temperature socket 1 : 74  socket 2 : 58 
+	 ParallelApplication(EnergyStat) - Time 14.442479 Total energy consumed 2007.958095 Ave. Power Level 139.031401
+15
+/home/wwang/shared/tools/gcc-4.8.1/bin/gcc
+Memory used: 2.10547
+Loading 32-bit binary file: pnnl.bin, numvertices: 2361670, numEdges: 191402826
+File read time: 1.57008
+Before allocating graph
+Allocated graph: 0xb5ac60
+Processing edges for vertex: 0, range(0, 166)
+Processing edges for vertex: 100000, range(58444108, 58444133)
+Processing edges for vertex: 200000, range(84376057, 84376362)
+Processing edges for vertex: 300000, range(106069163, 106069503)
+Processing edges for vertex: 400000, range(122097114, 122097513)
+Processing edges for vertex: 500000, range(135096418, 135096483)
+Processing edges for vertex: 600000, range(146097008, 146097061)
+Processing edges for vertex: 700000, range(155415410, 155415531)
+Processing edges for vertex: 800000, range(162595900, 162595989)
+Processing edges for vertex: 900000, range(168508374, 168508464)
+Processing edges for vertex: 1000000, range(173203321, 173203442)
+Processing edges for vertex: 1100000, range(176935100, 176935110)
+Processing edges for vertex: 1200000, range(179876260, 179876270)
+Processing edges for vertex: 1300000, range(182240081, 182240092)
+Processing edges for vertex: 1400000, range(184224513, 184224521)
+Processing edges for vertex: 1500000, range(185795161, 185795170)
+Processing edges for vertex: 1600000, range(187104124, 187104130)
+Processing edges for vertex: 1700000, range(188148455, 188148461)
+Processing edges for vertex: 1800000, range(188997836, 188997842)
+Processing edges for vertex: 1900000, range(189691532, 189691535)
+Processing edges for vertex: 2000000, range(190254658, 190254660)
+Processing edges for vertex: 2100000, range(190705814, 190705822)
+Processing edges for vertex: 2200000, range(191052755, 191052764)
+Processing edges for vertex: 2300000, range(191302662, 191302663)
+Graph populate time: 7.67175
+Total I/O time: 9.24187
+Running on: 15 threads
+Loaded graph from file: pnnl.bin
+Memory used: 2949.83
+
+Regional(EnergyStat) - Time 9.257542 Total energy consumed 1320.529500 Ave. Power Level 142.643638 
+Maximum degree for the graph: 5520
+Iteration: 0, conflicts: 24
+Iteration: 1, conflicts: 5
+Iteration: 2, conflicts: 3
+Iteration: 3, conflicts: 1
+Iteration: 4, conflicts: 0
+Total number of colors used: 1192
+Total number of conflicts overall: 0
+Number of rounds: 5
+SUCCESS: No conflicts found
+Coloring time: 0.644885
+Memory used: 2949.83
+Number of reordered colors: 1018
+End position for large colors: 0, node count: 550660, largest: 550660
+Node count cutoff: 472334
+e_xx: 1.15656e+08, a2_x: 6.54375e+11, currMod: 0.604237
+e_xx: 1.58417e+08, a2_x: 6.07434e+11, currMod: 0.827645
+e_xx: 1.6684e+08, a2_x: 5.60531e+11, currMod: 0.871653
+e_xx: 1.7112e+08, a2_x: 5.22301e+11, currMod: 0.894019
+e_xx: 1.73329e+08, a2_x: 5.16241e+11, currMod: 0.905558
+e_xx: 1.74242e+08, a2_x: 5.02584e+11, currMod: 0.910328
+currMod: 0.905558, prevMod: -1
+Louvain time: 7.34092
+numClusters: 200717, time: 0.11397
+Next phase: 2
+Memory used: 2949.83
+End Structure 1248453 200717 vs 2696627
+Build next level time: 3.53713
+Iteration time: 10.9954
+Memory used: 2949.83
+e_xx: 1.70119e+08, a2_x: 5.0168e+11, currMod: 0.908378
+e_xx: 1.80003e+08, a2_x: 3.51393e+11, currMod: 0.961158
+e_xx: 1.81425e+08, a2_x: 2.74249e+11, currMod: 0.968753
+e_xx: 1.82699e+08, a2_x: 2.34805e+11, currMod: 0.975558
+e_xx: 1.82814e+08, a2_x: 2.56214e+11, currMod: 0.976173
+e_xx: 1.8289e+08, a2_x: 2.56278e+11, currMod: 0.976577
+e_xx: 1.82907e+08, a2_x: 2.42654e+11, currMod: 0.976667
+e_xx: 1.82942e+08, a2_x: 2.59858e+11, currMod: 0.976855
+e_xx: 1.82935e+08, a2_x: 2.59055e+11, currMod: 0.976817
+currMod: 0.976855, prevMod: 0.905558
+Louvain time: 1.75004
+numClusters: 44650, time: 0.013848
+Next phase: 3
+Memory used: 2949.83
+End Structure 384080 44650 vs 812806
+Build next level time: 0.247468
+Iteration time: 2.01191
+Memory used: 2949.83
+e_xx: 1.82941e+08, a2_x: 2.61689e+11, currMod: 0.976844
+e_xx: 1.83803e+08, a2_x: 1.39134e+11, currMod: 0.981449
+e_xx: 1.83903e+08, a2_x: 7.92819e+10, currMod: 0.981983
+e_xx: 1.83958e+08, a2_x: 9.41313e+10, currMod: 0.982277
+e_xx: 1.8393e+08, a2_x: 8.10882e+10, currMod: 0.98213
+currMod: 0.982277, prevMod: 0.976855
+Louvain time: 0.433667
+numClusters: 24389, time: 0.004679
+Next phase: 4
+Memory used: 2949.83
+End Structure 147406 24389 vs 319201
+Build next level time: 0.065234
+Iteration time: 0.503951
+Memory used: 2949.83
+e_xx: 1.83958e+08, a2_x: 9.41682e+10, currMod: 0.982265
+e_xx: 1.84041e+08, a2_x: 1.30391e+10, currMod: 0.98271
+e_xx: 1.84044e+08, a2_x: 3.46415e+10, currMod: 0.982728
+e_xx: 1.84061e+08, a2_x: 7.53632e+09, currMod: 0.982819
+e_xx: 1.8407e+08, a2_x: 4.31421e+10, currMod: 0.982866
+e_xx: 1.84066e+08, a2_x: 2.31483e+10, currMod: 0.982841
+currMod: 0.982866, prevMod: 0.982277
+Louvain time: 0.259399
+numClusters: 22144, time: 0.003256
+Next phase: 5
+Memory used: 2949.83
+End Structure 79920 22144 vs 181984
+Build next level time: 0.029022
+Iteration time: 0.291998
+Memory used: 2949.83
+e_xx: 1.8407e+08, a2_x: 4.65725e+10, currMod: 0.982864
+e_xx: 1.84073e+08, a2_x: 4.61121e+10, currMod: 0.982878
+e_xx: 1.84073e+08, a2_x: 3.84327e+10, currMod: 0.982878
+currMod: 0.982878, prevMod: 0.982866
+Louvain time: 0.079124
+numClusters: 22023, time: 0.002987
+Next phase: 6
+Memory used: 2949.83
+End Structure 71809 22023 vs 165641
+Build next level time: 0.022949
+Iteration time: 0.105204
+Memory used: 2949.83
+e_xx: 1.84073e+08, a2_x: 4.29622e+10, currMod: 0.982878
+e_xx: 1.84073e+08, a2_x: 4.73302e+10, currMod: 0.982879
+currMod: 0.982878, prevMod: 0.982878
+Louvain time: 0.047685
+numClusters: 22023, time: 0.002972
+Maximum degree for the graph: 508
+Iteration: 0, conflicts: 0
+Total number of colors used: 173
+Total number of conflicts overall: 0
+Number of rounds: 1
+SUCCESS: No conflicts found
+Number of reordered colors: 169
+End position for large colors: 0, node count: 21587, largest: 21587
+Node count cutoff: 4405
+e_xx: 1.84095e+08, a2_x: 3.77203e+10, currMod: 0.982998
+e_xx: 1.84098e+08, a2_x: 3.13176e+10, currMod: 0.98301
+e_xx: 1.84107e+08, a2_x: 2.39575e+10, currMod: 0.983059
+e_xx: 1.84108e+08, a2_x: 2.52336e+10, currMod: 0.983064
+e_xx: 1.87097e+08, a2_x: 1.07221e+10, currMod: 0.999026
+e_xx: 1.87101e+08, a2_x: 9.60627e+09, currMod: 0.999046
+e_xx: 1.87008e+08, a2_x: 6.28493e+09, currMod: 0.998551
+End Structure 301 21600 vs 22202
+currMod: 0.999046, prevMod: 0.982878
+numClusters: 21600
+Total iteration time: 13.9084
+
+Loop 0 <line-37> - Time 0.000230 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 0 (sock 1 consumed 0.000000, avg temp 74.000000, final temp 74 ) ------
+	-------- Loop 0 (sock 2 consumed 0.000000, avg temp 57.000000, final temp 57 ) ------
+Loop 1 <line-57> - Time 0.000233 Total energy consumed 0.143760 Ave. Power Level 616.638428
+	-------- Loop 1 (sock 1 consumed 0.076620, avg temp 73.000000, final temp 73 ) ------
+	-------- Loop 1 (sock 2 consumed 0.067140, avg temp 58.000000, final temp 58 ) ------
+Loop 2 <line-79> - Time 0.000340 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 2 (sock 1 consumed 0.000000, avg temp 73.000000, final temp 73 ) ------
+	-------- Loop 2 (sock 2 consumed 0.000000, avg temp 58.000000, final temp 58 ) ------
+Loop 3 <line-173> - Time 0.396788 Total energy consumed 55.170990 Ave. Power Level 139.044029
+	-------- Loop 3 (sock 1 consumed 29.267805, avg temp 73.833333, final temp 73 ) ------
+	-------- Loop 3 (sock 2 consumed 25.903185, avg temp 58.000000, final temp 58 ) ------
+Loop 4 <line-195> - Time 0.000270 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 4 (sock 1 consumed 0.000000, avg temp 73.500000, final temp 73 ) ------
+	-------- Loop 4 (sock 2 consumed 0.000000, avg temp 58.000000, final temp 58 ) ------
+Loop 5 <line-225> - Time 0.142831 Total energy consumed 20.084445 Ave. Power Level 140.617292
+	-------- Loop 5 (sock 1 consumed 10.780890, avg temp 73.500000, final temp 73 ) ------
+	-------- Loop 5 (sock 2 consumed 9.303555, avg temp 58.000000, final temp 58 ) ------
+Loop 6 <line-164> - Time 0.079185 Total energy consumed 11.035380 Ave. Power Level 139.361985
+	-------- Loop 6 (sock 1 consumed 5.898090, avg temp 73.250000, final temp 73 ) ------
+	-------- Loop 6 (sock 2 consumed 5.137290, avg temp 57.833333, final temp 58 ) ------
+Loop 7 <line-344> - Time 0.310746 Total energy consumed 42.528060 Ave. Power Level 136.858062
+	-------- Loop 7 (sock 1 consumed 22.501605, avg temp 73.285714, final temp 73 ) ------
+	-------- Loop 7 (sock 2 consumed 20.026455, avg temp 57.714286, final temp 58 ) ------
+Loop 8 <line-363> - Time 0.000343 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 8 (sock 1 consumed 0.000000, avg temp 73.285714, final temp 73 ) ------
+	-------- Loop 8 (sock 2 consumed 0.000000, avg temp 57.714286, final temp 58 ) ------
+Loop 9 <line-385> - Time 0.000701 Total energy consumed 0.133095 Ave. Power Level 189.770000
+	-------- Loop 9 (sock 1 consumed 0.068340, avg temp 73.285714, final temp 73 ) ------
+	-------- Loop 9 (sock 2 consumed 0.064755, avg temp 57.857143, final temp 58 ) ------
+Loop 10 <line-85> - Time 0.101166 Total energy consumed 13.353705 Ave. Power Level 131.998101
+	-------- Loop 10 (sock 1 consumed 6.995220, avg temp 73.000000, final temp 74 ) ------
+	-------- Loop 10 (sock 2 consumed 6.358485, avg temp 57.000000, final temp 58 ) ------
+Loop 11 <line-131> - Time 0.002447 Total energy consumed 0.419925 Ave. Power Level 171.578291
+	-------- Loop 11 (sock 1 consumed 0.221835, avg temp 73.000000, final temp 74 ) ------
+	-------- Loop 11 (sock 2 consumed 0.198090, avg temp 57.000000, final temp 58 ) ------
+Loop 12 <line-167> - Time 0.164102 Total energy consumed 22.288020 Ave. Power Level 135.818221
+	-------- Loop 12 (sock 1 consumed 11.737770, avg temp 72.500000, final temp 73 ) ------
+	-------- Loop 12 (sock 2 consumed 10.550250, avg temp 56.500000, final temp 57 ) ------
+Loop 13 <line-215> - Time 4.302593 Total energy consumed 621.409080 Ave. Power Level 144.426663
+	-------- Loop 13 (sock 1 consumed 330.662010, avg temp 74.076923, final temp 72 ) ------
+	-------- Loop 13 (sock 2 consumed 290.747070, avg temp 58.230769, final temp 58 ) ------
+Loop 14 <line-101> - Time 3.634239 Total energy consumed 498.139455 Ave. Power Level 137.068450
+	-------- Loop 14 (sock 1 consumed 262.531215, avg temp 73.000000, final temp 73 ) ------
+	-------- Loop 14 (sock 2 consumed 235.608240, avg temp 57.666667, final temp 58 ) ------
+Loop 15 <line-277> - Time 2.554113 Total energy consumed 349.505430 Ave. Power Level 136.840261
+	-------- Loop 15 (sock 1 consumed 184.749990, avg temp 73.600000, final temp 74 ) ------
+	-------- Loop 15 (sock 2 consumed 164.755440, avg temp 57.920000, final temp 57 ) ------
+Loop 16 <line-308> - Time 0.001654 Total energy consumed 0.136035 Ave. Power Level 82.264323
+	-------- Loop 16 (sock 1 consumed 0.071820, avg temp 73.450000, final temp 73 ) ------
+	-------- Loop 16 (sock 2 consumed 0.064215, avg temp 58.100000, final temp 58 ) ------
+Loop 17 <line-196> - Time 0.000335 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 17 (sock 1 consumed 0.000000, avg temp 74.000000, final temp 74 ) ------
+	-------- Loop 17 (sock 2 consumed 0.000000, avg temp 57.000000, final temp 57 ) ------
+Application(EnergyStat) - Time 23.901396 Total energy consumed 3364.236165 Ave. Power Level 140.754800 Final Temperature socket 1 : 73  socket 2 : 58 
+	 ParallelApplication(EnergyStat) - Time 11.692315 Total energy consumed 1634.347380 Ave. Power Level 139.779626
+15
+/home/wwang/shared/tools/gcc-4.8.1/bin/gcc
+Memory used: 2.10547
+Loading 32-bit binary file: pnnl.bin, numvertices: 2361670, numEdges: 191402826
+File read time: 1.57139
+Before allocating graph
+Allocated graph: 0x81ac60
+Processing edges for vertex: 0, range(0, 166)
+Processing edges for vertex: 100000, range(58444108, 58444133)
+Processing edges for vertex: 200000, range(84376057, 84376362)
+Processing edges for vertex: 300000, range(106069163, 106069503)
+Processing edges for vertex: 400000, range(122097114, 122097513)
+Processing edges for vertex: 500000, range(135096418, 135096483)
+Processing edges for vertex: 600000, range(146097008, 146097061)
+Processing edges for vertex: 700000, range(155415410, 155415531)
+Processing edges for vertex: 800000, range(162595900, 162595989)
+Processing edges for vertex: 900000, range(168508374, 168508464)
+Processing edges for vertex: 1000000, range(173203321, 173203442)
+Processing edges for vertex: 1100000, range(176935100, 176935110)
+Processing edges for vertex: 1200000, range(179876260, 179876270)
+Processing edges for vertex: 1300000, range(182240081, 182240092)
+Processing edges for vertex: 1400000, range(184224513, 184224521)
+Processing edges for vertex: 1500000, range(185795161, 185795170)
+Processing edges for vertex: 1600000, range(187104124, 187104130)
+Processing edges for vertex: 1700000, range(188148455, 188148461)
+Processing edges for vertex: 1800000, range(188997836, 188997842)
+Processing edges for vertex: 1900000, range(189691532, 189691535)
+Processing edges for vertex: 2000000, range(190254658, 190254660)
+Processing edges for vertex: 2100000, range(190705814, 190705822)
+Processing edges for vertex: 2200000, range(191052755, 191052764)
+Processing edges for vertex: 2300000, range(191302662, 191302663)
+Graph populate time: 7.68112
+Total I/O time: 9.25254
+Running on: 15 threads
+Loaded graph from file: pnnl.bin
+Memory used: 2949.83
+
+Regional(EnergyStat) - Time 9.264448 Total energy consumed 1322.415780 Ave. Power Level 142.740907 
+Maximum degree for the graph: 5520
+Iteration: 0, conflicts: 25
+Iteration: 1, conflicts: 2
+Iteration: 2, conflicts: 0
+Total number of colors used: 1188
+Total number of conflicts overall: 0
+Number of rounds: 3
+SUCCESS: No conflicts found
+Coloring time: 0.6294
+Memory used: 2949.83
+Number of reordered colors: 1008
+End position for large colors: 0, node count: 550681, largest: 550681
+Node count cutoff: 472334
+e_xx: 1.29961e+08, a2_x: 6.24729e+11, currMod: 0.678974
+e_xx: 1.68939e+08, a2_x: 5.83013e+11, currMod: 0.88262
+e_xx: 1.74785e+08, a2_x: 5.7792e+11, currMod: 0.913164
+e_xx: 1.77172e+08, a2_x: 5.3893e+11, currMod: 0.925634
+e_xx: 1.78313e+08, a2_x: 5.62872e+11, currMod: 0.931597
+currMod: 0.925634, prevMod: -1
+Louvain time: 6.52651
+numClusters: 203886, time: 0.114199
+Next phase: 2
+Memory used: 2949.83
+End Structure 1276196 203886 vs 2754410
+Build next level time: 6.61927
+Iteration time: 13.271
+Memory used: 2949.83
+e_xx: 1.55431e+08, a2_x: 5.61973e+11, currMod: 0.922351
+e_xx: 1.62114e+08, a2_x: 3.31373e+11, currMod: 0.962017
+e_xx: 1.63351e+08, a2_x: 3.3529e+11, currMod: 0.969354
+e_xx: 1.63637e+08, a2_x: 2.7368e+11, currMod: 0.971058
+e_xx: 1.63726e+08, a2_x: 2.71571e+11, currMod: 0.971584
+e_xx: 1.63818e+08, a2_x: 2.44639e+11, currMod: 0.972129
+e_xx: 1.63821e+08, a2_x: 2.76951e+11, currMod: 0.972148
+e_xx: 1.63868e+08, a2_x: 2.61939e+11, currMod: 0.972428
+e_xx: 1.63858e+08, a2_x: 2.7003e+11, currMod: 0.972368
+currMod: 0.972428, prevMod: 0.925634
+Louvain time: 1.83176
+numClusters: 50286, time: 0.016164
+Next phase: 3
+Memory used: 2949.83
+End Structure 480198 50286 vs 1010672
+Build next level time: 0.191867
+Iteration time: 2.04052
+Memory used: 2949.83
+e_xx: 1.63868e+08, a2_x: 2.61447e+11, currMod: 0.972395
+e_xx: 1.64835e+08, a2_x: 5.5264e+10, currMod: 0.978139
+e_xx: 1.64876e+08, a2_x: 7.93426e+10, currMod: 0.978384
+e_xx: 1.64985e+08, a2_x: 4.20826e+10, currMod: 0.979033
+e_xx: 1.64906e+08, a2_x: 2.03767e+10, currMod: 0.978563
+currMod: 0.979033, prevMod: 0.972428
+Louvain time: 0.506297
+numClusters: 25371, time: 0.005107
+Next phase: 4
+Memory used: 2949.83
+End Structure 172747 25371 vs 370865
+Build next level time: 0.06878
+Iteration time: 0.580555
+Memory used: 2949.83
+e_xx: 1.64985e+08, a2_x: 4.24154e+10, currMod: 0.979021
+e_xx: 1.65236e+08, a2_x: -2.07321e+10, currMod: 0.980509
+e_xx: 1.65269e+08, a2_x: -8.75263e+09, currMod: 0.980703
+e_xx: 1.6527e+08, a2_x: 1.02021e+10, currMod: 0.980714
+e_xx: 1.6527e+08, a2_x: 2.45255e+10, currMod: 0.980711
+currMod: 0.980714, prevMod: 0.979033
+Louvain time: 0.240334
+numClusters: 22185, time: 0.003341
+Next phase: 5
+Memory used: 2949.83
+End Structure 91785 22185 vs 205755
+Build next level time: 0.033109
+Iteration time: 0.277139
+Memory used: 2949.83
+e_xx: 1.6527e+08, a2_x: 1.1693e+10, currMod: 0.980712
+e_xx: 1.65273e+08, a2_x: 9.53514e+09, currMod: 0.980725
+e_xx: 1.65273e+08, a2_x: 5.28219e+09, currMod: 0.980725
+currMod: 0.980725, prevMod: 0.980714
+Louvain time: 0.091608
+numClusters: 22040, time: 0.002951
+Next phase: 6
+Memory used: 2949.83
+End Structure 84087 22040 vs 190214
+Build next level time: 0.025987
+Iteration time: 0.120712
+Memory used: 2949.83
+e_xx: 1.65273e+08, a2_x: 9.39799e+09, currMod: 0.980725
+e_xx: 1.65273e+08, a2_x: 3.58458e+09, currMod: 0.980726
+e_xx: 1.65273e+08, a2_x: 2.47182e+09, currMod: 0.980726
+currMod: 0.980726, prevMod: 0.980725
+Louvain time: 0.085883
+numClusters: 22015, time: 0.002986
+Next phase: 7
+Memory used: 2949.83
+End Structure 82556 22015 vs 187127
+Build next level time: 0.024369
+Iteration time: 0.113498
+Memory used: 2949.83
+e_xx: 1.65273e+08, a2_x: 3.516e+09, currMod: 0.980726
+e_xx: 1.65273e+08, a2_x: 5.60601e+09, currMod: 0.980726
+currMod: 0.980726, prevMod: 0.980726
+Louvain time: 0.055198
+numClusters: 22015, time: 0.002948
+Maximum degree for the graph: 509
+Iteration: 0, conflicts: 0
+Total number of colors used: 178
+Total number of conflicts overall: 0
+Number of rounds: 1
+SUCCESS: No conflicts found
+Number of reordered colors: 176
+End position for large colors: 0, node count: 21556, largest: 21556
+Node count cutoff: 4403
+e_xx: 1.65273e+08, a2_x: 5.60601e+09, currMod: 0.980726
+End Structure 82163 22009 vs 186335
+currMod: 0.980726, prevMod: 0.980726
+numClusters: 22009
+Total iteration time: 16.4034
+
+Loop 0 <line-37> - Time 0.000237 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 0 (sock 1 consumed 0.000000, avg temp 73.500000, final temp 73 ) ------
+	-------- Loop 0 (sock 2 consumed 0.000000, avg temp 58.500000, final temp 58 ) ------
+Loop 1 <line-57> - Time 0.000232 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 1 (sock 1 consumed 0.000000, avg temp 73.000000, final temp 73 ) ------
+	-------- Loop 1 (sock 2 consumed 0.000000, avg temp 58.000000, final temp 58 ) ------
+Loop 2 <line-79> - Time 0.000333 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 2 (sock 1 consumed 0.000000, avg temp 73.000000, final temp 73 ) ------
+	-------- Loop 2 (sock 2 consumed 0.000000, avg temp 58.000000, final temp 58 ) ------
+Loop 3 <line-173> - Time 0.382888 Total energy consumed 53.551800 Ave. Power Level 139.862746
+	-------- Loop 3 (sock 1 consumed 28.431975, avg temp 73.750000, final temp 73 ) ------
+	-------- Loop 3 (sock 2 consumed 25.119825, avg temp 58.750000, final temp 58 ) ------
+Loop 4 <line-195> - Time 0.000248 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 4 (sock 1 consumed 0.000000, avg temp 73.500000, final temp 73 ) ------
+	-------- Loop 4 (sock 2 consumed 0.000000, avg temp 58.500000, final temp 58 ) ------
+Loop 5 <line-225> - Time 0.139085 Total energy consumed 19.382190 Ave. Power Level 139.355113
+	-------- Loop 5 (sock 1 consumed 10.519740, avg temp 73.000000, final temp 73 ) ------
+	-------- Loop 5 (sock 2 consumed 8.862450, avg temp 58.500000, final temp 58 ) ------
+Loop 6 <line-164> - Time 0.102218 Total energy consumed 13.836945 Ave. Power Level 135.366706
+	-------- Loop 6 (sock 1 consumed 7.279485, avg temp 72.857143, final temp 73 ) ------
+	-------- Loop 6 (sock 2 consumed 6.557460, avg temp 58.714286, final temp 58 ) ------
+Loop 7 <line-344> - Time 0.305295 Total energy consumed 41.981895 Ave. Power Level 137.512775
+	-------- Loop 7 (sock 1 consumed 22.287480, avg temp 72.875000, final temp 73 ) ------
+	-------- Loop 7 (sock 2 consumed 19.694415, avg temp 58.375000, final temp 58 ) ------
+Loop 8 <line-363> - Time 0.000361 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 8 (sock 1 consumed 0.000000, avg temp 72.875000, final temp 73 ) ------
+	-------- Loop 8 (sock 2 consumed 0.000000, avg temp 58.375000, final temp 58 ) ------
+Loop 9 <line-385> - Time 0.000704 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 9 (sock 1 consumed 0.000000, avg temp 73.000000, final temp 73 ) ------
+	-------- Loop 9 (sock 2 consumed 0.000000, avg temp 58.375000, final temp 58 ) ------
+Loop 10 <line-85> - Time 0.105463 Total energy consumed 14.053770 Ave. Power Level 133.257614
+	-------- Loop 10 (sock 1 consumed 7.363740, avg temp 72.000000, final temp 73 ) ------
+	-------- Loop 10 (sock 2 consumed 6.690030, avg temp 57.750000, final temp 58 ) ------
+Loop 11 <line-131> - Time 0.002443 Total energy consumed 0.416700 Ave. Power Level 170.559198
+	-------- Loop 11 (sock 1 consumed 0.219555, avg temp 72.500000, final temp 73 ) ------
+	-------- Loop 11 (sock 2 consumed 0.197145, avg temp 58.000000, final temp 58 ) ------
+Loop 12 <line-167> - Time 0.176042 Total energy consumed 23.840760 Ave. Power Level 135.426686
+	-------- Loop 12 (sock 1 consumed 12.559155, avg temp 72.500000, final temp 73 ) ------
+	-------- Loop 12 (sock 2 consumed 11.281605, avg temp 57.000000, final temp 58 ) ------
+Loop 13 <line-215> - Time 3.813740 Total energy consumed 551.449830 Ave. Power Level 144.595535
+	-------- Loop 13 (sock 1 consumed 293.632365, avg temp 73.500000, final temp 73 ) ------
+	-------- Loop 13 (sock 2 consumed 257.817465, avg temp 59.166667, final temp 58 ) ------
+Loop 14 <line-101> - Time 6.673095 Total energy consumed 909.655410 Ave. Power Level 136.316867
+	-------- Loop 14 (sock 1 consumed 482.695845, avg temp 73.142857, final temp 74 ) ------
+	-------- Loop 14 (sock 2 consumed 426.959565, avg temp 58.857143, final temp 58 ) ------
+Loop 15 <line-277> - Time 2.793234 Total energy consumed 382.590630 Ave. Power Level 136.970497
+	-------- Loop 15 (sock 1 consumed 202.116390, avg temp 73.111111, final temp 73 ) ------
+	-------- Loop 15 (sock 2 consumed 180.474240, avg temp 58.740741, final temp 58 ) ------
+Loop 16 <line-308> - Time 0.001719 Total energy consumed 0.000000 Ave. Power Level 0.000000
+	-------- Loop 16 (sock 1 consumed 0.000000, avg temp 73.047619, final temp 73 ) ------
+	-------- Loop 16 (sock 2 consumed 0.000000, avg temp 58.809524, final temp 58 ) ------
+Loop 17 <line-196> - Time 0.000328 Total energy consumed 0.075480 Ave. Power Level 230.216705
+	-------- Loop 17 (sock 1 consumed 0.075480, avg temp 73.000000, final temp 73 ) ------
+	-------- Loop 17 (sock 2 consumed 0.000000, avg temp 58.000000, final temp 58 ) ------
+Application(EnergyStat) - Time 26.395592 Total energy consumed 3699.174630 Ave. Power Level 140.143650 Final Temperature socket 1 : 73  socket 2 : 58 
+	 ParallelApplication(EnergyStat) - Time 14.497665 Total energy consumed 2010.835410 Ave. Power Level 138.700636

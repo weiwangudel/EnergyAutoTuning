@@ -1,0 +1,100 @@
+In preparing for SEAK2014, we observed for 2mm and gemm,
+the default baseline took more time while consuming less energy.
+The best omptimized version took less time but consumed more energy.
+Running on savina using icc14.0.2
+--------------------------------------------------------------------
+
+1. 2mm default
+using -O3 took 28.9 seconds
+Regional(EnergyStat) - Time 28.485669 Total energy consumed 1583.561400 Ave. Power Level 55.591511 
+using -O3 -xHOST took  10.9 seconds.
+   Regional(EnergyStat) - Time 10.914708 Total energy consumed 639.620145 Ave. Power Level 58.601673
+
+(compiler on Weiss but run on elo)
+
+2. 2mm best from gcc generated code on elo: 2mm_--pluto-ufactor_4_--pluto-tile_64x64x32.c
+-- -O3 -openmp only
+   Regional(EnergyStat) - Time 18.228278 Total energy consumed 2464.419105 Ave. Power Level 135.197582  
+-- -O3 -openmp -xHOST
+   Regional(EnergyStat) - Time 15.581511 Total energy consumed 2112.337155 Ave. Power Level 135.566900
+
+
+
+3. 2mm best from icc generated code on savina (in preparing for SEAK)
+ --3.1 2mm_--pluto-ufactor_4_--pluto-fuse_nofuse_--pluto-prevector_--pluto-parallel_--pluto-tile_64x64x32.c
+   -O3 -openmp
+   Regional(EnergyStat) - Time 10.109386 Total energy consumed 1436.831115 Ave. Power Level 142.128427 
+   with -O3 -xHOST -openmp flag
+   Regional(EnergyStat) - Time 3.945177 Total energy consumed 610.520940 Ave. Power Level 154.751208
+ --3.2  2mm_--pluto-ufactor_4_--pluto-fuse_nofuse_--pluto-prevector_--pluto-tile_64x64x32.c
+   -O3 -openmp 
+   Regional(EnergyStat) - Time 10.098404 Total energy consumed 1438.480140 Ave. Power Level 142.446289
+   -O3 -xHOST -openmp flag
+   Regional(EnergyStat) - Time 3.937457 Total energy consumed 609.768270 Ave. Power Level 154.863457
+ --3.3 2mm_--pluto-ufactor_4_--pluto-prevector_--pluto-tile_64x64x32.c
+   -O3 -openmp
+   Regional(EnergyStat) - Time 14.887978 Total energy consumed 2211.302940 Ave. Power Level 148.529435 
+   -O3 -xHOST -openmp 
+   Regional(EnergyStat) - Time 14.796219 Total energy consumed 2202.957900 Ave. Power Level 148.886546
+========================================================================================================
+gcc results:  (note: this is different from ROSE+GCC results even!!!!!!)
+2mm-gcc.exe
+2mm_--pluto-ufactor_4_--pluto-fuse_nofuse_--pluto-prevector_--pluto-parallel_--pluto-tile_64x64x32-gcc.exe
+2mm_--pluto-ufactor_4_--pluto-fuse_nofuse_--pluto-prevector_--pluto-tile_64x64x32-gcc.exe
+2mm_--pluto-ufactor_4_--pluto-prevector_--pluto-tile_64x64x32-gcc.exe
+2mm_--pluto-ufactor_4_--pluto-tile_64x64x32-gcc.exe
+
+results:
+2mm-gcc.exe
+
+Regional(EnergyStat) - Time 359.333041 Total energy consumed 20108.563740 Ave. Power Level 55.960798 
+
+Application(EnergyStat) - Time 359.485807 Total energy consumed 20116.972935 Ave. Power Level 55.960409 Final Temperature socket 1 : 44  socket 2 : 32 
+2mm_--pluto-ufactor_4_--pluto-fuse_nofuse_--pluto-prevector_--pluto-parallel_--pluto-tile_64x64x32-gcc.exe
+
+Regional(EnergyStat) - Time 12.311294 Total energy consumed 1726.956210 Ave. Power Level 140.274142 
+
+Application(EnergyStat) - Time 12.464335 Total energy consumed 1735.620735 Ave. Power Level 139.246954 Final Temperature socket 1 : 46  socket 2 : 44 
+2mm_--pluto-ufactor_4_--pluto-fuse_nofuse_--pluto-prevector_--pluto-tile_64x64x32-gcc.exe
+
+Regional(EnergyStat) - Time 12.428215 Total energy consumed 1750.320075 Ave. Power Level 140.834386 
+
+Application(EnergyStat) - Time 12.574699 Total energy consumed 1759.757595 Ave. Power Level 139.944314 Final Temperature socket 1 : 48  socket 2 : 40 
+2mm_--pluto-ufactor_4_--pluto-prevector_--pluto-tile_64x64x32-gcc.exe
+
+Regional(EnergyStat) - Time 11.958199 Total energy consumed 1719.223110 Ave. Power Level 143.769396 
+
+Application(EnergyStat) - Time 12.111041 Total energy consumed 1727.913945 Ave. Power Level 142.672623 Final Temperature socket 1 : 50  socket 2 : 47 
+2mm_--pluto-ufactor_4_--pluto-tile_64x64x32-gcc.exe
+
+Regional(EnergyStat) - Time 16.982788 Total energy consumed 2309.863845 Ave. Power Level 136.012054 
+
+Application(EnergyStat) - Time 17.136227 Total energy consumed 2318.463960 Ave. Power Level 135.296058 Final Temperature socket 1 : 51  socket 2 : 49 
+
+=================
+icc results again:
+2mm-icc.exe
+
+Regional(EnergyStat) - Time 10.857114 Total energy consumed 647.538075 Ave. Power Level 59.641824 
+
+Application(EnergyStat) - Time 10.969835 Total energy consumed 654.193980 Ave. Power Level 59.635720 Final Temperature socket 1 : 41  socket 2 : 33 
+2mm_--pluto-ufactor_4_--pluto-fuse_nofuse_--pluto-prevector_--pluto-parallel_--pluto-tile_64x64x32-icc.exe
+
+Regional(EnergyStat) - Time 4.296561 Total energy consumed 654.174360 Ave. Power Level 152.255340 
+
+Application(EnergyStat) - Time 4.401399 Total energy consumed 660.090570 Ave. Power Level 149.972889 Final Temperature socket 1 : 47  socket 2 : 42 
+2mm_--pluto-ufactor_4_--pluto-fuse_nofuse_--pluto-prevector_--pluto-tile_64x64x32-icc.exe
+
+Regional(EnergyStat) - Time 3.943844 Total energy consumed 614.132790 Ave. Power Level 155.719361 
+
+Application(EnergyStat) - Time 4.055541 Total energy consumed 620.787420 Ave. Power Level 153.071426 Final Temperature socket 1 : 50  socket 2 : 45 
+2mm_--pluto-ufactor_4_--pluto-prevector_--pluto-tile_64x64x32-icc.exe
+
+Regional(EnergyStat) - Time 14.930654 Total energy consumed 2212.700550 Ave. Power Level 148.198503 
+
+Application(EnergyStat) - Time 15.031845 Total energy consumed 2218.810680 Ave. Power Level 147.607343 Final Temperature socket 1 : 45  socket 2 : 42 
+2mm_--pluto-ufactor_4_--pluto-tile_64x64x32-icc.exe
+
+Regional(EnergyStat) - Time 15.601230 Total energy consumed 2156.909745 Ave. Power Level 138.252548 
+
+Application(EnergyStat) - Time 15.719814 Total energy consumed 2163.783285 Ave. Power Level 137.646873 Final Temperature socket 1 : 49  socket 2 : 44 
