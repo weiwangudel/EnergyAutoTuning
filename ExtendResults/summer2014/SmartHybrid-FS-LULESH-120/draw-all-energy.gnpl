@@ -1,0 +1,29 @@
+set xlabel 'Frequency (GHz)' font "Arial-Bold, 9"
+set ylabel 'Normalized Energy' font "Arial-Bold,9"
+#set ylabel 'Normalization' font "Arial-Bold,9"
+#set xrange [0:20]
+#set yrange [0.5:2]
+#set ytics mirror font "Arial-Bold,8"
+#set y2tics font "Arial-Bold,8"
+#set xtics font "Arial-Bold, 8"
+set rmargin at screen 0.92
+set xtics rotate by -45
+#set key below font "Arial-Bold,6"  maxrows 2 
+set key top left font "Arial-Bold,6" # maxrows 2 
+#plot  'gnuplot.data' u 3:xticlabel(1) axes x1y1 title 'E' w linespoints lt 3 lw 2.5
+plot  'gnuplot.data' u 3:xticlabel(1) axes x1y1 title 'All-Energy' w linespoints lt 1 lw 2.5, \
+				'' u 4 axes x1y1 title '1st-Loop2' w linespoints lt 2 lw 2.5, \
+				'' u 5 axes x1y1 title '2nd-Loop7' w linespoints lt 3 lw 2.5, \
+				'' u 6 axes x1y1 title '3rd-Loop0' w linespoints lt 4 lw 2.5, \
+				'' u 7 axes x1y1 title '4th-Loop1' w linespoints lt 5 lw 2.5, \
+				'' u 8 axes x1y1 title '5th-Loop3' w linespoints lt 6 lw 2.5, \
+				'' u 9 axes x1y1 title '6th-Loop8' w linespoints lt 7 lw 2.5 
+
+set term pdfcairo enhanced color font "Arial-Bold,8"
+set output "output.pdf"
+replot 
+
+#set term png font "Arial-Bold,8" size 800,600
+#set output "orig-dutycyle-compare.png"
+#replot
+#

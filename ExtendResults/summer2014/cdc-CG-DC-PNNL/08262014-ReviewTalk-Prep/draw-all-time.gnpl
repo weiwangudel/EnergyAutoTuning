@@ -1,0 +1,28 @@
+set xlabel 'Duty Cycle (Clock Skipping)' font "Arial-Bold, 9"
+set ylabel 'Normalized Time' font "Arial-Bold,9"
+#set ylabel 'Normalization' font "Arial-Bold,9"
+#set xrange [0:20]
+#set yrange [1:1.5]
+#set ytics mirror font "Arial-Bold,8"
+#set y2tics font "Arial-Bold,8"
+#set xtics font "Arial-Bold, 8"
+set rmargin at screen 0.92
+set xtics rotate by -45
+#set key below font "Arial-Bold,6"  maxrows 2 
+#set key left bottom font "Arial-Bold,6" # maxrows 2 
+#plot  'gnuplot.data' u 3:xticlabel(1) axes x1y1 title 'E' w linespoints lt 3 lw 2.5
+plot  'gnuplot.data' u 9:xticlabel(1) axes x1y1 title 'All' w linespoints lt 1 lw 2.5, \
+				'' u 10 axes x1y1 title 'Preprocess' w linespoints lt 2 lw 2.5, \
+				'' u 11 axes x1y1 title 'Parallel' w linespoints lt 3 lw 2.5, \
+				'' u 12 axes x1y1 title 'Loop13' w linespoints lt 4 lw 2.5, \
+				'' u 13 axes x1y1 title 'Loop14' w linespoints lt 5 lw 2.5, \
+				'' u 14 axes x1y1 title 'Loop16' w linespoints lt 6 lw 2.5
+
+set term pdfcairo enhanced color font "Arial-Bold,8"
+set output "output.pdf"
+replot 
+
+#set term png font "Arial-Bold,8" size 800,600
+#set output "orig-dutycyle-compare.png"
+#replot
+#
