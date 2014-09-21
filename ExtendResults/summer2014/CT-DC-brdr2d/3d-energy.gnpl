@@ -1,0 +1,16 @@
+#set xtics 75%, 6.25%, 100%
+#set logscale y 2
+#set ztics 0.5                                    
+set pm3d                                         
+#set hidden3d                                     
+splot "gnuplot.data"  using 1:2:4:xticlabel(1) t "Energy"
+set xlabel "Clock Skipping" offset 1,-1 rotate right
+set ylabel "# of Threads" 
+set zlabel "Energy" offset 0,0  rotate left
+#set view 49,303
+set view 54,150
+
+set term pdfcairo enhanced color font "Arial-Bold,8"
+set output "output.pdf"
+replot
+

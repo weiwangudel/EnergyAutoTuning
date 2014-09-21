@@ -1,0 +1,14 @@
+set xlabel "X"
+set ylabel "Y"
+set zlabel "Z"
+set xtics 1200000,300000
+set logscale y 2
+#set ztics 0.5                                    
+set pm3d                                         
+#set hidden3d                                     
+splot "data" using 1:2:4
+
+set term pdfcairo enhanced color font "Arial-Bold,8"
+set output "output.pdf"
+replot
+

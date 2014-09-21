@@ -1,0 +1,1340 @@
+Initializing ... 
+Initializing constant array ... 
+Initializing derivative array ... 
+Initializing data array ... 
+Initializing block matrix ... 
+Establishing initial conditions for spiral wave ... 
+b1: 973, b2: 1117, middley: 1024 
+**********************************************************
+
+Model parameters: 
+                 tfinal (msec):  0.50
+                     dt (msec): 0.0031
+                        Nsteps:     160.00
+                       Lx (cm): 10.00
+                       dx (cm): 0.0049
+                            Nx: 2048
+                       Ly (cm): 10.00
+                       dy (cm): 0.0049
+                            Ny: 2048
+        dt/[dx*dy] (msec/cm^2): 131.0720
+
+                msec per write: 1.000
+              Nsteps per write: 320
+Spatial rate for write (nodes): 1
+              datafile dx (cm): 0.0049
+              datafile dy (cm): 0.0049
+         datafile Nx (columns): 2048
+            datafile Ny (rows): 2048
+
+        Nsteps per user update: 1600
+              msec user update: 5.000
+   Monitor this node [mNx,mNy]: 1024, 1024
+
+
+BR Constants: 
+    gK1 (mmho/cm^2): 0.350
+    gNa (mmho/cm^2): 15.000
+           ENa (mV): 40.000
+    gx1 (mmho/cm^2): 0.800
+     gs (mmho/cm^2): 0.090
+       Cm (uF/cm^2): 1.000
+      kCa (msec^-1): 0.070
+   gNaC (mmho/cm^2): 0.000
+  Dpara (cm^2/msec): 0.000760
+Dperpen (cm^2/msec): 0.000380
+    theta (degrees): 33.000
+   sigma (unitless): 0.600
+       A (unitless): 1.000
+
+
+Mesh Ratios: 
+(dx*dy)/dt [0.00763 (cm^2/msec)] should be greater than 4*Dpara [0.00304 (cm^2/msec)].
+(dx*dy)/dt [0.00763 (cm^2/msec)] should be greater than 4*Dperpen [0.00152 (cm^2/msec)].
+
+
+Diffusion Tensor: 
+ D11 (cm^2/msec): 0.000647
+ D12 (cm^2/msec): 0.000174
+ D21 (cm^2/msec): 0.000174
+ D22 (cm^2/msec): 0.000493
+
+
+Laplacian Multipliers: 
+ Dp11 (msec^-1): 27.1489
+ Dp12 (msec^-1): 3.6401
+ Dp21 (msec^-1): 3.6401
+ Dp22 (msec^-1): 20.6662
+
+ Af=0
+ Initializing the A field as a homogenous distribution, A=1.000 
+
+Initial conditions set for spiral wave.
+
+Block information: 
+       icewidth (cm): 0.2500 
+       icbwidth (cm): 0.4500 
+    iclengthact (cm): 8.5000 
+  iclengthblock (cm): 9.2500 
+          icewidthn : 52 
+          icbwidthn : 93 
+       iclengthactn : 1740 
+     iclengthblockn : 1894 
+       blocktimenum : 1 
+   blocktimes (msec): 65.00 
+
+
+Initial Conditions: 
+        Vm (mV): -20.000
+  IK1 (uA/cm^2): 0.000
+  Ix1 (uA/cm^2): 0.000
+  x1 (unitless): 0.009
+  INa (uA/cm^2): 0.000
+   m (unitless): 1.000
+   h (unitless): 0.947
+   Is (uA/cm^2): 0.000
+   d (unitless): 0.004
+   f (unitless): 1.000
+   Cai (mole/L): 2.000e-07
+
+End conditions: Slab
+
+
+Variables to save to disk: 
+    Vm
+**********************************************************
+Opening files ... 
+Writing initial conditions ... 
+Entering time loop ... 
+
+Loop 0 <line-304> - Time 11.307372 Total energy consumed 1159.178805 Ave. Power Level 102.515312 Memory 572966 MemoryRefresh 18138
+	-------- Loop 0 (sock 1 consumed 558.465255, avg temp 55.728395, final temp 56 ) ------
+	-------- Loop 0 (sock 2 consumed 600.713550, avg temp 50.074074, final temp 52 ) ------
+Loop 1 <line-347> - Time 0.257128 Total energy consumed 27.391680 Ave. Power Level 106.529283 Memory 18317 MemoryRefresh 402
+	-------- Loop 1 (sock 1 consumed 13.044765, avg temp 55.777778, final temp 57 ) ------
+	-------- Loop 1 (sock 2 consumed 14.346915, avg temp 50.148148, final temp 51 ) ------
+Loop 2 <line-309> - Time 11.162180 Total energy consumed 1145.256030 Ave. Power Level 102.601462 Memory 563609 MemoryRefresh 17979
+	-------- Loop 2 (sock 1 consumed 552.291585, avg temp 55.650000, final temp 56 ) ------
+	-------- Loop 2 (sock 2 consumed 592.964445, avg temp 50.125000, final temp 50 ) ------
+Loop 3 <line-352> - Time 0.253960 Total energy consumed 27.241890 Ave. Power Level 107.268617 Memory 17923 MemoryRefresh 407
+	-------- Loop 3 (sock 1 consumed 12.775380, avg temp 55.812500, final temp 56 ) ------
+	-------- Loop 3 (sock 2 consumed 14.466510, avg temp 50.262500, final temp 50 ) ------
+Application(EnergyStat) - Time 23.888868 Total energy consumed 2403.870690 Ave. Power Level 100.627231 Memory 1177476 MemoryRefresh 38394 Final Temperature socket 1 : 57  socket 2 : 51 
+	 ParallelApplication(EnergyStat) - Time 22.980640 Total energy consumed 2359.068405 Ave. Power Level 102.654598 Memory 1172815 MemoryRefresh 36926
+total time is 22.99
+
+Simulation Finished!
+Saving final conditions...
+
+         tfinal: 0.500 msec
+     Final time: 0.503 msec
+         Nsteps:     160.00
+Number of steps: 161
+             Nx: 2048
+             Ny: 2048
+Initializing ... 
+Initializing constant array ... 
+Initializing derivative array ... 
+Initializing data array ... 
+Initializing block matrix ... 
+Establishing initial conditions for spiral wave ... 
+b1: 973, b2: 1117, middley: 1024 
+**********************************************************
+
+Model parameters: 
+                 tfinal (msec):  0.50
+                     dt (msec): 0.0031
+                        Nsteps:     160.00
+                       Lx (cm): 10.00
+                       dx (cm): 0.0049
+                            Nx: 2048
+                       Ly (cm): 10.00
+                       dy (cm): 0.0049
+                            Ny: 2048
+        dt/[dx*dy] (msec/cm^2): 131.0720
+
+                msec per write: 1.000
+              Nsteps per write: 320
+Spatial rate for write (nodes): 1
+              datafile dx (cm): 0.0049
+              datafile dy (cm): 0.0049
+         datafile Nx (columns): 2048
+            datafile Ny (rows): 2048
+
+        Nsteps per user update: 1600
+              msec user update: 5.000
+   Monitor this node [mNx,mNy]: 1024, 1024
+
+
+BR Constants: 
+    gK1 (mmho/cm^2): 0.350
+    gNa (mmho/cm^2): 15.000
+           ENa (mV): 40.000
+    gx1 (mmho/cm^2): 0.800
+     gs (mmho/cm^2): 0.090
+       Cm (uF/cm^2): 1.000
+      kCa (msec^-1): 0.070
+   gNaC (mmho/cm^2): 0.000
+  Dpara (cm^2/msec): 0.000760
+Dperpen (cm^2/msec): 0.000380
+    theta (degrees): 33.000
+   sigma (unitless): 0.600
+       A (unitless): 1.000
+
+
+Mesh Ratios: 
+(dx*dy)/dt [0.00763 (cm^2/msec)] should be greater than 4*Dpara [0.00304 (cm^2/msec)].
+(dx*dy)/dt [0.00763 (cm^2/msec)] should be greater than 4*Dperpen [0.00152 (cm^2/msec)].
+
+
+Diffusion Tensor: 
+ D11 (cm^2/msec): 0.000647
+ D12 (cm^2/msec): 0.000174
+ D21 (cm^2/msec): 0.000174
+ D22 (cm^2/msec): 0.000493
+
+
+Laplacian Multipliers: 
+ Dp11 (msec^-1): 27.1489
+ Dp12 (msec^-1): 3.6401
+ Dp21 (msec^-1): 3.6401
+ Dp22 (msec^-1): 20.6662
+
+ Af=0
+ Initializing the A field as a homogenous distribution, A=1.000 
+
+Initial conditions set for spiral wave.
+
+Block information: 
+       icewidth (cm): 0.2500 
+       icbwidth (cm): 0.4500 
+    iclengthact (cm): 8.5000 
+  iclengthblock (cm): 9.2500 
+          icewidthn : 52 
+          icbwidthn : 93 
+       iclengthactn : 1740 
+     iclengthblockn : 1894 
+       blocktimenum : 1 
+   blocktimes (msec): 65.00 
+
+
+Initial Conditions: 
+        Vm (mV): -20.000
+  IK1 (uA/cm^2): 0.000
+  Ix1 (uA/cm^2): 0.000
+  x1 (unitless): 0.009
+  INa (uA/cm^2): 0.000
+   m (unitless): 1.000
+   h (unitless): 0.947
+   Is (uA/cm^2): 0.000
+   d (unitless): 0.004
+   f (unitless): 1.000
+   Cai (mole/L): 2.000e-07
+
+End conditions: Slab
+
+
+Variables to save to disk: 
+    Vm
+**********************************************************
+Opening files ... 
+Writing initial conditions ... 
+Entering time loop ... 
+
+Loop 0 <line-304> - Time 11.299127 Total energy consumed 1160.537610 Ave. Power Level 102.710382 Memory 13005040244 MemoryRefresh 18126
+	-------- Loop 0 (sock 1 consumed 559.375275, avg temp 56.049383, final temp 56 ) ------
+	-------- Loop 0 (sock 2 consumed 601.162335, avg temp 50.567901, final temp 52 ) ------
+Loop 1 <line-347> - Time 0.256485 Total energy consumed 27.817065 Ave. Power Level 108.454967 Memory 18518 MemoryRefresh 413
+	-------- Loop 1 (sock 1 consumed 13.122120, avg temp 56.049383, final temp 56 ) ------
+	-------- Loop 1 (sock 2 consumed 14.694945, avg temp 50.604938, final temp 52 ) ------
+Loop 2 <line-309> - Time 11.164666 Total energy consumed 1148.167920 Ave. Power Level 102.839432 Memory 13698915645 MemoryRefresh 17986
+	-------- Loop 2 (sock 1 consumed 553.800330, avg temp 55.962500, final temp 56 ) ------
+	-------- Loop 2 (sock 2 consumed 594.367590, avg temp 50.537500, final temp 51 ) ------
+Loop 3 <line-352> - Time 0.251515 Total energy consumed 26.558100 Ave. Power Level 105.592513 Memory 18035 MemoryRefresh 405
+	-------- Loop 3 (sock 1 consumed 12.948210, avg temp 56.125000, final temp 57 ) ------
+	-------- Loop 3 (sock 2 consumed 13.609890, avg temp 50.687500, final temp 52 ) ------
+Application(EnergyStat) - Time 23.878988 Total energy consumed 2407.245975 Ave. Power Level 100.810217 Memory 26703996727 MemoryRefresh 38388 Final Temperature socket 1 : 56  socket 2 : 52 
+	 ParallelApplication(EnergyStat) - Time 22.971793 Total energy consumed 2363.080695 Ave. Power Level 102.868798 Memory 26703992442 MemoryRefresh 36930
+total time is 22.98
+
+Simulation Finished!
+Saving final conditions...
+
+         tfinal: 0.500 msec
+     Final time: 0.503 msec
+         Nsteps:     160.00
+Number of steps: 161
+             Nx: 2048
+             Ny: 2048
+Initializing ... 
+Initializing constant array ... 
+Initializing derivative array ... 
+Initializing data array ... 
+Initializing block matrix ... 
+Establishing initial conditions for spiral wave ... 
+b1: 973, b2: 1117, middley: 1024 
+**********************************************************
+
+Model parameters: 
+                 tfinal (msec):  0.50
+                     dt (msec): 0.0031
+                        Nsteps:     160.00
+                       Lx (cm): 10.00
+                       dx (cm): 0.0049
+                            Nx: 2048
+                       Ly (cm): 10.00
+                       dy (cm): 0.0049
+                            Ny: 2048
+        dt/[dx*dy] (msec/cm^2): 131.0720
+
+                msec per write: 1.000
+              Nsteps per write: 320
+Spatial rate for write (nodes): 1
+              datafile dx (cm): 0.0049
+              datafile dy (cm): 0.0049
+         datafile Nx (columns): 2048
+            datafile Ny (rows): 2048
+
+        Nsteps per user update: 1600
+              msec user update: 5.000
+   Monitor this node [mNx,mNy]: 1024, 1024
+
+
+BR Constants: 
+    gK1 (mmho/cm^2): 0.350
+    gNa (mmho/cm^2): 15.000
+           ENa (mV): 40.000
+    gx1 (mmho/cm^2): 0.800
+     gs (mmho/cm^2): 0.090
+       Cm (uF/cm^2): 1.000
+      kCa (msec^-1): 0.070
+   gNaC (mmho/cm^2): 0.000
+  Dpara (cm^2/msec): 0.000760
+Dperpen (cm^2/msec): 0.000380
+    theta (degrees): 33.000
+   sigma (unitless): 0.600
+       A (unitless): 1.000
+
+
+Mesh Ratios: 
+(dx*dy)/dt [0.00763 (cm^2/msec)] should be greater than 4*Dpara [0.00304 (cm^2/msec)].
+(dx*dy)/dt [0.00763 (cm^2/msec)] should be greater than 4*Dperpen [0.00152 (cm^2/msec)].
+
+
+Diffusion Tensor: 
+ D11 (cm^2/msec): 0.000647
+ D12 (cm^2/msec): 0.000174
+ D21 (cm^2/msec): 0.000174
+ D22 (cm^2/msec): 0.000493
+
+
+Laplacian Multipliers: 
+ Dp11 (msec^-1): 27.1489
+ Dp12 (msec^-1): 3.6401
+ Dp21 (msec^-1): 3.6401
+ Dp22 (msec^-1): 20.6662
+
+ Af=0
+ Initializing the A field as a homogenous distribution, A=1.000 
+
+Initial conditions set for spiral wave.
+
+Block information: 
+       icewidth (cm): 0.2500 
+       icbwidth (cm): 0.4500 
+    iclengthact (cm): 8.5000 
+  iclengthblock (cm): 9.2500 
+          icewidthn : 52 
+          icbwidthn : 93 
+       iclengthactn : 1740 
+     iclengthblockn : 1894 
+       blocktimenum : 1 
+   blocktimes (msec): 65.00 
+
+
+Initial Conditions: 
+        Vm (mV): -20.000
+  IK1 (uA/cm^2): 0.000
+  Ix1 (uA/cm^2): 0.000
+  x1 (unitless): 0.009
+  INa (uA/cm^2): 0.000
+   m (unitless): 1.000
+   h (unitless): 0.947
+   Is (uA/cm^2): 0.000
+   d (unitless): 0.004
+   f (unitless): 1.000
+   Cai (mole/L): 2.000e-07
+
+End conditions: Slab
+
+
+Variables to save to disk: 
+    Vm
+**********************************************************
+Opening files ... 
+Writing initial conditions ... 
+Entering time loop ... 
+
+Loop 0 <line-304> - Time 11.290724 Total energy consumed 1160.901735 Ave. Power Level 102.819065 Memory 572081 MemoryRefresh 18113
+	-------- Loop 0 (sock 1 consumed 560.029875, avg temp 56.333333, final temp 57 ) ------
+	-------- Loop 0 (sock 2 consumed 600.871860, avg temp 51.024691, final temp 51 ) ------
+Loop 1 <line-347> - Time 0.255771 Total energy consumed 27.023235 Ave. Power Level 105.653925 Memory 18211 MemoryRefresh 407
+	-------- Loop 1 (sock 1 consumed 12.774915, avg temp 56.333333, final temp 57 ) ------
+	-------- Loop 1 (sock 2 consumed 14.248320, avg temp 51.172840, final temp 52 ) ------
+Loop 2 <line-309> - Time 11.156875 Total energy consumed 1147.981485 Ave. Power Level 102.894536 Memory 562387 MemoryRefresh 17941
+	-------- Loop 2 (sock 1 consumed 554.338260, avg temp 56.300000, final temp 57 ) ------
+	-------- Loop 2 (sock 2 consumed 593.643225, avg temp 51.037500, final temp 52 ) ------
+Loop 3 <line-352> - Time 0.252067 Total energy consumed 26.035170 Ave. Power Level 103.286524 Memory 17543 MemoryRefresh 391
+	-------- Loop 3 (sock 1 consumed 12.459975, avg temp 56.312500, final temp 57 ) ------
+	-------- Loop 3 (sock 2 consumed 13.575195, avg temp 51.062500, final temp 52 ) ------
+Application(EnergyStat) - Time 23.868906 Total energy consumed 2406.156630 Ave. Power Level 100.807159 Memory 1174672 MemoryRefresh 38326 Final Temperature socket 1 : 57  socket 2 : 52 
+	 ParallelApplication(EnergyStat) - Time 22.955438 Total energy consumed 2361.941625 Ave. Power Level 102.892465 Memory 1170222 MemoryRefresh 36852
+total time is 22.97
+
+Simulation Finished!
+Saving final conditions...
+
+         tfinal: 0.500 msec
+     Final time: 0.503 msec
+         Nsteps:     160.00
+Number of steps: 161
+             Nx: 2048
+             Ny: 2048
+Initializing ... 
+Initializing constant array ... 
+Initializing derivative array ... 
+Initializing data array ... 
+Initializing block matrix ... 
+Establishing initial conditions for spiral wave ... 
+b1: 973, b2: 1117, middley: 1024 
+**********************************************************
+
+Model parameters: 
+                 tfinal (msec):  0.50
+                     dt (msec): 0.0031
+                        Nsteps:     160.00
+                       Lx (cm): 10.00
+                       dx (cm): 0.0049
+                            Nx: 2048
+                       Ly (cm): 10.00
+                       dy (cm): 0.0049
+                            Ny: 2048
+        dt/[dx*dy] (msec/cm^2): 131.0720
+
+                msec per write: 1.000
+              Nsteps per write: 320
+Spatial rate for write (nodes): 1
+              datafile dx (cm): 0.0049
+              datafile dy (cm): 0.0049
+         datafile Nx (columns): 2048
+            datafile Ny (rows): 2048
+
+        Nsteps per user update: 1600
+              msec user update: 5.000
+   Monitor this node [mNx,mNy]: 1024, 1024
+
+
+BR Constants: 
+    gK1 (mmho/cm^2): 0.350
+    gNa (mmho/cm^2): 15.000
+           ENa (mV): 40.000
+    gx1 (mmho/cm^2): 0.800
+     gs (mmho/cm^2): 0.090
+       Cm (uF/cm^2): 1.000
+      kCa (msec^-1): 0.070
+   gNaC (mmho/cm^2): 0.000
+  Dpara (cm^2/msec): 0.000760
+Dperpen (cm^2/msec): 0.000380
+    theta (degrees): 33.000
+   sigma (unitless): 0.600
+       A (unitless): 1.000
+
+
+Mesh Ratios: 
+(dx*dy)/dt [0.00763 (cm^2/msec)] should be greater than 4*Dpara [0.00304 (cm^2/msec)].
+(dx*dy)/dt [0.00763 (cm^2/msec)] should be greater than 4*Dperpen [0.00152 (cm^2/msec)].
+
+
+Diffusion Tensor: 
+ D11 (cm^2/msec): 0.000647
+ D12 (cm^2/msec): 0.000174
+ D21 (cm^2/msec): 0.000174
+ D22 (cm^2/msec): 0.000493
+
+
+Laplacian Multipliers: 
+ Dp11 (msec^-1): 27.1489
+ Dp12 (msec^-1): 3.6401
+ Dp21 (msec^-1): 3.6401
+ Dp22 (msec^-1): 20.6662
+
+ Af=0
+ Initializing the A field as a homogenous distribution, A=1.000 
+
+Initial conditions set for spiral wave.
+
+Block information: 
+       icewidth (cm): 0.2500 
+       icbwidth (cm): 0.4500 
+    iclengthact (cm): 8.5000 
+  iclengthblock (cm): 9.2500 
+          icewidthn : 52 
+          icbwidthn : 93 
+       iclengthactn : 1740 
+     iclengthblockn : 1894 
+       blocktimenum : 1 
+   blocktimes (msec): 65.00 
+
+
+Initial Conditions: 
+        Vm (mV): -20.000
+  IK1 (uA/cm^2): 0.000
+  Ix1 (uA/cm^2): 0.000
+  x1 (unitless): 0.009
+  INa (uA/cm^2): 0.000
+   m (unitless): 1.000
+   h (unitless): 0.947
+   Is (uA/cm^2): 0.000
+   d (unitless): 0.004
+   f (unitless): 1.000
+   Cai (mole/L): 2.000e-07
+
+End conditions: Slab
+
+
+Variables to save to disk: 
+    Vm
+**********************************************************
+Opening files ... 
+Writing initial conditions ... 
+Entering time loop ... 
+
+Loop 0 <line-304> - Time 11.300598 Total energy consumed 1162.361670 Ave. Power Level 102.858418 Memory 572842 MemoryRefresh 18140
+	-------- Loop 0 (sock 1 consumed 560.762025, avg temp 56.493827, final temp 57 ) ------
+	-------- Loop 0 (sock 2 consumed 601.599645, avg temp 51.012346, final temp 52 ) ------
+Loop 1 <line-347> - Time 0.257097 Total energy consumed 27.730635 Ave. Power Level 107.860435 Memory 18226 MemoryRefresh 402
+	-------- Loop 1 (sock 1 consumed 13.268565, avg temp 56.604938, final temp 58 ) ------
+	-------- Loop 1 (sock 2 consumed 14.462070, avg temp 51.222222, final temp 52 ) ------
+Loop 2 <line-309> - Time 11.169583 Total energy consumed 1149.184935 Ave. Power Level 102.885214 Memory 562935 MemoryRefresh 17982
+	-------- Loop 2 (sock 1 consumed 555.009180, avg temp 56.487500, final temp 57 ) ------
+	-------- Loop 2 (sock 2 consumed 594.175755, avg temp 51.087500, final temp 52 ) ------
+Loop 3 <line-352> - Time 0.250979 Total energy consumed 27.396810 Ave. Power Level 109.159797 Memory 17966 MemoryRefresh 407
+	-------- Loop 3 (sock 1 consumed 12.941715, avg temp 56.612500, final temp 57 ) ------
+	-------- Loop 3 (sock 2 consumed 14.455095, avg temp 51.175000, final temp 52 ) ------
+Application(EnergyStat) - Time 23.885594 Total energy consumed 2411.450445 Ave. Power Level 100.958360 Memory 1176384 MemoryRefresh 38390 Final Temperature socket 1 : 58  socket 2 : 52 
+	 ParallelApplication(EnergyStat) - Time 22.978258 Total energy consumed 2366.674050 Ave. Power Level 102.996236 Memory 1171969 MemoryRefresh 36931
+total time is 22.99
+
+Simulation Finished!
+Saving final conditions...
+
+         tfinal: 0.500 msec
+     Final time: 0.503 msec
+         Nsteps:     160.00
+Number of steps: 161
+             Nx: 2048
+             Ny: 2048
+Initializing ... 
+Initializing constant array ... 
+Initializing derivative array ... 
+Initializing data array ... 
+Initializing block matrix ... 
+Establishing initial conditions for spiral wave ... 
+b1: 973, b2: 1117, middley: 1024 
+**********************************************************
+
+Model parameters: 
+                 tfinal (msec):  0.50
+                     dt (msec): 0.0031
+                        Nsteps:     160.00
+                       Lx (cm): 10.00
+                       dx (cm): 0.0049
+                            Nx: 2048
+                       Ly (cm): 10.00
+                       dy (cm): 0.0049
+                            Ny: 2048
+        dt/[dx*dy] (msec/cm^2): 131.0720
+
+                msec per write: 1.000
+              Nsteps per write: 320
+Spatial rate for write (nodes): 1
+              datafile dx (cm): 0.0049
+              datafile dy (cm): 0.0049
+         datafile Nx (columns): 2048
+            datafile Ny (rows): 2048
+
+        Nsteps per user update: 1600
+              msec user update: 5.000
+   Monitor this node [mNx,mNy]: 1024, 1024
+
+
+BR Constants: 
+    gK1 (mmho/cm^2): 0.350
+    gNa (mmho/cm^2): 15.000
+           ENa (mV): 40.000
+    gx1 (mmho/cm^2): 0.800
+     gs (mmho/cm^2): 0.090
+       Cm (uF/cm^2): 1.000
+      kCa (msec^-1): 0.070
+   gNaC (mmho/cm^2): 0.000
+  Dpara (cm^2/msec): 0.000760
+Dperpen (cm^2/msec): 0.000380
+    theta (degrees): 33.000
+   sigma (unitless): 0.600
+       A (unitless): 1.000
+
+
+Mesh Ratios: 
+(dx*dy)/dt [0.00763 (cm^2/msec)] should be greater than 4*Dpara [0.00304 (cm^2/msec)].
+(dx*dy)/dt [0.00763 (cm^2/msec)] should be greater than 4*Dperpen [0.00152 (cm^2/msec)].
+
+
+Diffusion Tensor: 
+ D11 (cm^2/msec): 0.000647
+ D12 (cm^2/msec): 0.000174
+ D21 (cm^2/msec): 0.000174
+ D22 (cm^2/msec): 0.000493
+
+
+Laplacian Multipliers: 
+ Dp11 (msec^-1): 27.1489
+ Dp12 (msec^-1): 3.6401
+ Dp21 (msec^-1): 3.6401
+ Dp22 (msec^-1): 20.6662
+
+ Af=0
+ Initializing the A field as a homogenous distribution, A=1.000 
+
+Initial conditions set for spiral wave.
+
+Block information: 
+       icewidth (cm): 0.2500 
+       icbwidth (cm): 0.4500 
+    iclengthact (cm): 8.5000 
+  iclengthblock (cm): 9.2500 
+          icewidthn : 52 
+          icbwidthn : 93 
+       iclengthactn : 1740 
+     iclengthblockn : 1894 
+       blocktimenum : 1 
+   blocktimes (msec): 65.00 
+
+
+Initial Conditions: 
+        Vm (mV): -20.000
+  IK1 (uA/cm^2): 0.000
+  Ix1 (uA/cm^2): 0.000
+  x1 (unitless): 0.009
+  INa (uA/cm^2): 0.000
+   m (unitless): 1.000
+   h (unitless): 0.947
+   Is (uA/cm^2): 0.000
+   d (unitless): 0.004
+   f (unitless): 1.000
+   Cai (mole/L): 2.000e-07
+
+End conditions: Slab
+
+
+Variables to save to disk: 
+    Vm
+**********************************************************
+Opening files ... 
+Writing initial conditions ... 
+Entering time loop ... 
+
+Loop 0 <line-304> - Time 11.310675 Total energy consumed 1163.840715 Ave. Power Level 102.897551 Memory 572301 MemoryRefresh 18118
+	-------- Loop 0 (sock 1 consumed 561.630915, avg temp 56.765432, final temp 57 ) ------
+	-------- Loop 0 (sock 2 consumed 602.209800, avg temp 51.111111, final temp 51 ) ------
+Loop 1 <line-347> - Time 0.256567 Total energy consumed 26.921685 Ave. Power Level 104.930375 Memory 18332 MemoryRefresh 407
+	-------- Loop 1 (sock 1 consumed 12.894495, avg temp 56.864198, final temp 57 ) ------
+	-------- Loop 1 (sock 2 consumed 14.027190, avg temp 51.172840, final temp 51 ) ------
+Loop 2 <line-309> - Time 11.153217 Total energy consumed 1148.900460 Ave. Power Level 103.010681 Memory 561712 MemoryRefresh 17934
+	-------- Loop 2 (sock 1 consumed 554.814705, avg temp 56.875000, final temp 57 ) ------
+	-------- Loop 2 (sock 2 consumed 594.085755, avg temp 51.100000, final temp 52 ) ------
+Loop 3 <line-352> - Time 0.250367 Total energy consumed 25.864035 Ave. Power Level 103.304635 Memory 17643 MemoryRefresh 395
+	-------- Loop 3 (sock 1 consumed 12.384120, avg temp 56.925000, final temp 58 ) ------
+	-------- Loop 3 (sock 2 consumed 13.479915, avg temp 51.212500, final temp 52 ) ------
+Application(EnergyStat) - Time 23.876528 Total energy consumed 2409.779400 Ave. Power Level 100.926710 Memory 1174742 MemoryRefresh 38330 Final Temperature socket 1 : 57  socket 2 : 51 
+	 ParallelApplication(EnergyStat) - Time 22.970825 Total energy consumed 2365.526895 Ave. Power Level 102.979622 Memory 1169988 MemoryRefresh 36854
+total time is 22.98
+
+Simulation Finished!
+Saving final conditions...
+
+         tfinal: 0.500 msec
+     Final time: 0.503 msec
+         Nsteps:     160.00
+Number of steps: 161
+             Nx: 2048
+             Ny: 2048
+Initializing ... 
+Initializing constant array ... 
+Initializing derivative array ... 
+Initializing data array ... 
+Initializing block matrix ... 
+Establishing initial conditions for spiral wave ... 
+b1: 973, b2: 1117, middley: 1024 
+**********************************************************
+
+Model parameters: 
+                 tfinal (msec):  0.50
+                     dt (msec): 0.0031
+                        Nsteps:     160.00
+                       Lx (cm): 10.00
+                       dx (cm): 0.0049
+                            Nx: 2048
+                       Ly (cm): 10.00
+                       dy (cm): 0.0049
+                            Ny: 2048
+        dt/[dx*dy] (msec/cm^2): 131.0720
+
+                msec per write: 1.000
+              Nsteps per write: 320
+Spatial rate for write (nodes): 1
+              datafile dx (cm): 0.0049
+              datafile dy (cm): 0.0049
+         datafile Nx (columns): 2048
+            datafile Ny (rows): 2048
+
+        Nsteps per user update: 1600
+              msec user update: 5.000
+   Monitor this node [mNx,mNy]: 1024, 1024
+
+
+BR Constants: 
+    gK1 (mmho/cm^2): 0.350
+    gNa (mmho/cm^2): 15.000
+           ENa (mV): 40.000
+    gx1 (mmho/cm^2): 0.800
+     gs (mmho/cm^2): 0.090
+       Cm (uF/cm^2): 1.000
+      kCa (msec^-1): 0.070
+   gNaC (mmho/cm^2): 0.000
+  Dpara (cm^2/msec): 0.000760
+Dperpen (cm^2/msec): 0.000380
+    theta (degrees): 33.000
+   sigma (unitless): 0.600
+       A (unitless): 1.000
+
+
+Mesh Ratios: 
+(dx*dy)/dt [0.00763 (cm^2/msec)] should be greater than 4*Dpara [0.00304 (cm^2/msec)].
+(dx*dy)/dt [0.00763 (cm^2/msec)] should be greater than 4*Dperpen [0.00152 (cm^2/msec)].
+
+
+Diffusion Tensor: 
+ D11 (cm^2/msec): 0.000647
+ D12 (cm^2/msec): 0.000174
+ D21 (cm^2/msec): 0.000174
+ D22 (cm^2/msec): 0.000493
+
+
+Laplacian Multipliers: 
+ Dp11 (msec^-1): 27.1489
+ Dp12 (msec^-1): 3.6401
+ Dp21 (msec^-1): 3.6401
+ Dp22 (msec^-1): 20.6662
+
+ Af=0
+ Initializing the A field as a homogenous distribution, A=1.000 
+
+Initial conditions set for spiral wave.
+
+Block information: 
+       icewidth (cm): 0.2500 
+       icbwidth (cm): 0.4500 
+    iclengthact (cm): 8.5000 
+  iclengthblock (cm): 9.2500 
+          icewidthn : 52 
+          icbwidthn : 93 
+       iclengthactn : 1740 
+     iclengthblockn : 1894 
+       blocktimenum : 1 
+   blocktimes (msec): 65.00 
+
+
+Initial Conditions: 
+        Vm (mV): -20.000
+  IK1 (uA/cm^2): 0.000
+  Ix1 (uA/cm^2): 0.000
+  x1 (unitless): 0.009
+  INa (uA/cm^2): 0.000
+   m (unitless): 1.000
+   h (unitless): 0.947
+   Is (uA/cm^2): 0.000
+   d (unitless): 0.004
+   f (unitless): 1.000
+   Cai (mole/L): 2.000e-07
+
+End conditions: Slab
+
+
+Variables to save to disk: 
+    Vm
+**********************************************************
+Opening files ... 
+Writing initial conditions ... 
+Entering time loop ... 
+
+Loop 0 <line-304> - Time 11.306740 Total energy consumed 1163.459505 Ave. Power Level 102.899642 Memory 16349074599 MemoryRefresh 18150
+	-------- Loop 0 (sock 1 consumed 561.353130, avg temp 57.283951, final temp 57 ) ------
+	-------- Loop 0 (sock 2 consumed 602.106375, avg temp 51.074074, final temp 52 ) ------
+Loop 1 <line-347> - Time 0.259396 Total energy consumed 27.688080 Ave. Power Level 106.740461 Memory 18321 MemoryRefresh 408
+	-------- Loop 1 (sock 1 consumed 13.059690, avg temp 57.358025, final temp 58 ) ------
+	-------- Loop 1 (sock 2 consumed 14.628390, avg temp 51.135802, final temp 52 ) ------
+Loop 2 <line-309> - Time 11.163443 Total energy consumed 1149.008520 Ave. Power Level 102.926003 Memory 563381 MemoryRefresh 17982
+	-------- Loop 2 (sock 1 consumed 555.097980, avg temp 57.287500, final temp 58 ) ------
+	-------- Loop 2 (sock 2 consumed 593.910540, avg temp 51.150000, final temp 51 ) ------
+Loop 3 <line-352> - Time 0.252647 Total energy consumed 27.698310 Ave. Power Level 109.632613 Memory 18188 MemoryRefresh 412
+	-------- Loop 3 (sock 1 consumed 13.200660, avg temp 57.487500, final temp 58 ) ------
+	-------- Loop 3 (sock 2 consumed 14.497650, avg temp 51.125000, final temp 52 ) ------
+Application(EnergyStat) - Time 23.891408 Total energy consumed 2411.931960 Ave. Power Level 100.953950 Memory 16349678899 MemoryRefresh 38416 Final Temperature socket 1 : 58  socket 2 : 52 
+	 ParallelApplication(EnergyStat) - Time 22.982226 Total energy consumed 2367.854415 Ave. Power Level 103.029814 Memory 16349674489 MemoryRefresh 36952
+total time is 22.99
+
+Simulation Finished!
+Saving final conditions...
+
+         tfinal: 0.500 msec
+     Final time: 0.503 msec
+         Nsteps:     160.00
+Number of steps: 161
+             Nx: 2048
+             Ny: 2048
+Initializing ... 
+Initializing constant array ... 
+Initializing derivative array ... 
+Initializing data array ... 
+Initializing block matrix ... 
+Establishing initial conditions for spiral wave ... 
+b1: 973, b2: 1117, middley: 1024 
+**********************************************************
+
+Model parameters: 
+                 tfinal (msec):  0.50
+                     dt (msec): 0.0031
+                        Nsteps:     160.00
+                       Lx (cm): 10.00
+                       dx (cm): 0.0049
+                            Nx: 2048
+                       Ly (cm): 10.00
+                       dy (cm): 0.0049
+                            Ny: 2048
+        dt/[dx*dy] (msec/cm^2): 131.0720
+
+                msec per write: 1.000
+              Nsteps per write: 320
+Spatial rate for write (nodes): 1
+              datafile dx (cm): 0.0049
+              datafile dy (cm): 0.0049
+         datafile Nx (columns): 2048
+            datafile Ny (rows): 2048
+
+        Nsteps per user update: 1600
+              msec user update: 5.000
+   Monitor this node [mNx,mNy]: 1024, 1024
+
+
+BR Constants: 
+    gK1 (mmho/cm^2): 0.350
+    gNa (mmho/cm^2): 15.000
+           ENa (mV): 40.000
+    gx1 (mmho/cm^2): 0.800
+     gs (mmho/cm^2): 0.090
+       Cm (uF/cm^2): 1.000
+      kCa (msec^-1): 0.070
+   gNaC (mmho/cm^2): 0.000
+  Dpara (cm^2/msec): 0.000760
+Dperpen (cm^2/msec): 0.000380
+    theta (degrees): 33.000
+   sigma (unitless): 0.600
+       A (unitless): 1.000
+
+
+Mesh Ratios: 
+(dx*dy)/dt [0.00763 (cm^2/msec)] should be greater than 4*Dpara [0.00304 (cm^2/msec)].
+(dx*dy)/dt [0.00763 (cm^2/msec)] should be greater than 4*Dperpen [0.00152 (cm^2/msec)].
+
+
+Diffusion Tensor: 
+ D11 (cm^2/msec): 0.000647
+ D12 (cm^2/msec): 0.000174
+ D21 (cm^2/msec): 0.000174
+ D22 (cm^2/msec): 0.000493
+
+
+Laplacian Multipliers: 
+ Dp11 (msec^-1): 27.1489
+ Dp12 (msec^-1): 3.6401
+ Dp21 (msec^-1): 3.6401
+ Dp22 (msec^-1): 20.6662
+
+ Af=0
+ Initializing the A field as a homogenous distribution, A=1.000 
+
+Initial conditions set for spiral wave.
+
+Block information: 
+       icewidth (cm): 0.2500 
+       icbwidth (cm): 0.4500 
+    iclengthact (cm): 8.5000 
+  iclengthblock (cm): 9.2500 
+          icewidthn : 52 
+          icbwidthn : 93 
+       iclengthactn : 1740 
+     iclengthblockn : 1894 
+       blocktimenum : 1 
+   blocktimes (msec): 65.00 
+
+
+Initial Conditions: 
+        Vm (mV): -20.000
+  IK1 (uA/cm^2): 0.000
+  Ix1 (uA/cm^2): 0.000
+  x1 (unitless): 0.009
+  INa (uA/cm^2): 0.000
+   m (unitless): 1.000
+   h (unitless): 0.947
+   Is (uA/cm^2): 0.000
+   d (unitless): 0.004
+   f (unitless): 1.000
+   Cai (mole/L): 2.000e-07
+
+End conditions: Slab
+
+
+Variables to save to disk: 
+    Vm
+**********************************************************
+Opening files ... 
+Writing initial conditions ... 
+Entering time loop ... 
+
+Loop 0 <line-304> - Time 11.303943 Total energy consumed 1161.680715 Ave. Power Level 102.767745 Memory 573395 MemoryRefresh 18143
+	-------- Loop 0 (sock 1 consumed 561.036645, avg temp 56.641975, final temp 57 ) ------
+	-------- Loop 0 (sock 2 consumed 600.644070, avg temp 51.098765, final temp 52 ) ------
+Loop 1 <line-347> - Time 0.256671 Total energy consumed 25.978845 Ave. Power Level 101.214498 Memory 17925 MemoryRefresh 387
+	-------- Loop 1 (sock 1 consumed 12.529650, avg temp 56.827160, final temp 57 ) ------
+	-------- Loop 1 (sock 2 consumed 13.449195, avg temp 51.197531, final temp 52 ) ------
+Loop 2 <line-309> - Time 11.142046 Total energy consumed 1146.074760 Ave. Power Level 102.860350 Memory 562676 MemoryRefresh 17952
+	-------- Loop 2 (sock 1 consumed 554.238060, avg temp 56.637500, final temp 57 ) ------
+	-------- Loop 2 (sock 2 consumed 591.836700, avg temp 51.112500, final temp 52 ) ------
+Loop 3 <line-352> - Time 0.251282 Total energy consumed 27.365100 Ave. Power Level 108.901888 Memory 18134 MemoryRefresh 416
+	-------- Loop 3 (sock 1 consumed 12.925335, avg temp 56.825000, final temp 57 ) ------
+	-------- Loop 3 (sock 2 consumed 14.439765, avg temp 51.212500, final temp 51 ) ------
+Application(EnergyStat) - Time 23.893901 Total energy consumed 2406.795930 Ave. Power Level 100.728463 Memory 1176543 MemoryRefresh 38414 Final Temperature socket 1 : 57  socket 2 : 52 
+	 ParallelApplication(EnergyStat) - Time 22.953942 Total energy consumed 2361.099420 Ave. Power Level 102.862480 Memory 1172130 MemoryRefresh 36898
+total time is 22.97
+
+Simulation Finished!
+Saving final conditions...
+
+         tfinal: 0.500 msec
+     Final time: 0.503 msec
+         Nsteps:     160.00
+Number of steps: 161
+             Nx: 2048
+             Ny: 2048
+Initializing ... 
+Initializing constant array ... 
+Initializing derivative array ... 
+Initializing data array ... 
+Initializing block matrix ... 
+Establishing initial conditions for spiral wave ... 
+b1: 973, b2: 1117, middley: 1024 
+**********************************************************
+
+Model parameters: 
+                 tfinal (msec):  0.50
+                     dt (msec): 0.0031
+                        Nsteps:     160.00
+                       Lx (cm): 10.00
+                       dx (cm): 0.0049
+                            Nx: 2048
+                       Ly (cm): 10.00
+                       dy (cm): 0.0049
+                            Ny: 2048
+        dt/[dx*dy] (msec/cm^2): 131.0720
+
+                msec per write: 1.000
+              Nsteps per write: 320
+Spatial rate for write (nodes): 1
+              datafile dx (cm): 0.0049
+              datafile dy (cm): 0.0049
+         datafile Nx (columns): 2048
+            datafile Ny (rows): 2048
+
+        Nsteps per user update: 1600
+              msec user update: 5.000
+   Monitor this node [mNx,mNy]: 1024, 1024
+
+
+BR Constants: 
+    gK1 (mmho/cm^2): 0.350
+    gNa (mmho/cm^2): 15.000
+           ENa (mV): 40.000
+    gx1 (mmho/cm^2): 0.800
+     gs (mmho/cm^2): 0.090
+       Cm (uF/cm^2): 1.000
+      kCa (msec^-1): 0.070
+   gNaC (mmho/cm^2): 0.000
+  Dpara (cm^2/msec): 0.000760
+Dperpen (cm^2/msec): 0.000380
+    theta (degrees): 33.000
+   sigma (unitless): 0.600
+       A (unitless): 1.000
+
+
+Mesh Ratios: 
+(dx*dy)/dt [0.00763 (cm^2/msec)] should be greater than 4*Dpara [0.00304 (cm^2/msec)].
+(dx*dy)/dt [0.00763 (cm^2/msec)] should be greater than 4*Dperpen [0.00152 (cm^2/msec)].
+
+
+Diffusion Tensor: 
+ D11 (cm^2/msec): 0.000647
+ D12 (cm^2/msec): 0.000174
+ D21 (cm^2/msec): 0.000174
+ D22 (cm^2/msec): 0.000493
+
+
+Laplacian Multipliers: 
+ Dp11 (msec^-1): 27.1489
+ Dp12 (msec^-1): 3.6401
+ Dp21 (msec^-1): 3.6401
+ Dp22 (msec^-1): 20.6662
+
+ Af=0
+ Initializing the A field as a homogenous distribution, A=1.000 
+
+Initial conditions set for spiral wave.
+
+Block information: 
+       icewidth (cm): 0.2500 
+       icbwidth (cm): 0.4500 
+    iclengthact (cm): 8.5000 
+  iclengthblock (cm): 9.2500 
+          icewidthn : 52 
+          icbwidthn : 93 
+       iclengthactn : 1740 
+     iclengthblockn : 1894 
+       blocktimenum : 1 
+   blocktimes (msec): 65.00 
+
+
+Initial Conditions: 
+        Vm (mV): -20.000
+  IK1 (uA/cm^2): 0.000
+  Ix1 (uA/cm^2): 0.000
+  x1 (unitless): 0.009
+  INa (uA/cm^2): 0.000
+   m (unitless): 1.000
+   h (unitless): 0.947
+   Is (uA/cm^2): 0.000
+   d (unitless): 0.004
+   f (unitless): 1.000
+   Cai (mole/L): 2.000e-07
+
+End conditions: Slab
+
+
+Variables to save to disk: 
+    Vm
+**********************************************************
+Opening files ... 
+Writing initial conditions ... 
+Entering time loop ... 
+
+Loop 0 <line-304> - Time 11.297111 Total energy consumed 1163.216490 Ave. Power Level 102.965834 Memory 15475871774 MemoryRefresh 18140
+	-------- Loop 0 (sock 1 consumed 561.098130, avg temp 56.567901, final temp 57 ) ------
+	-------- Loop 0 (sock 2 consumed 602.118360, avg temp 51.320988, final temp 52 ) ------
+Loop 1 <line-347> - Time 0.256074 Total energy consumed 26.966145 Ave. Power Level 105.306106 Memory 18030 MemoryRefresh 394
+	-------- Loop 1 (sock 1 consumed 13.091715, avg temp 56.654321, final temp 56 ) ------
+	-------- Loop 1 (sock 2 consumed 13.874430, avg temp 51.419753, final temp 52 ) ------
+Loop 2 <line-309> - Time 11.168005 Total energy consumed 1150.774410 Ave. Power Level 103.042071 Memory 563755 MemoryRefresh 17992
+	-------- Loop 2 (sock 1 consumed 555.705750, avg temp 56.637500, final temp 57 ) ------
+	-------- Loop 2 (sock 2 consumed 595.068660, avg temp 51.325000, final temp 52 ) ------
+Loop 3 <line-352> - Time 0.250846 Total energy consumed 25.843380 Ave. Power Level 103.024816 Memory 17862 MemoryRefresh 399
+	-------- Loop 3 (sock 1 consumed 12.118065, avg temp 56.675000, final temp 57 ) ------
+	-------- Loop 3 (sock 2 consumed 13.725315, avg temp 51.400000, final temp 51 ) ------
+Application(EnergyStat) - Time 23.884887 Total energy consumed 2411.518260 Ave. Power Level 100.964191 Memory 15476475883 MemoryRefresh 38408 Final Temperature socket 1 : 57  socket 2 : 52 
+	 ParallelApplication(EnergyStat) - Time 22.972037 Total energy consumed 2366.800425 Ave. Power Level 103.029629 Memory 15476471421 MemoryRefresh 36925
+total time is 22.98
+
+Simulation Finished!
+Saving final conditions...
+
+         tfinal: 0.500 msec
+     Final time: 0.503 msec
+         Nsteps:     160.00
+Number of steps: 161
+             Nx: 2048
+             Ny: 2048
+Initializing ... 
+Initializing constant array ... 
+Initializing derivative array ... 
+Initializing data array ... 
+Initializing block matrix ... 
+Establishing initial conditions for spiral wave ... 
+b1: 973, b2: 1117, middley: 1024 
+**********************************************************
+
+Model parameters: 
+                 tfinal (msec):  0.50
+                     dt (msec): 0.0031
+                        Nsteps:     160.00
+                       Lx (cm): 10.00
+                       dx (cm): 0.0049
+                            Nx: 2048
+                       Ly (cm): 10.00
+                       dy (cm): 0.0049
+                            Ny: 2048
+        dt/[dx*dy] (msec/cm^2): 131.0720
+
+                msec per write: 1.000
+              Nsteps per write: 320
+Spatial rate for write (nodes): 1
+              datafile dx (cm): 0.0049
+              datafile dy (cm): 0.0049
+         datafile Nx (columns): 2048
+            datafile Ny (rows): 2048
+
+        Nsteps per user update: 1600
+              msec user update: 5.000
+   Monitor this node [mNx,mNy]: 1024, 1024
+
+
+BR Constants: 
+    gK1 (mmho/cm^2): 0.350
+    gNa (mmho/cm^2): 15.000
+           ENa (mV): 40.000
+    gx1 (mmho/cm^2): 0.800
+     gs (mmho/cm^2): 0.090
+       Cm (uF/cm^2): 1.000
+      kCa (msec^-1): 0.070
+   gNaC (mmho/cm^2): 0.000
+  Dpara (cm^2/msec): 0.000760
+Dperpen (cm^2/msec): 0.000380
+    theta (degrees): 33.000
+   sigma (unitless): 0.600
+       A (unitless): 1.000
+
+
+Mesh Ratios: 
+(dx*dy)/dt [0.00763 (cm^2/msec)] should be greater than 4*Dpara [0.00304 (cm^2/msec)].
+(dx*dy)/dt [0.00763 (cm^2/msec)] should be greater than 4*Dperpen [0.00152 (cm^2/msec)].
+
+
+Diffusion Tensor: 
+ D11 (cm^2/msec): 0.000647
+ D12 (cm^2/msec): 0.000174
+ D21 (cm^2/msec): 0.000174
+ D22 (cm^2/msec): 0.000493
+
+
+Laplacian Multipliers: 
+ Dp11 (msec^-1): 27.1489
+ Dp12 (msec^-1): 3.6401
+ Dp21 (msec^-1): 3.6401
+ Dp22 (msec^-1): 20.6662
+
+ Af=0
+ Initializing the A field as a homogenous distribution, A=1.000 
+
+Initial conditions set for spiral wave.
+
+Block information: 
+       icewidth (cm): 0.2500 
+       icbwidth (cm): 0.4500 
+    iclengthact (cm): 8.5000 
+  iclengthblock (cm): 9.2500 
+          icewidthn : 52 
+          icbwidthn : 93 
+       iclengthactn : 1740 
+     iclengthblockn : 1894 
+       blocktimenum : 1 
+   blocktimes (msec): 65.00 
+
+
+Initial Conditions: 
+        Vm (mV): -20.000
+  IK1 (uA/cm^2): 0.000
+  Ix1 (uA/cm^2): 0.000
+  x1 (unitless): 0.009
+  INa (uA/cm^2): 0.000
+   m (unitless): 1.000
+   h (unitless): 0.947
+   Is (uA/cm^2): 0.000
+   d (unitless): 0.004
+   f (unitless): 1.000
+   Cai (mole/L): 2.000e-07
+
+End conditions: Slab
+
+
+Variables to save to disk: 
+    Vm
+**********************************************************
+Opening files ... 
+Writing initial conditions ... 
+Entering time loop ... 
+
+Loop 0 <line-304> - Time 11.300457 Total energy consumed 1161.131235 Ave. Power Level 102.750823 Memory 573729 MemoryRefresh 18145
+	-------- Loop 0 (sock 1 consumed 561.357270, avg temp 57.567901, final temp 57 ) ------
+	-------- Loop 0 (sock 2 consumed 599.773965, avg temp 50.518519, final temp 52 ) ------
+Loop 1 <line-347> - Time 0.257931 Total energy consumed 27.189705 Ave. Power Level 105.414490 Memory 17996 MemoryRefresh 392
+	-------- Loop 1 (sock 1 consumed 12.791940, avg temp 57.654321, final temp 58 ) ------
+	-------- Loop 1 (sock 2 consumed 14.397765, avg temp 50.567901, final temp 52 ) ------
+Loop 2 <line-309> - Time 11.161920 Total energy consumed 1148.068890 Ave. Power Level 102.855858 Memory 563665 MemoryRefresh 17973
+	-------- Loop 2 (sock 1 consumed 555.844620, avg temp 57.550000, final temp 58 ) ------
+	-------- Loop 2 (sock 2 consumed 592.224270, avg temp 50.487500, final temp 51 ) ------
+Loop 3 <line-352> - Time 0.248983 Total energy consumed 25.090665 Ave. Power Level 100.772431 Memory 17708 MemoryRefresh 395
+	-------- Loop 3 (sock 1 consumed 12.440130, avg temp 57.587500, final temp 57 ) ------
+	-------- Loop 3 (sock 2 consumed 12.650535, avg temp 50.625000, final temp 51 ) ------
+Application(EnergyStat) - Time 23.876313 Total energy consumed 2405.656500 Ave. Power Level 100.754940 Memory 1177498 MemoryRefresh 38364 Final Temperature socket 1 : 58  socket 2 : 52 
+	 ParallelApplication(EnergyStat) - Time 22.969292 Total energy consumed 2361.480495 Ave. Power Level 102.810330 Memory 1173098 MemoryRefresh 36905
+total time is 22.98
+
+Simulation Finished!
+Saving final conditions...
+
+         tfinal: 0.500 msec
+     Final time: 0.503 msec
+         Nsteps:     160.00
+Number of steps: 161
+             Nx: 2048
+             Ny: 2048
+Initializing ... 
+Initializing constant array ... 
+Initializing derivative array ... 
+Initializing data array ... 
+Initializing block matrix ... 
+Establishing initial conditions for spiral wave ... 
+b1: 973, b2: 1117, middley: 1024 
+**********************************************************
+
+Model parameters: 
+                 tfinal (msec):  0.50
+                     dt (msec): 0.0031
+                        Nsteps:     160.00
+                       Lx (cm): 10.00
+                       dx (cm): 0.0049
+                            Nx: 2048
+                       Ly (cm): 10.00
+                       dy (cm): 0.0049
+                            Ny: 2048
+        dt/[dx*dy] (msec/cm^2): 131.0720
+
+                msec per write: 1.000
+              Nsteps per write: 320
+Spatial rate for write (nodes): 1
+              datafile dx (cm): 0.0049
+              datafile dy (cm): 0.0049
+         datafile Nx (columns): 2048
+            datafile Ny (rows): 2048
+
+        Nsteps per user update: 1600
+              msec user update: 5.000
+   Monitor this node [mNx,mNy]: 1024, 1024
+
+
+BR Constants: 
+    gK1 (mmho/cm^2): 0.350
+    gNa (mmho/cm^2): 15.000
+           ENa (mV): 40.000
+    gx1 (mmho/cm^2): 0.800
+     gs (mmho/cm^2): 0.090
+       Cm (uF/cm^2): 1.000
+      kCa (msec^-1): 0.070
+   gNaC (mmho/cm^2): 0.000
+  Dpara (cm^2/msec): 0.000760
+Dperpen (cm^2/msec): 0.000380
+    theta (degrees): 33.000
+   sigma (unitless): 0.600
+       A (unitless): 1.000
+
+
+Mesh Ratios: 
+(dx*dy)/dt [0.00763 (cm^2/msec)] should be greater than 4*Dpara [0.00304 (cm^2/msec)].
+(dx*dy)/dt [0.00763 (cm^2/msec)] should be greater than 4*Dperpen [0.00152 (cm^2/msec)].
+
+
+Diffusion Tensor: 
+ D11 (cm^2/msec): 0.000647
+ D12 (cm^2/msec): 0.000174
+ D21 (cm^2/msec): 0.000174
+ D22 (cm^2/msec): 0.000493
+
+
+Laplacian Multipliers: 
+ Dp11 (msec^-1): 27.1489
+ Dp12 (msec^-1): 3.6401
+ Dp21 (msec^-1): 3.6401
+ Dp22 (msec^-1): 20.6662
+
+ Af=0
+ Initializing the A field as a homogenous distribution, A=1.000 
+
+Initial conditions set for spiral wave.
+
+Block information: 
+       icewidth (cm): 0.2500 
+       icbwidth (cm): 0.4500 
+    iclengthact (cm): 8.5000 
+  iclengthblock (cm): 9.2500 
+          icewidthn : 52 
+          icbwidthn : 93 
+       iclengthactn : 1740 
+     iclengthblockn : 1894 
+       blocktimenum : 1 
+   blocktimes (msec): 65.00 
+
+
+Initial Conditions: 
+        Vm (mV): -20.000
+  IK1 (uA/cm^2): 0.000
+  Ix1 (uA/cm^2): 0.000
+  x1 (unitless): 0.009
+  INa (uA/cm^2): 0.000
+   m (unitless): 1.000
+   h (unitless): 0.947
+   Is (uA/cm^2): 0.000
+   d (unitless): 0.004
+   f (unitless): 1.000
+   Cai (mole/L): 2.000e-07
+
+End conditions: Slab
+
+
+Variables to save to disk: 
+    Vm
+**********************************************************
+Opening files ... 
+Writing initial conditions ... 
+Entering time loop ... 
+
+Loop 0 <line-304> - Time 11.267913 Total energy consumed 1159.716060 Ave. Power Level 102.921990 Memory 571621 MemoryRefresh 18097
+	-------- Loop 0 (sock 1 consumed 559.721925, avg temp 56.419753, final temp 57 ) ------
+	-------- Loop 0 (sock 2 consumed 599.994135, avg temp 51.185185, final temp 52 ) ------
+Loop 1 <line-347> - Time 0.256157 Total energy consumed 26.090280 Ave. Power Level 101.852677 Memory 17839 MemoryRefresh 395
+	-------- Loop 1 (sock 1 consumed 12.450075, avg temp 56.654321, final temp 57 ) ------
+	-------- Loop 1 (sock 2 consumed 13.640205, avg temp 51.333333, final temp 52 ) ------
+Loop 2 <line-309> - Time 11.151093 Total energy consumed 1148.957565 Ave. Power Level 103.035419 Memory 15593748242 MemoryRefresh 17978
+	-------- Loop 2 (sock 1 consumed 555.542910, avg temp 56.450000, final temp 57 ) ------
+	-------- Loop 2 (sock 2 consumed 593.414655, avg temp 51.237500, final temp 52 ) ------
+Loop 3 <line-352> - Time 0.249923 Total energy consumed 25.940985 Ave. Power Level 103.795834 Memory 17642 MemoryRefresh 392
+	-------- Loop 3 (sock 1 consumed 12.555795, avg temp 56.550000, final temp 58 ) ------
+	-------- Loop 3 (sock 2 consumed 13.385190, avg temp 51.325000, final temp 52 ) ------
+Application(EnergyStat) - Time 23.832595 Total energy consumed 2404.818330 Ave. Power Level 100.904596 Memory 15594359766 MemoryRefresh 38332 Final Temperature socket 1 : 57  socket 2 : 52 
+	 ParallelApplication(EnergyStat) - Time 22.925087 Total energy consumed 2360.704890 Ave. Power Level 102.974742 Memory 15594355344 MemoryRefresh 36862
+total time is 22.94
+
+Simulation Finished!
+Saving final conditions...
+
+         tfinal: 0.500 msec
+     Final time: 0.503 msec
+         Nsteps:     160.00
+Number of steps: 161
+             Nx: 2048
+             Ny: 2048
