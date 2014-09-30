@@ -1,0 +1,380 @@
+MiniFE Mini-App, OpenMP Peer Implementation
+Creating OpenMP Thread Pool...
+Counted: 10 threads.
+Running MiniFE Mini-App...
+      creating/filling mesh...0.386182s, total time: 0.386183
+generating matrix structure...17.0246s, total time: 17.4108
+         assembling FE data...12.0261s, total time: 29.4369
+      imposing Dirichlet BC...5.8911s, total time: 35.328
+      imposing Dirichlet BC...3.3404s, total time: 38.6684
+making matrix indices local...0s, total time: 38.6684
+Starting CG solver ... 
+Initial Residual = 301.002
+Iteration = 20   Residual = 0.0582629
+Iteration = 40   Residual = 0.0262794
+Iteration = 60   Residual = 0.0165033
+Iteration = 80   Residual = 0.01135
+Iteration = 100   Residual = 0.0301914
+Iteration = 120   Residual = 0.00643412
+Iteration = 140   Residual = 0.00517967
+Iteration = 160   Residual = 0.00397659
+Iteration = 180   Residual = 0.00312736
+Iteration = 200   Residual = 0.00250506
+Final Resid Norm: 0.00250506
+
+Loop 0 <line-186> - Time 17.025018 Total energy consumed 832.065600 Ave. Power Level 48.873113 Memory 76780 MemoryRefresh 28206
+	-------- Loop 0 (sock 1 consumed 447.221670, avg temp 50.000000, final temp 50 ) ------
+	-------- Loop 0 (sock 2 consumed 384.843930, avg temp 40.000000, final temp 40 ) ------
+Loop 1 <line-202> - Time 12.026476 Total energy consumed 985.230645 Ave. Power Level 81.921805 Memory 39803 MemoryRefresh 20616
+	-------- Loop 1 (sock 1 consumed 490.046280, avg temp 53.000000, final temp 53 ) ------
+	-------- Loop 1 (sock 2 consumed 495.184365, avg temp 44.000000, final temp 44 ) ------
+Loop 2 <line-487> - Time 9.170145 Total energy consumed 652.617465 Ave. Power Level 71.167627 Memory 13768 MemoryRefresh 15638
+	-------- Loop 2 (sock 1 consumed 323.761260, avg temp 49.500000, final temp 50 ) ------
+	-------- Loop 2 (sock 2 consumed 328.856205, avg temp 42.000000, final temp 43 ) ------
+Loop 3 <line-535> - Time 29.707141 Total energy consumed 3168.545625 Ave. Power Level 106.659392 Memory 3721974 MemoryRefresh 48115
+	-------- Loop 3 (sock 1 consumed 1592.370285, avg temp 54.169154, final temp 56 ) ------
+	-------- Loop 3 (sock 2 consumed 1576.175340, avg temp 45.850746, final temp 47 ) ------
+Application(EnergyStat) - Time 85.209512 Total energy consumed 7154.454210 Ave. Power Level 83.963093 Memory 1806112692 MemoryRefresh 140226 Final Temperature socket 1 : 54  socket 2 : 46 
+	 ParallelApplication(EnergyStat) - Time 67.928780 Total energy consumed 5638.459335 Ave. Power Level 83.005456 Memory 3852325 MemoryRefresh 112575
+MiniFE Mini-App, OpenMP Peer Implementation
+Creating OpenMP Thread Pool...
+Counted: 10 threads.
+Running MiniFE Mini-App...
+      creating/filling mesh...0.391729s, total time: 0.391729
+generating matrix structure...17.0251s, total time: 17.4168
+         assembling FE data...12.0422s, total time: 29.459
+      imposing Dirichlet BC...5.89325s, total time: 35.3522
+      imposing Dirichlet BC...3.33903s, total time: 38.6913
+making matrix indices local...9.53674e-07s, total time: 38.6913
+Starting CG solver ... 
+Initial Residual = 301.002
+Iteration = 20   Residual = 0.0582629
+Iteration = 40   Residual = 0.0262794
+Iteration = 60   Residual = 0.0165033
+Iteration = 80   Residual = 0.01135
+Iteration = 100   Residual = 0.0301914
+Iteration = 120   Residual = 0.00643412
+Iteration = 140   Residual = 0.00517967
+Iteration = 160   Residual = 0.00397659
+Iteration = 180   Residual = 0.00312736
+Iteration = 200   Residual = 0.00250506
+Final Resid Norm: 0.00250506
+
+Loop 0 <line-186> - Time 17.025563 Total energy consumed 832.183005 Ave. Power Level 48.878443 Memory 76898 MemoryRefresh 28226
+	-------- Loop 0 (sock 1 consumed 447.804285, avg temp 51.000000, final temp 51 ) ------
+	-------- Loop 0 (sock 2 consumed 384.378720, avg temp 40.000000, final temp 40 ) ------
+Loop 1 <line-202> - Time 12.042663 Total energy consumed 986.513055 Ave. Power Level 81.918182 Memory 39762 MemoryRefresh 20644
+	-------- Loop 1 (sock 1 consumed 491.016090, avg temp 54.000000, final temp 54 ) ------
+	-------- Loop 1 (sock 2 consumed 495.496965, avg temp 44.000000, final temp 44 ) ------
+Loop 2 <line-487> - Time 9.170954 Total energy consumed 656.245680 Ave. Power Level 71.556969 Memory 13731 MemoryRefresh 15637
+	-------- Loop 2 (sock 1 consumed 325.593120, avg temp 50.500000, final temp 52 ) ------
+	-------- Loop 2 (sock 2 consumed 330.652560, avg temp 41.000000, final temp 42 ) ------
+Loop 3 <line-535> - Time 29.710947 Total energy consumed 3166.011015 Ave. Power Level 106.560421 Memory 3720755 MemoryRefresh 48125
+	-------- Loop 3 (sock 1 consumed 1590.344190, avg temp 54.726368, final temp 55 ) ------
+	-------- Loop 3 (sock 2 consumed 1575.666825, avg temp 45.582090, final temp 46 ) ------
+Application(EnergyStat) - Time 85.228656 Total energy consumed 7155.456585 Ave. Power Level 83.955995 Memory 5072298 MemoryRefresh 140254 Final Temperature socket 1 : 54  socket 2 : 46 
+	 ParallelApplication(EnergyStat) - Time 67.950127 Total energy consumed 5640.952755 Ave. Power Level 83.016073 Memory 3851146 MemoryRefresh 112632
+MiniFE Mini-App, OpenMP Peer Implementation
+Creating OpenMP Thread Pool...
+Counted: 10 threads.
+Running MiniFE Mini-App...
+      creating/filling mesh...0.383082s, total time: 0.383082
+generating matrix structure...16.9969s, total time: 17.38
+         assembling FE data...12.0265s, total time: 29.4065
+      imposing Dirichlet BC...5.89235s, total time: 35.2988
+      imposing Dirichlet BC...3.33919s, total time: 38.638
+making matrix indices local...0s, total time: 38.638
+Starting CG solver ... 
+Initial Residual = 301.002
+Iteration = 20   Residual = 0.0582629
+Iteration = 40   Residual = 0.0262794
+Iteration = 60   Residual = 0.0165033
+Iteration = 80   Residual = 0.01135
+Iteration = 100   Residual = 0.0301914
+Iteration = 120   Residual = 0.00643412
+Iteration = 140   Residual = 0.00517967
+Iteration = 160   Residual = 0.00397659
+Iteration = 180   Residual = 0.00312736
+Iteration = 200   Residual = 0.00250506
+Final Resid Norm: 0.00250506
+
+Loop 0 <line-186> - Time 16.997442 Total energy consumed 832.185615 Ave. Power Level 48.959461 Memory 76747 MemoryRefresh 28156
+	-------- Loop 0 (sock 1 consumed 447.206100, avg temp 52.000000, final temp 52 ) ------
+	-------- Loop 0 (sock 2 consumed 384.979515, avg temp 40.000000, final temp 40 ) ------
+Loop 1 <line-202> - Time 12.026958 Total energy consumed 985.650525 Ave. Power Level 81.953435 Memory 39769 MemoryRefresh 20614
+	-------- Loop 1 (sock 1 consumed 490.482765, avg temp 53.000000, final temp 53 ) ------
+	-------- Loop 1 (sock 2 consumed 495.167760, avg temp 44.000000, final temp 44 ) ------
+Loop 2 <line-487> - Time 9.170126 Total energy consumed 654.810690 Ave. Power Level 71.406945 Memory 13692 MemoryRefresh 15636
+	-------- Loop 2 (sock 1 consumed 325.205145, avg temp 51.000000, final temp 53 ) ------
+	-------- Loop 2 (sock 2 consumed 329.605545, avg temp 42.500000, final temp 44 ) ------
+Loop 3 <line-535> - Time 29.721787 Total energy consumed 3172.865430 Ave. Power Level 106.752175 Memory 3518323086 MemoryRefresh 48171
+	-------- Loop 3 (sock 1 consumed 1593.538755, avg temp 54.263682, final temp 55 ) ------
+	-------- Loop 3 (sock 2 consumed 1579.326675, avg temp 45.810945, final temp 46 ) ------
+Application(EnergyStat) - Time 85.203203 Total energy consumed 7161.173490 Ave. Power Level 84.048172 Memory 3519673880 MemoryRefresh 140196 Final Temperature socket 1 : 54  socket 2 : 47 
+	 ParallelApplication(EnergyStat) - Time 67.916314 Total energy consumed 5645.512260 Ave. Power Level 83.124539 Memory 3518453294 MemoryRefresh 112577
+MiniFE Mini-App, OpenMP Peer Implementation
+Creating OpenMP Thread Pool...
+Counted: 10 threads.
+Running MiniFE Mini-App...
+      creating/filling mesh...0.385366s, total time: 0.385366
+generating matrix structure...17.0302s, total time: 17.4156
+         assembling FE data...12.0307s, total time: 29.4463
+      imposing Dirichlet BC...5.86041s, total time: 35.3067
+      imposing Dirichlet BC...3.33766s, total time: 38.6444
+making matrix indices local...0s, total time: 38.6444
+Starting CG solver ... 
+Initial Residual = 301.002
+Iteration = 20   Residual = 0.0582629
+Iteration = 40   Residual = 0.0262794
+Iteration = 60   Residual = 0.0165033
+Iteration = 80   Residual = 0.01135
+Iteration = 100   Residual = 0.0301914
+Iteration = 120   Residual = 0.00643412
+Iteration = 140   Residual = 0.00517967
+Iteration = 160   Residual = 0.00397659
+Iteration = 180   Residual = 0.00312736
+Iteration = 200   Residual = 0.00250506
+Final Resid Norm: 0.00250506
+
+Loop 0 <line-186> - Time 17.030634 Total energy consumed 834.782070 Ave. Power Level 49.016501 Memory 76733 MemoryRefresh 28202
+	-------- Loop 0 (sock 1 consumed 448.056480, avg temp 52.000000, final temp 52 ) ------
+	-------- Loop 0 (sock 2 consumed 386.725590, avg temp 41.000000, final temp 41 ) ------
+Loop 1 <line-202> - Time 12.031151 Total energy consumed 988.029630 Ave. Power Level 82.122619 Memory 39725 MemoryRefresh 20618
+	-------- Loop 1 (sock 1 consumed 491.255655, avg temp 53.000000, final temp 53 ) ------
+	-------- Loop 1 (sock 2 consumed 496.773975, avg temp 44.000000, final temp 44 ) ------
+Loop 2 <line-487> - Time 9.136508 Total energy consumed 656.388555 Ave. Power Level 71.842390 Memory 13606 MemoryRefresh 15582
+	-------- Loop 2 (sock 1 consumed 326.059200, avg temp 51.000000, final temp 53 ) ------
+	-------- Loop 2 (sock 2 consumed 330.329355, avg temp 42.500000, final temp 44 ) ------
+Loop 3 <line-535> - Time 29.717255 Total energy consumed 3174.310425 Ave. Power Level 106.817082 Memory 1805491226 MemoryRefresh 48155
+	-------- Loop 3 (sock 1 consumed 1595.146530, avg temp 54.756219, final temp 55 ) ------
+	-------- Loop 3 (sock 2 consumed 1579.163895, avg temp 46.343284, final temp 48 ) ------
+Application(EnergyStat) - Time 85.200157 Total energy consumed 7171.966485 Ave. Power Level 84.177855 Memory 1806841719 MemoryRefresh 140168 Final Temperature socket 1 : 55  socket 2 : 47 
+	 ParallelApplication(EnergyStat) - Time 67.915547 Total energy consumed 5653.510680 Ave. Power Level 83.243247 Memory 1805621290 MemoryRefresh 112557
+MiniFE Mini-App, OpenMP Peer Implementation
+Creating OpenMP Thread Pool...
+Counted: 10 threads.
+Running MiniFE Mini-App...
+      creating/filling mesh...0.383611s, total time: 0.383611
+generating matrix structure...17.0261s, total time: 17.4097
+         assembling FE data...12.0371s, total time: 29.4468
+      imposing Dirichlet BC...5.91875s, total time: 35.3655
+      imposing Dirichlet BC...3.33865s, total time: 38.7042
+making matrix indices local...0s, total time: 38.7042
+Starting CG solver ... 
+Initial Residual = 301.002
+Iteration = 20   Residual = 0.0582629
+Iteration = 40   Residual = 0.0262794
+Iteration = 60   Residual = 0.0165033
+Iteration = 80   Residual = 0.01135
+Iteration = 100   Residual = 0.0301914
+Iteration = 120   Residual = 0.00643412
+Iteration = 140   Residual = 0.00517967
+Iteration = 160   Residual = 0.00397659
+Iteration = 180   Residual = 0.00312736
+Iteration = 200   Residual = 0.00250506
+Final Resid Norm: 0.00250506
+
+Loop 0 <line-186> - Time 17.026525 Total energy consumed 834.928635 Ave. Power Level 49.036936 Memory 76930 MemoryRefresh 28228
+	-------- Loop 0 (sock 1 consumed 448.173765, avg temp 52.000000, final temp 52 ) ------
+	-------- Loop 0 (sock 2 consumed 386.754870, avg temp 40.000000, final temp 40 ) ------
+Loop 1 <line-202> - Time 12.037517 Total energy consumed 988.530180 Ave. Power Level 82.120768 Memory 39794 MemoryRefresh 20638
+	-------- Loop 1 (sock 1 consumed 491.408580, avg temp 53.000000, final temp 53 ) ------
+	-------- Loop 1 (sock 2 consumed 497.121600, avg temp 45.000000, final temp 45 ) ------
+Loop 2 <line-487> - Time 9.195942 Total energy consumed 658.998090 Ave. Power Level 71.661839 Memory 14227 MemoryRefresh 15676
+	-------- Loop 2 (sock 1 consumed 326.229840, avg temp 51.000000, final temp 53 ) ------
+	-------- Loop 2 (sock 2 consumed 332.768250, avg temp 42.500000, final temp 44 ) ------
+Loop 3 <line-535> - Time 29.721905 Total energy consumed 3172.371615 Ave. Power Level 106.735138 Memory 1762840074 MemoryRefresh 48120
+	-------- Loop 3 (sock 1 consumed 1593.486225, avg temp 54.348259, final temp 56 ) ------
+	-------- Loop 3 (sock 2 consumed 1578.885390, avg temp 46.318408, final temp 47 ) ------
+Application(EnergyStat) - Time 85.287023 Total energy consumed 7174.974705 Ave. Power Level 84.127391 Memory 1764193562 MemoryRefresh 140359 Final Temperature socket 1 : 55  socket 2 : 47 
+	 ParallelApplication(EnergyStat) - Time 67.981889 Total energy consumed 5654.828520 Ave. Power Level 83.181397 Memory 1762971025 MemoryRefresh 112662
+MiniFE Mini-App, OpenMP Peer Implementation
+Creating OpenMP Thread Pool...
+Counted: 10 threads.
+Running MiniFE Mini-App...
+      creating/filling mesh...0.384326s, total time: 0.384327
+generating matrix structure...17.0167s, total time: 17.401
+         assembling FE data...12.0157s, total time: 29.4167
+      imposing Dirichlet BC...5.88564s, total time: 35.3023
+      imposing Dirichlet BC...3.33713s, total time: 38.6395
+making matrix indices local...0s, total time: 38.6395
+Starting CG solver ... 
+Initial Residual = 301.002
+Iteration = 20   Residual = 0.0582629
+Iteration = 40   Residual = 0.0262794
+Iteration = 60   Residual = 0.0165033
+Iteration = 80   Residual = 0.01135
+Iteration = 100   Residual = 0.0301914
+Iteration = 120   Residual = 0.00643412
+Iteration = 140   Residual = 0.00517967
+Iteration = 160   Residual = 0.00397659
+Iteration = 180   Residual = 0.00312736
+Iteration = 200   Residual = 0.00250506
+Final Resid Norm: 0.00250506
+
+Loop 0 <line-186> - Time 17.019915 Total energy consumed 834.345885 Ave. Power Level 49.021744 Memory 76727 MemoryRefresh 28201
+	-------- Loop 0 (sock 1 consumed 448.021425, avg temp 52.000000, final temp 52 ) ------
+	-------- Loop 0 (sock 2 consumed 386.324460, avg temp 40.000000, final temp 40 ) ------
+Loop 1 <line-202> - Time 12.016126 Total energy consumed 985.612350 Ave. Power Level 82.024134 Memory 39669 MemoryRefresh 20598
+	-------- Loop 1 (sock 1 consumed 490.379655, avg temp 53.000000, final temp 53 ) ------
+	-------- Loop 1 (sock 2 consumed 495.232695, avg temp 43.000000, final temp 43 ) ------
+Loop 2 <line-487> - Time 9.161148 Total energy consumed 654.061785 Ave. Power Level 71.395175 Memory 13668 MemoryRefresh 15624
+	-------- Loop 2 (sock 1 consumed 324.671085, avg temp 51.000000, final temp 53 ) ------
+	-------- Loop 2 (sock 2 consumed 329.390700, avg temp 42.500000, final temp 44 ) ------
+Loop 3 <line-535> - Time 29.725613 Total energy consumed 3172.041420 Ave. Power Level 106.710714 Memory 1848372649 MemoryRefresh 48151
+	-------- Loop 3 (sock 1 consumed 1594.148100, avg temp 54.532338, final temp 55 ) ------
+	-------- Loop 3 (sock 2 consumed 1577.893320, avg temp 45.432836, final temp 46 ) ------
+Application(EnergyStat) - Time 85.182041 Total energy consumed 7163.115540 Ave. Power Level 84.091851 Memory 1849722077 MemoryRefresh 140174 Final Temperature socket 1 : 54  socket 2 : 45 
+	 ParallelApplication(EnergyStat) - Time 67.922802 Total energy consumed 5646.061440 Ave. Power Level 83.124684 Memory 1848502713 MemoryRefresh 112574
+MiniFE Mini-App, OpenMP Peer Implementation
+Creating OpenMP Thread Pool...
+Counted: 10 threads.
+Running MiniFE Mini-App...
+      creating/filling mesh...0.385978s, total time: 0.385978
+generating matrix structure...17.0329s, total time: 17.4189
+         assembling FE data...12.0446s, total time: 29.4635
+      imposing Dirichlet BC...5.89258s, total time: 35.3561
+      imposing Dirichlet BC...3.3392s, total time: 38.6952
+making matrix indices local...0s, total time: 38.6952
+Starting CG solver ... 
+Initial Residual = 301.002
+Iteration = 20   Residual = 0.0582629
+Iteration = 40   Residual = 0.0262794
+Iteration = 60   Residual = 0.0165033
+Iteration = 80   Residual = 0.01135
+Iteration = 100   Residual = 0.0301914
+Iteration = 120   Residual = 0.00643412
+Iteration = 140   Residual = 0.00517967
+Iteration = 160   Residual = 0.00397659
+Iteration = 180   Residual = 0.00312736
+Iteration = 200   Residual = 0.00250506
+Final Resid Norm: 0.00250506
+
+Loop 0 <line-186> - Time 17.033384 Total energy consumed 833.548140 Ave. Power Level 48.936144 Memory 76946 MemoryRefresh 28234
+	-------- Loop 0 (sock 1 consumed 448.406325, avg temp 50.000000, final temp 50 ) ------
+	-------- Loop 0 (sock 2 consumed 385.141815, avg temp 39.000000, final temp 39 ) ------
+Loop 1 <line-202> - Time 12.045045 Total energy consumed 990.674085 Ave. Power Level 82.247437 Memory 39789 MemoryRefresh 20648
+	-------- Loop 1 (sock 1 consumed 492.381495, avg temp 53.000000, final temp 53 ) ------
+	-------- Loop 1 (sock 2 consumed 498.292590, avg temp 44.000000, final temp 44 ) ------
+Loop 2 <line-487> - Time 9.170242 Total energy consumed 655.896330 Ave. Power Level 71.524433 Memory 13717 MemoryRefresh 15637
+	-------- Loop 2 (sock 1 consumed 325.133265, avg temp 49.500000, final temp 50 ) ------
+	-------- Loop 2 (sock 2 consumed 330.763065, avg temp 41.000000, final temp 42 ) ------
+Loop 3 <line-535> - Time 29.708250 Total energy consumed 3170.278185 Ave. Power Level 106.713730 Memory 3721082 MemoryRefresh 48128
+	-------- Loop 3 (sock 1 consumed 1593.481815, avg temp 54.184080, final temp 55 ) ------
+	-------- Loop 3 (sock 2 consumed 1576.796370, avg temp 45.726368, final temp 47 ) ------
+Application(EnergyStat) - Time 85.229997 Total energy consumed 7167.261435 Ave. Power Level 84.093179 Memory 5071193 MemoryRefresh 140260 Final Temperature socket 1 : 54  socket 2 : 46 
+	 ParallelApplication(EnergyStat) - Time 67.956921 Total energy consumed 5650.396740 Ave. Power Level 83.146744 Memory 3851534 MemoryRefresh 112647
+MiniFE Mini-App, OpenMP Peer Implementation
+Creating OpenMP Thread Pool...
+Counted: 10 threads.
+Running MiniFE Mini-App...
+      creating/filling mesh...0.382614s, total time: 0.382614
+generating matrix structure...17.0578s, total time: 17.4404
+         assembling FE data...12.0272s, total time: 29.4676
+      imposing Dirichlet BC...5.89225s, total time: 35.3599
+      imposing Dirichlet BC...3.33901s, total time: 38.6989
+making matrix indices local...0s, total time: 38.6989
+Starting CG solver ... 
+Initial Residual = 301.002
+Iteration = 20   Residual = 0.0582629
+Iteration = 40   Residual = 0.0262794
+Iteration = 60   Residual = 0.0165033
+Iteration = 80   Residual = 0.01135
+Iteration = 100   Residual = 0.0301914
+Iteration = 120   Residual = 0.00643412
+Iteration = 140   Residual = 0.00517967
+Iteration = 160   Residual = 0.00397659
+Iteration = 180   Residual = 0.00312736
+Iteration = 200   Residual = 0.00250506
+Final Resid Norm: 0.00250506
+
+Loop 0 <line-186> - Time 17.057856 Total energy consumed 835.175445 Ave. Power Level 48.961338 Memory 76856 MemoryRefresh 28282
+	-------- Loop 0 (sock 1 consumed 449.029515, avg temp 52.000000, final temp 52 ) ------
+	-------- Loop 0 (sock 2 consumed 386.145930, avg temp 40.000000, final temp 40 ) ------
+Loop 1 <line-202> - Time 12.027661 Total energy consumed 987.532410 Ave. Power Level 82.105110 Memory 39743 MemoryRefresh 20620
+	-------- Loop 1 (sock 1 consumed 491.717355, avg temp 53.000000, final temp 53 ) ------
+	-------- Loop 1 (sock 2 consumed 495.815055, avg temp 44.000000, final temp 44 ) ------
+Loop 2 <line-487> - Time 9.169748 Total energy consumed 656.241570 Ave. Power Level 71.565936 Memory 13635 MemoryRefresh 15638
+	-------- Loop 2 (sock 1 consumed 325.415925, avg temp 49.000000, final temp 50 ) ------
+	-------- Loop 2 (sock 2 consumed 330.825645, avg temp 42.500000, final temp 43 ) ------
+Loop 3 <line-535> - Time 29.704082 Total energy consumed 3168.991230 Ave. Power Level 106.685379 Memory 3722860 MemoryRefresh 48091
+	-------- Loop 3 (sock 1 consumed 1593.498030, avg temp 54.184080, final temp 56 ) ------
+	-------- Loop 3 (sock 2 consumed 1575.493200, avg temp 46.393035, final temp 47 ) ------
+Application(EnergyStat) - Time 85.231557 Total energy consumed 7166.096310 Ave. Power Level 84.077970 Memory 5073230 MemoryRefresh 140272 Final Temperature socket 1 : 54  socket 2 : 48 
+	 ParallelApplication(EnergyStat) - Time 67.959346 Total energy consumed 5647.940655 Ave. Power Level 83.107637 Memory 3853094 MemoryRefresh 112631
+MiniFE Mini-App, OpenMP Peer Implementation
+Creating OpenMP Thread Pool...
+Counted: 10 threads.
+Running MiniFE Mini-App...
+      creating/filling mesh...0.386555s, total time: 0.386556
+generating matrix structure...17.0721s, total time: 17.4586
+         assembling FE data...12.056s, total time: 29.5146
+      imposing Dirichlet BC...5.86079s, total time: 35.3754
+      imposing Dirichlet BC...3.34023s, total time: 38.7156
+making matrix indices local...0s, total time: 38.7156
+Starting CG solver ... 
+Initial Residual = 301.002
+Iteration = 20   Residual = 0.0582629
+Iteration = 40   Residual = 0.0262794
+Iteration = 60   Residual = 0.0165033
+Iteration = 80   Residual = 0.01135
+Iteration = 100   Residual = 0.0301914
+Iteration = 120   Residual = 0.00643412
+Iteration = 140   Residual = 0.00517967
+Iteration = 160   Residual = 0.00397659
+Iteration = 180   Residual = 0.00312736
+Iteration = 200   Residual = 0.00250506
+Final Resid Norm: 0.00250506
+
+Loop 0 <line-186> - Time 17.072523 Total energy consumed 836.313195 Ave. Power Level 48.985916 Memory 76659 MemoryRefresh 28274
+	-------- Loop 0 (sock 1 consumed 449.175675, avg temp 51.000000, final temp 51 ) ------
+	-------- Loop 0 (sock 2 consumed 387.137520, avg temp 41.000000, final temp 41 ) ------
+Loop 1 <line-202> - Time 12.056402 Total energy consumed 991.942005 Ave. Power Level 82.275127 Memory 39922 MemoryRefresh 20669
+	-------- Loop 1 (sock 1 consumed 493.227990, avg temp 53.000000, final temp 53 ) ------
+	-------- Loop 1 (sock 2 consumed 498.714015, avg temp 45.000000, final temp 45 ) ------
+Loop 2 <line-487> - Time 9.139543 Total energy consumed 655.653930 Ave. Power Level 71.738151 Memory 13571 MemoryRefresh 15596
+	-------- Loop 2 (sock 1 consumed 324.970455, avg temp 50.000000, final temp 51 ) ------
+	-------- Loop 2 (sock 2 consumed 330.683475, avg temp 42.500000, final temp 44 ) ------
+Loop 3 <line-535> - Time 29.708600 Total energy consumed 3171.726900 Ave. Power Level 106.761236 Memory 1776949395 MemoryRefresh 48127
+	-------- Loop 3 (sock 1 consumed 1593.563610, avg temp 54.109453, final temp 55 ) ------
+	-------- Loop 3 (sock 2 consumed 1578.163290, avg temp 46.691542, final temp 48 ) ------
+Application(EnergyStat) - Time 85.251991 Total energy consumed 7172.637060 Ave. Power Level 84.134540 Memory 1778298522 MemoryRefresh 140281 Final Temperature socket 1 : 54  socket 2 : 47 
+	 ParallelApplication(EnergyStat) - Time 67.977069 Total energy consumed 5655.636030 Ave. Power Level 83.199175 Memory 1777079547 MemoryRefresh 112666
+MiniFE Mini-App, OpenMP Peer Implementation
+Creating OpenMP Thread Pool...
+Counted: 10 threads.
+Running MiniFE Mini-App...
+      creating/filling mesh...0.386705s, total time: 0.386705
+generating matrix structure...16.9965s, total time: 17.3832
+         assembling FE data...12.0256s, total time: 29.4088
+      imposing Dirichlet BC...5.89024s, total time: 35.299
+      imposing Dirichlet BC...3.3385s, total time: 38.6375
+making matrix indices local...9.53674e-07s, total time: 38.6375
+Starting CG solver ... 
+Initial Residual = 301.002
+Iteration = 20   Residual = 0.0582629
+Iteration = 40   Residual = 0.0262794
+Iteration = 60   Residual = 0.0165033
+Iteration = 80   Residual = 0.01135
+Iteration = 100   Residual = 0.0301914
+Iteration = 120   Residual = 0.00643412
+Iteration = 140   Residual = 0.00517967
+Iteration = 160   Residual = 0.00397659
+Iteration = 180   Residual = 0.00312736
+Iteration = 200   Residual = 0.00250506
+Final Resid Norm: 0.00250506
+
+Loop 0 <line-186> - Time 16.996556 Total energy consumed 832.521345 Ave. Power Level 48.981768 Memory 76755 MemoryRefresh 28158
+	-------- Loop 0 (sock 1 consumed 447.528930, avg temp 51.000000, final temp 51 ) ------
+	-------- Loop 0 (sock 2 consumed 384.992415, avg temp 40.000000, final temp 40 ) ------
+Loop 1 <line-202> - Time 12.026006 Total energy consumed 985.609740 Ave. Power Level 81.956533 Memory 39774 MemoryRefresh 20616
+	-------- Loop 1 (sock 1 consumed 490.299675, avg temp 52.000000, final temp 52 ) ------
+	-------- Loop 1 (sock 2 consumed 495.310065, avg temp 44.000000, final temp 44 ) ------
+Loop 2 <line-487> - Time 9.167331 Total energy consumed 654.941820 Ave. Power Level 71.443022 Memory 13618 MemoryRefresh 15640
+	-------- Loop 2 (sock 1 consumed 325.006155, avg temp 51.000000, final temp 52 ) ------
+	-------- Loop 2 (sock 2 consumed 329.935665, avg temp 42.500000, final temp 44 ) ------
+Loop 3 <line-535> - Time 29.720998 Total energy consumed 3168.706440 Ave. Power Level 106.615077 Memory 3722821 MemoryRefresh 48136
+	-------- Loop 3 (sock 1 consumed 1592.577585, avg temp 54.074627, final temp 55 ) ------
+	-------- Loop 3 (sock 2 consumed 1576.128855, avg temp 46.004975, final temp 46 ) ------
+Application(EnergyStat) - Time 85.199543 Total energy consumed 7159.425465 Ave. Power Level 84.031266 Memory 5074555 MemoryRefresh 140194 Final Temperature socket 1 : 53  socket 2 : 46 
+	 ParallelApplication(EnergyStat) - Time 67.910890 Total energy consumed 5641.779345 Ave. Power Level 83.076210 Memory 3852968 MemoryRefresh 112550

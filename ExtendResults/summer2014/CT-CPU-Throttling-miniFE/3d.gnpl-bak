@@ -1,16 +1,16 @@
-#set xtics 75%, 6.25%, 100%
+set ztics 20,15,110
 #set logscale y 2
-#set ztics 0.5                                    
 set pm3d                                         
 #set hidden3d                                     
 splot "gnuplot.data"  using 1:2:3:xticlabel(1) t "Time"
-set xlabel "Clock Skipping" offset 2.5,-2
+set xlabel "Clock Skipping" offset 1,-1.5
 set ylabel "# of Threads" 
-set zlabel "Time"   rotate left offset 0, 1
-set ztics 9,3,24
-#set view 55,144
-set view 39,127
-
+set zlabel "Time"   rotate left
+#set view 55,124
+#set view 54,140
+set view 50,140
+set palette defined (20 "white" , 100 "black")
+set cbtics 20,15,110
 set term pdfcairo enhanced color font "Arial-Bold,8"
 set output "output.pdf"
 replot

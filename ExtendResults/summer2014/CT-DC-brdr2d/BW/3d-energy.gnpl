@@ -3,13 +3,13 @@
 #set ztics 0.5                                    
 set pm3d                                         
 #set hidden3d                                     
-splot "gnuplot.data"  using 1:2:3:xticlabel(1) t "Time"
-set xlabel "Clock Skipping" offset 2.5,-2
+splot "gnuplot.data"  using 1:2:4:xticlabel(1) t "Energy"
+set xlabel "Clock Skipping" offset 1,-1 rotate right
 set ylabel "# of Threads" 
-set zlabel "Time"   rotate left offset 0, 1
-set ztics 9,3,24
-#set view 55,144
-set view 39,127
+set zlabel "Energy" offset 0,0  rotate left
+#set view 49,303
+set view 54,150
+set palette defined (2000 "white", 5500 "black")
 
 set term pdfcairo enhanced color font "Arial-Bold,8"
 set output "output.pdf"
