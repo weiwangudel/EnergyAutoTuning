@@ -4,7 +4,7 @@ set ztics  800,300,2400
 set pm3d                                         
 #set hidden3d                                     
 splot "gnuplot.data"  using 1:2:4:xticlabel(1) t "Energy"
-set xlabel "Clock Skipping" offset 2,-1.5 rotate by -45
+set xlabel "Clock Modulation" offset 2,-1.5 rotate by -45
 set ylabel "# of Threads" 
 set zlabel "Energy" offset -0.5,1 rotate left
 #set view 49,303

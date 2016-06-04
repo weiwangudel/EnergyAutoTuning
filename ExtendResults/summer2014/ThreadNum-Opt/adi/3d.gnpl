@@ -1,0 +1,21 @@
+#set xtics 75%, 6.25%, 100%
+#set logscale y 2
+#set ztics 0.5                                    
+set pm3d                                         
+#set hidden3d                                     
+splot "gnuplot.data"  using 1:2:3:xticlabel(1) t "Time"
+set xlabel "Opt. Flag" offset 2.5,-2
+set ylabel "# of Threads" 
+set zlabel "Time"   rotate left offset 0, 1
+#set ztics 2,0.5,4
+#set view 55,144
+#set view 39,127
+#set palette defined (2 "white" , 3 "black")
+#set cbrange [2:3]
+#set cbtics 2,0.1,3
+
+
+set term pdfcairo enhanced color font "Arial-Bold,8"
+set output "output.pdf"
+replot
+
